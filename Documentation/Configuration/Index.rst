@@ -5,7 +5,7 @@
 Configuration
 =============
 
-All extension settings are managed in **Media > AutoAlt.ai > Extension
+All extension settings are managed in **File (TYPO3 13) / Media (TYPO3 14) > AutoAlt.ai > Extension
 Configuration**. They are global extension settings, so give access only to
 trusted administrators or backend user groups.
 
@@ -29,6 +29,21 @@ on the action, this can include the image filename, site language, requested
 metadata fields, writing style, character limits, keywords, negative keywords,
 prefix/suffix, and custom prompt.
 
+Account and settings workflows send optional diagnostics only after an
+administrator enables **Share diagnostic data with AutoAlt.ai** and saves.
+Missing or invalid consent is disabled, and upgrades never enable it. Disable
+the checkbox and save to stop future optional submissions. Reports contain the
+website domain, TYPO3/extension/PHP versions, aggregate image counts and selected
+feature switches and numeric settings. API keys, prompts, keywords, notification
+email addresses and error logs are excluded from reports. The saved API key is
+used only in diagnostic request authentication headers.
+Administrators can also choose **Send diagnostic data to support**, review the
+exact report and confirm or cancel. Nothing is sent before confirmation; this
+one-time action does not enable ongoing telemetry. Reviews expire in 15 minutes.
+See the README's **External services** section for the complete payload.
+The request timeout is fixed at 30 seconds, API-error logging is always on,
+and image content is sent rather than public image URLs.
+
 Review the `AutoAlt.ai Privacy Policy <https://www.autoalt.ai/privacy-policy/>`__
 and your organisation's data-protection requirements before enabling the
 extension. Do not use prompts or metadata to transmit passwords, API keys, or
@@ -46,7 +61,7 @@ pause generation without removing its history or settings.
 Auto-generate on upload
 -----------------------
 
-When enabled, newly added supported files can be processed automatically. Use
+Enabled by default. Newly added supported files can be processed automatically. Use
 a small test library first, because each eligible generation can use credits.
 
 Automatically Rename Uploaded Image Files
@@ -162,7 +177,7 @@ Error logs
 
 The settings page displays recent AutoAlt.ai errors and provides a **Clear
 logs** action. Errors are also sent to TYPO3's standard logging system and can
-be reviewed in **System > Log**. See :doc:`Troubleshooting/Index` for common
+be reviewed in **System > Log**. See :doc:`/Troubleshooting/Index` for common
 causes.
 
 Language behaviour

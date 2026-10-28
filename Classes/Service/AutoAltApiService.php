@@ -97,33 +97,43 @@ final readonly class AutoAltApiService
     }
 
     /**
-     * @param array<string, mixed> $settings
-     * @return array<string, mixed>
-     */
-    public function saveRemoteSettings(array $settings, string $websiteDomain = '', ?string $apiKey = null): array
-    {
-        return $this->postJson('autoalt-save-settings', [
-            'setting' => $settings,
-            'website_domain' => $websiteDomain,
-        ], apiKey: $apiKey);
-    }
-
-    /**
-     * Sends the installation's aggregated plugin data to AutoAlt.ai. The
-     * caller owns failure handling because this request is informational and
-     * must never interrupt a TYPO3 workflow.
-     *
+     * Automatic diagnostics recheck persisted consent immediately before transport.
      * @param array<string, mixed> $payload
-     * @return array<string, mixed>
+     * @return array<string, mixed> Empty when consent has been revoked.
      */
     public function synchronizePluginData(array $payload): array
     {
-        // Sync data is telemetry-like information, not an action requested by
-        // the editor. Keep a remote outage from delaying a TYPO3 workflow.
+        if (!$this->configurationService->isTelemetryEnabled()) {
+            return [];
+        }
+        return $this->sendDiagnosticData($payload, true);
+    }
+
+    /**
+     * Only the confirmed support workflow supplies this server-stored snapshot.
+     * @param array<string, mixed> $payload
+     */
+    public function sendSupportDiagnosticData(array $payload): bool
+    {
+        return ($this->sendDiagnosticData($payload, false)['success'] ?? null) === true;
+    }
+
+    /**
+     * @param array<string, mixed> $payload
+     * @return array<string, mixed>
+     */
+    private function sendDiagnosticData(array $payload, bool $requiresConsent): array
+    {
+        if ($this->getApiKey() === '') {
+            throw new AutoAltApiException('Connect an AutoAlt.ai API key before sending diagnostics.');
+        }
         return $this->requestJson('autoalt-get-data-from-plugin', 'POST', [
             'json' => $payload,
             'timeout' => self::PLUGIN_DATA_SYNC_TIMEOUT,
-        ]);
+            'connect_timeout' => 3,
+            'allow_redirects' => false,
+            'verify' => true,
+        ], requiresTelemetryConsent: $requiresConsent);
     }
 
     public function getApiKey(): string
@@ -159,7 +169,7 @@ final readonly class AutoAltApiService
      * @param array<string, mixed> $options
      * @return array<string, mixed>
      */
-    private function requestJson(string $endpoint, string $method, array $options, ?string $apiKey = null): array
+    private function requestJson(string $endpoint, string $method, array $options, ?string $apiKey = null, bool $requiresTelemetryConsent = false): array
     {
         $apiKey = $apiKey ?? $this->getApiKey();
         $headers = [
@@ -178,21 +188,23 @@ final readonly class AutoAltApiService
             'timeout' => $this->getRequestTimeout(),
         ], $options);
 
+        if ($requiresTelemetryConsent && !$this->configurationService->isTelemetryEnabled()) {
+            return [];
+        }
+
         try {
             $response = $this->requestFactory->request($this->buildEndpointUrl($endpoint), $method, $options);
-        } catch (\Throwable $exception) {
+        } catch (\Throwable) {
             if ($this->isLoggingEnabled()) {
                 $this->logger->error('AutoAlt.ai API request failed.', [
                     'endpoint' => $endpoint,
-                    'exception' => $exception,
                 ]);
                 $this->recordErrorLog('error', self::GENERIC_REQUEST_FAILURE_MESSAGE, [
                     'endpoint' => $endpoint,
-                    'exceptionMessage' => $exception->getMessage(),
                 ]);
             }
 
-            throw new AutoAltApiException(self::GENERIC_REQUEST_FAILURE_MESSAGE, previous: $exception);
+            throw new AutoAltApiException(self::GENERIC_REQUEST_FAILURE_MESSAGE);
         }
 
         return $this->decodeResponse($response, $endpoint);
@@ -211,12 +223,11 @@ final readonly class AutoAltApiService
             try {
                 $decoded = json_decode($body, true, 512, JSON_THROW_ON_ERROR);
                 $data = is_array($decoded) ? $decoded : [];
-            } catch (\JsonException $exception) {
+            } catch (\JsonException) {
                 if ($this->isLoggingEnabled()) {
                     $this->logger->warning('AutoAlt.ai API returned invalid JSON.', [
                         'endpoint' => $endpoint,
                         'statusCode' => $statusCode,
-                        'exception' => $exception,
                     ]);
                     $this->recordErrorLog('warning', 'AutoAlt.ai returned invalid JSON.', [
                         'endpoint' => $endpoint,
@@ -224,12 +235,12 @@ final readonly class AutoAltApiService
                     ]);
                 }
 
-                throw new AutoAltApiException('AutoAlt.ai returned invalid JSON.', $statusCode, $exception);
+                throw new AutoAltApiException('AutoAlt.ai returned invalid JSON.', $statusCode);
             }
         }
 
         if ($statusCode < 200 || $statusCode >= 300) {
-            $message = $this->sanitizeApiMessage((string)($data['message'] ?? $data['error'] ?? ''));
+            $message = self::GENERIC_REQUEST_FAILURE_MESSAGE;
             if ($this->isLoggingEnabled()) {
                 $this->logger->warning('AutoAlt.ai API returned an error.', [
                     'endpoint' => $endpoint,
@@ -253,16 +264,6 @@ final readonly class AutoAltApiService
         return self::API_BASE_URL . ltrim($endpoint, '/');
     }
 
-    private function sanitizeApiMessage(string $message): string
-    {
-        $message = trim(preg_replace('/\s+/', ' ', $message) ?? '');
-        if ($message === '') {
-            return 'AutoAlt.ai API request failed.';
-        }
-
-        return mb_substr($message, 0, 500);
-    }
-
     private function isLoggingEnabled(): bool
     {
         return $this->configurationService->isLoggingEnabled();
@@ -279,10 +280,8 @@ final readonly class AutoAltApiService
     {
         try {
             $this->errorLogService->record($level, $message, $context);
-        } catch (\Throwable $loggingException) {
-            $this->logger->warning('AutoAlt.ai extension error log could not be written.', [
-                'exception' => $loggingException,
-            ]);
+        } catch (\Throwable) {
+            $this->logger->warning('AutoAlt.ai extension error log could not be written.');
         }
     }
 }

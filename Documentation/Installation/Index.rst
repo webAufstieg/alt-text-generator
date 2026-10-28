@@ -6,16 +6,16 @@ Installation
 ============
 
 This chapter is for TYPO3 administrators. Editors can start at
-:doc:`Usage/Index` once the extension is installed and connected.
+:doc:`/Usage/Index` once the extension is installed and connected.
 
 Install with Composer
 =====================
 
-Run the command from the root directory of the Composer-based TYPO3 project:
+Install the public Composer package from the TYPO3 project root:
 
 ..  code-block:: bash
 
-    composer require autoaltai/alt-text-generator
+    composer require autoaltai/alt-text-generator:1.0.8
 
 Composer installs the package and publishes its TYPO3 public assets. If the
 extension is not activated automatically, activate all newly installed
@@ -53,7 +53,7 @@ Sign in as a TYPO3 administrator. In the backend navigation, open:
 
 ..  code-block:: text
 
-    Media > AutoAlt.ai > Extension Configuration
+    File (TYPO3 13) / Media (TYPO3 14) > AutoAlt.ai > Extension Configuration
 
 The first page shows the connection card and the current configuration.
 
@@ -72,7 +72,7 @@ Register or sign in with email
 
 If you do not already have an API key:
 
-#. Open **Media > AutoAlt.ai > Extension Configuration**.
+#. Open **File (TYPO3 13) / Media (TYPO3 14) > AutoAlt.ai > Extension Configuration**.
 #. In the **Login / Register** card, enter your email address.
 #. Select **Send verification code**.
 #. Enter the six-digit code sent to your email.
@@ -86,7 +86,7 @@ First-run checklist
 
 Before processing a complete media library:
 
-#. Review the options in :doc:`Configuration/Index`, especially the allowed
+#. Review the options in :doc:`/Configuration/Index`, especially the allowed
    image types, overwrite setting, title/description generation, and keywords.
 #. Start with a small set of test images using **Bulk Alt Text Generator**.
 #. Review the generated values in the TYPO3 File List or **Alt Text History**.
@@ -112,7 +112,7 @@ For every extension update:
 #. Flush TYPO3 caches if the backend does not show the new assets or module
    changes.
 
-See :doc:`Troubleshooting/Index` when an update does not complete as expected.
+See :doc:`/Troubleshooting/Index` when an update does not complete as expected.
 
 Uninstalling
 ============
@@ -126,8 +126,8 @@ after generation.
 
 For a Composer installation, register the following root-project Composer
 script. Composer intentionally runs only scripts declared by the root project,
-not scripts from dependencies. This project already contains the registration.
-Other Composer projects should add it before running
+not scripts from dependencies. The extension does not register this in your
+root project automatically. Add it to the root project before running
 ``composer remove autoaltai/alt-text-generator``:
 
 ..  code-block:: json

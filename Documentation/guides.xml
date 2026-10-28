@@ -5,14 +5,14 @@
     <extension class="\T3Docs\Typo3DocsTheme\DependencyInjection\Typo3DocsThemeExtension"
                project-home="https://www.autoalt.ai/"
                project-contact="mailto:support@autoalt.ai"
-               project-repository="https://github.com/autoaltai/alt-text-generator"
-               project-issues="https://github.com/autoaltai/alt-text-generator/issues"
-               edit-on-github="autoaltai/alt-text-generator"
+               project-repository="https://github.com/webAufstieg/alt-text-generator"
+               project-issues="https://github.com/webAufstieg/alt-text-generator/issues"
+               edit-on-github="webAufstieg/alt-text-generator"
                edit-on-github-branch="main"
                interlink-shortcode="autoaltai/alt-text-generator"
     />
     <project title="Alt Text Generator - AutoAlt.ai"
-             release="1.0.7"
+             release="1.0.8"
              version="1.0"
              copyright="since 2026 by AutoAlt.ai"
     />

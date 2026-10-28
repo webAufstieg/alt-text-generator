@@ -7,6 +7,5 @@ services:
   AutoAltAi\AltTextGenerator\:
     resource: '../Classes/*'
     exclude:
-      - '../Classes/Domain/Model/*'
       - '../Classes/Dto/*'
       - '../Classes/Exception/*'

@@ -18,6 +18,7 @@ final readonly class ConfigurationService
     /** @var array<string, string> */
     private const DEFAULT_CONFIGURATION = [
         'apiKey' => '',
+        'telemetryEnabled' => '0',
         'enabled' => '1',
         'writingStyle' => '',
         'altTextMinLength' => '100',
@@ -100,6 +101,7 @@ final readonly class ConfigurationService
     public function set(array $configuration): void
     {
         $configuration = $this->removeObsoleteConfiguration($configuration);
+        $configuration['telemetryEnabled'] = self::isExplicitConsent($configuration['telemetryEnabled'] ?? null) ? '1' : '0';
 
         try {
             $this->saveDatabaseConfiguration($configuration);
@@ -121,6 +123,21 @@ final readonly class ConfigurationService
         return trim((string)($this->get()['apiKey'] ?? ''));
     }
 
+    /** Read persistence on every check; never fall back to legacy/cached consent. */
+    public function isTelemetryEnabled(): bool
+    {
+        try {
+            return self::isExplicitConsent($this->getDatabaseConfiguration()['telemetryEnabled'] ?? null);
+        } catch (\Throwable) {
+            return false;
+        }
+    }
+
+    public static function isExplicitConsent(mixed $value): bool
+    {
+        return in_array($value, ['1', 1, true], true);
+    }
+
     public function getRequestTimeout(): int
     {
         return 30;
@@ -138,6 +155,7 @@ final readonly class ConfigurationService
     private function withFixedDefaults(array $configuration): array
     {
         $configuration = $this->removeObsoleteConfiguration($configuration);
+        $configuration['telemetryEnabled'] = self::isExplicitConsent($configuration['telemetryEnabled'] ?? null) ? '1' : '0';
         $configuration['requestTimeout'] = '30';
         $configuration['logApiErrors'] = '1';
         $configuration['ignoreMissingImages'] = '1';
@@ -217,7 +235,13 @@ final readonly class ConfigurationService
             return [];
         }
 
-        return is_array($configuration) ? $this->removeObsoleteConfiguration($configuration) : [];
+        if (!is_array($configuration)) {
+            return [];
+        }
+
+        // Upgrades may migrate operational settings, but cannot migrate consent.
+        $configuration['telemetryEnabled'] = '0';
+        return $this->removeObsoleteConfiguration($configuration);
     }
 
     /**

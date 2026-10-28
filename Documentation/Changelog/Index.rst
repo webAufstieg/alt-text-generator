@@ -5,6 +5,23 @@
 Changelog
 =========
 
+See the root CHANGELOG.md for the maintained Markdown history. Earlier release
+notes are preserved below.
+
+1.0.8 — 28 October 2026
+----------------------
+
+- Added administrator-controlled, default-off telemetry with fresh consent checks.
+- Added one-time support diagnostics with an exact report preview, explicit POST
+  confirmation, CSRF protection, expiry, cancellation and replay protection.
+- Removed API keys, free-text settings and raw error logs from diagnostic payloads.
+- Improved Telemetry & Privacy placement and the diagnostic review/result screens;
+  the JSON preview scrolls within a maximum height of 17rem.
+- Added external-services documentation and privacy behavior checks. Maximum
+  90-day backend retention remains pending and is not guaranteed by this release.
+- No new database schema or manual SQL migration is required. Apply normal
+  extension setup and clear TYPO3 caches after updating.
+
 1.0.7
 -----
 
@@ -36,9 +53,11 @@ Changelog
 - Improved compatibility with warmed TYPO3 controller caches.
 
 1.0.4
-=====
+-----
 
-Current stable release.
+Historical feature summary retained from the supplied documentation.
+The automatic-upload-rename item below overlaps the 1.0.5 entry; its original
+introduction version requires confirmation.
 
 *   Provides the AutoAlt.ai backend module under **Media > AutoAlt.ai**.
 *   Generates alternative text, titles, and descriptions for individual
@@ -57,6 +76,6 @@ Current stable release.
 *   Supports TYPO3 13.0.0 through 14.3.99 and PHP 8.2 or later.
 
 1.0.0
-=====
+-----
 
 Initial public release of the AutoAlt.ai TYPO3 extension.

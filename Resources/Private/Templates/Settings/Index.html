@@ -206,6 +206,7 @@
     </div>
 
     <form class="autoalt-settings-form" action="{actionUrl}" method="post" data-autoalt-settings-page>
+        <input type="hidden" name="formToken" value="{formToken}">
         <div class="autoalt-settings-layout">
             <div class="autoalt-settings-column autoalt-settings-column--side">
                 <section class="autoalt-panel autoalt-settings-card autoalt-settings-card--side">
@@ -318,6 +319,45 @@
                                 </div>
                             </f:else>
                         </f:if>
+                    </section>
+                </f:if>
+
+                <f:if condition="{canManageDiagnostics}">
+                    <section class="autoalt-panel autoalt-settings-card autoalt-privacy-card" aria-labelledby="autoalt-privacy-heading">
+                        <div class="autoalt-panel__header autoalt-privacy-card__header">
+                            <div class="autoalt-privacy-card__heading">
+                                <span class="autoalt-privacy-card__icon" aria-hidden="true">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+                                </span>
+                                <div>
+                                    <h2 id="autoalt-privacy-heading"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.title"/></h2>
+                                    <p><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.subtitle"/></p>
+                                </div>
+                            </div>
+                            <span class="autoalt-privacy-card__badge"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.optional"/></span>
+                        </div>
+                        <div class="autoalt-privacy-card__body">
+                            <label class="autoalt-switch autoalt-privacy-card__consent">
+                                <input type="checkbox" role="switch" name="settings[telemetryEnabled]" value="1" aria-describedby="autoalt-telemetry-description autoalt-telemetry-save-hint"{checked.telemetryEnabled -> f:format.raw()}>
+                                <span><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.consent"/></span>
+                            </label>
+                            <p class="autoalt-privacy-card__hint" id="autoalt-telemetry-save-hint"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.saveHint"/></p>
+                            <p id="autoalt-telemetry-description"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.summary"/></p>
+                            <details class="autoalt-privacy-card__details">
+                                <summary><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.details"/></summary>
+                                <p><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.description"/></p>
+                            </details>
+                            <a class="autoalt-privacy-card__policy" href="https://www.autoalt.ai/privacy-policy/" target="_blank" rel="noopener noreferrer"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.policy"/> <span aria-hidden="true">&#8599;</span></a>
+                        </div>
+                        <div class="autoalt-privacy-card__support" aria-labelledby="autoalt-support-heading">
+                            <h3 id="autoalt-support-heading"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.supportTitle"/></h3>
+                            <p><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.description"/></p>
+                            <a class="btn btn-default autoalt-privacy-card__support-action" href="{diagnosticsUrl}" aria-describedby="autoalt-support-hint">
+                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m21 3-7 18-4-7-7-4 18-7Z"/><path d="m10 14 5-5"/></svg>
+                                <span><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.action.review"/></span>
+                            </a>
+                            <p class="autoalt-privacy-card__hint" id="autoalt-support-hint"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.supportHint"/></p>
+                        </div>
                     </section>
                 </f:if>
             </div>

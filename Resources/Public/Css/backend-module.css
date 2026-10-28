@@ -3729,6 +3729,383 @@ form + form {
     padding: .8rem 1rem;
 }
 
+.autoalt-workspace .autoalt-settings-column > .autoalt-privacy-card {
+    margin-top: 0;
+    overflow: hidden;
+}
+
+.autoalt-workspace .autoalt-privacy-card__header {
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+.autoalt-privacy-card__heading {
+    align-items: center;
+    display: flex;
+    flex: 1 1 auto;
+    gap: .7rem;
+    min-width: 0;
+}
+
+.autoalt-privacy-card__icon {
+    align-items: center;
+    background: #ecfdf5;
+    border-radius: 9px;
+    color: #047857;
+    display: inline-flex;
+    flex: 0 0 2.35rem;
+    height: 2.35rem;
+    justify-content: center;
+}
+
+.autoalt-privacy-card__heading p {
+    color: var(--autoalt-muted, #64748b);
+    font-size: .75rem;
+    line-height: 1.5;
+    margin: .2rem 0 0;
+}
+
+.autoalt-privacy-card__badge {
+    background: #f1f5f9;
+    border-radius: 999px;
+    color: #475569;
+    flex: 0 0 auto;
+    font-size: .65rem;
+    font-weight: 700;
+    letter-spacing: .03em;
+    padding: .25rem .55rem;
+    text-transform: uppercase;
+}
+
+.autoalt-privacy-card__body,
+.autoalt-privacy-card__support {
+    color: var(--autoalt-muted, #64748b);
+    display: grid;
+    font-size: .8rem;
+    gap: .75rem;
+    line-height: 1.6;
+    padding: 1.15rem 1.25rem;
+}
+
+.autoalt-privacy-card p {
+    margin: 0;
+}
+
+.autoalt-workspace .autoalt-privacy-card__consent {
+    cursor: pointer;
+    gap: .75rem;
+    margin: 0;
+}
+
+.autoalt-privacy-card__consent > span {
+    line-height: 1.5;
+    min-width: 0;
+}
+
+.autoalt-privacy-card .autoalt-privacy-card__hint {
+    color: #526176;
+    font-size: .72rem;
+    line-height: 1.5;
+}
+
+.autoalt-privacy-card__details {
+    border: 1px solid var(--autoalt-line, #d8dee8);
+    border-radius: 8px;
+    padding: .65rem .8rem;
+}
+
+.autoalt-privacy-card__details summary {
+    color: var(--autoalt-ink, #152033);
+    cursor: pointer;
+    font-size: .78rem;
+    font-weight: 600;
+}
+
+.autoalt-privacy-card__details[open] summary {
+    margin-bottom: .65rem;
+}
+
+.autoalt-privacy-card__policy {
+    color: var(--autoalt-brand, #b30000);
+    font-size: .75rem;
+    font-weight: 600;
+    justify-self: start;
+    text-underline-offset: .2em;
+}
+
+.autoalt-privacy-card__support {
+    background: var(--autoalt-surface-subtle, #fbfcfe);
+    border-top: 1px solid var(--autoalt-line, #d8dee8);
+}
+
+.autoalt-privacy-card__support h3 {
+    color: var(--autoalt-ink, #152033);
+    font-size: .9rem;
+    font-weight: 700;
+    margin: 0;
+}
+
+.autoalt-privacy-card__support-action {
+    align-items: center;
+    display: flex;
+    gap: .5rem;
+    justify-content: center;
+    min-height: 2.6rem;
+    padding: .65rem .75rem;
+    white-space: normal;
+}
+
+.autoalt-privacy-card__support-action svg {
+    flex: 0 0 auto;
+}
+
+.autoalt-privacy-card__details summary:focus-visible,
+.autoalt-privacy-card a:focus-visible {
+    border-radius: 4px;
+    outline: 2px solid var(--autoalt-brand, #b30000);
+    outline-offset: 3px;
+}
+
+.autoalt-diagnostics {
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+.autoalt-diagnostics__back {
+    align-items: center;
+    color: var(--autoalt-muted);
+    display: inline-flex;
+    font-size: .85rem;
+    gap: .4rem;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+}
+
+.autoalt-diagnostics__back:hover {
+    color: var(--autoalt-brand);
+}
+
+.autoalt-diagnostics__layout {
+    align-items: start;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: minmax(0, 1fr) minmax(17rem, .4fr);
+}
+
+.autoalt-workspace .autoalt-diagnostics__layout > .autoalt-panel {
+    margin: 0;
+    min-width: 0;
+}
+
+.autoalt-diagnostics-report__heading {
+    align-items: center;
+    display: flex;
+    gap: .75rem;
+    min-width: 0;
+}
+
+.autoalt-diagnostics-report__icon {
+    align-items: center;
+    background: #eef2ff;
+    border-radius: 9px;
+    color: #4338ca;
+    display: flex;
+    flex: 0 0 2.35rem;
+    font-family: monospace;
+    font-weight: 700;
+    height: 2.35rem;
+    justify-content: center;
+}
+
+.autoalt-diagnostics-report__heading p {
+    color: var(--autoalt-muted);
+    font-size: .78rem;
+    line-height: 1.5;
+    margin: .25rem 0 0;
+}
+
+.autoalt-diagnostics-report__body {
+    padding: 1.25rem;
+}
+
+.autoalt-diagnostics-report__payload {
+    background: #f7f9fc;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    color: #334155;
+    font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", monospace;
+    font-size: .78rem;
+    line-height: 1.7;
+    margin: 0;
+    max-height: 17rem;
+    overflow: auto;
+    overflow-wrap: anywhere;
+    padding: 1.1rem;
+    scrollbar-color: #b8c2cf transparent;
+    scrollbar-width: thin;
+    white-space: pre-wrap;
+}
+
+.autoalt-diagnostics-report__payload code {
+    color: inherit;
+    font: inherit;
+}
+
+.autoalt-diagnostics-report__actions {
+    align-items: center;
+    border-top: 1px solid var(--autoalt-line);
+    display: flex;
+    flex-wrap: wrap;
+    gap: .85rem 1.25rem;
+    justify-content: space-between;
+    margin: 0;
+    padding: 1rem 1.25rem;
+}
+
+.autoalt-diagnostics-report__actions p {
+    color: var(--autoalt-muted);
+    font-size: .75rem;
+    margin: 0;
+}
+
+.autoalt-diagnostics-report__buttons,
+.autoalt-diagnostics-result__actions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: .6rem;
+}
+
+.autoalt-diagnostics .btn {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    min-height: 2.6rem;
+    padding: .65rem 1rem;
+    white-space: normal;
+}
+
+.autoalt-workspace .autoalt-diagnostics-guide .autoalt-panel__header {
+    gap: .7rem;
+    justify-content: flex-start;
+}
+
+.autoalt-diagnostics-guide__body {
+    color: var(--autoalt-muted);
+    display: grid;
+    font-size: .8rem;
+    gap: 1.25rem;
+    line-height: 1.6;
+    padding: 1.25rem;
+}
+
+.autoalt-diagnostics-guide__body h3,
+.autoalt-diagnostics-guide__facts dt {
+    color: var(--autoalt-ink);
+    font-size: .8rem;
+    font-weight: 700;
+    margin: 0 0 .3rem;
+}
+
+.autoalt-diagnostics-guide__body p,
+.autoalt-diagnostics-guide__facts,
+.autoalt-diagnostics-guide__facts dd {
+    margin: 0;
+}
+
+.autoalt-diagnostics-guide__facts {
+    border-top: 1px solid #e2e8f0;
+    display: grid;
+    gap: 1rem;
+    padding-top: 1.25rem;
+}
+
+.autoalt-diagnostics-guide__note {
+    background: #f8fafc;
+    border-radius: 8px;
+    font-size: .75rem;
+    padding: .8rem;
+}
+
+.autoalt-diagnostics__footer {
+    margin-top: 1.25rem;
+    text-align: end;
+}
+
+.autoalt-diagnostics-result {
+    padding: 3rem 1.5rem;
+    text-align: center;
+}
+
+.autoalt-diagnostics-result__icon {
+    align-items: center;
+    background: #fff1f1;
+    border-radius: 50%;
+    color: #b91c1c;
+    display: inline-flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    height: 3.5rem;
+    justify-content: center;
+    margin-bottom: 1.25rem;
+    width: 3.5rem;
+}
+
+.autoalt-diagnostics-result--success .autoalt-diagnostics-result__icon {
+    background: #dcfce7;
+    color: #15803d;
+}
+
+.autoalt-diagnostics-result h2 {
+    color: var(--autoalt-ink);
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin: 0 0 .75rem;
+}
+
+.autoalt-diagnostics-result p {
+    color: var(--autoalt-muted);
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 36rem;
+}
+
+.autoalt-diagnostics-result__actions {
+    justify-content: center;
+    margin-top: 1.5rem;
+}
+
+.autoalt-diagnostics a:focus-visible,
+.autoalt-diagnostics button:focus-visible,
+.autoalt-diagnostics-report__payload:focus-visible {
+    outline: 2px solid var(--autoalt-brand);
+    outline-offset: 3px;
+}
+
+@media (max-width: 1000px) {
+    .autoalt-diagnostics__layout {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .autoalt-diagnostics-report__body {
+        padding: 1rem;
+    }
+
+    .autoalt-diagnostics-report__buttons {
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+
+    .autoalt-diagnostics-report__buttons .btn {
+        width: 100%;
+    }
+
+    .autoalt-diagnostics-result__actions {
+        flex-direction: column-reverse;
+    }
+}
+
 @media (max-width: 1200px) {
     .autoalt-module.autoalt-workspace {
         padding: 2rem;

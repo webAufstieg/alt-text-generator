@@ -69,5 +69,5 @@ relevant history entry, timestamp, and the exact error message. Do not include
 an API key or other credentials.
 
 * Documentation: https://www.autoalt.ai/docs/typo3/
-* Issue tracker: https://github.com/autoaltai/alt-text-generator/issues
+* Issue tracker: https://github.com/webAufstieg/alt-text-generator/issues
 * Support: support@autoalt.ai

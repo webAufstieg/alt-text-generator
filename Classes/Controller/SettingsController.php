@@ -17,6 +17,8 @@ use TYPO3\CMS\Backend\Attribute\AsController;
 use TYPO3\CMS\Backend\Routing\UriBuilder;
 use TYPO3\CMS\Backend\Template\ModuleTemplateFactory;
 use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
+use TYPO3\CMS\Core\FormProtection\FormProtectionFactory;
+use TYPO3\CMS\Core\Http\HtmlResponse;
 use TYPO3\CMS\Core\Http\RedirectResponse;
 use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
@@ -97,6 +99,7 @@ final readonly class SettingsController
         // warmed TYPO3 route/controller definition with the previous
         // constructor argument order.
         private ?PluginDataSyncService $pluginDataSyncService = null,
+        private ?FormProtectionFactory $formProtectionFactory = null,
     ) {}
 
     public function handleRequest(ServerRequestInterface $request): ResponseInterface
@@ -109,6 +112,15 @@ final readonly class SettingsController
         $currentConfiguration = $storedConfiguration;
         $validationResult = null;
         $canManageSettings = $this->permissionsService->canManageSettings($this->getBackendUser());
+        $formProtection = ($this->formProtectionFactory ?? GeneralUtility::makeInstance(FormProtectionFactory::class))
+            ->createFromRequest($request);
+        if ($request->getMethod() === 'POST') {
+            $body = $request->getParsedBody();
+            $token = is_array($body) && is_string($body['formToken'] ?? null) ? $body['formToken'] : '';
+            if (!$formProtection->validateToken($token, 'autoaltSettings', 'save')) {
+                return new HtmlResponse('Invalid form token. Reopen the settings page.', 403);
+            }
+        }
 
         if ($request->getMethod() === 'POST' && $canManageSettings && $this->getSubmittedAction($request) === 'clearErrorLog') {
             $this->errorLogService->clear();
@@ -184,6 +196,9 @@ final readonly class SettingsController
             'connectSendOtpAjaxUrl' => (string)$this->uriBuilder->buildUriFromRoute('ajax_alt_text_generator_connect_send_otp'),
             'connectVerifyOtpAjaxUrl' => (string)$this->uriBuilder->buildUriFromRoute('ajax_alt_text_generator_connect_verify_otp'),
             'canSave' => $canManageSettings,
+            'canManageDiagnostics' => $this->getBackendUser()->isAdmin(),
+            'diagnosticsUrl' => (string)$this->uriBuilder->buildUriFromRoute('media_autoalt_alt_text_generator_settings.diagnostics'),
+            'formToken' => $formProtection->generateToken('autoaltSettings', 'save'),
             'checked' => $this->buildCheckedAttributes($settings),
             'disabledAttribute' => $canManageSettings ? '' : ' disabled="disabled"',
             'saved' => (bool)($request->getQueryParams()['saved'] ?? false),
@@ -325,6 +340,7 @@ final readonly class SettingsController
     {
         $settings = array_replace($this->configurationService->getDefaultConfiguration(), $configuration);
         $settings['writingStyle'] = $this->normalizeWritingStyle($settings['writingStyle'] ?? '');
+        $settings['telemetryEnabled'] = ConfigurationService::isExplicitConsent($settings['telemetryEnabled'] ?? null);
 
         foreach (['enabled', 'autoGenerateOnUpload', 'autoRenameOnUpload', 'overwriteExistingAltText', 'usePublicImageUrls', 'logApiErrors', 'notifyOnBulkComplete', 'ignoreMissingImages', 'generateTitle', 'generateDescription'] as $key) {
             $settings[$key] = $this->isEnabled($settings[$key] ?? false);
@@ -347,6 +363,10 @@ final readonly class SettingsController
         $body = $request->getParsedBody();
         $submitted = is_array($body) && is_array($body['settings'] ?? null) ? $body['settings'] : [];
         $settings = $this->normalizeConfiguration($currentConfiguration);
+        // Delegated settings editors cannot grant or revoke installation consent.
+        $settings['telemetryEnabled'] = ($this->getBackendUser()->isAdmin()
+            ? ConfigurationService::isExplicitConsent($submitted['telemetryEnabled'] ?? null)
+            : $settings['telemetryEnabled']) ? '1' : '0';
         $settings['enabled'] = $this->isEnabled($submitted['enabled'] ?? false) ? '1' : '0';
         $settings['writingStyle'] = $this->normalizeWritingStyle($submitted['writingStyle'] ?? $settings['writingStyle']);
         $settings['altTextMinLength'] = (string)$this->clampInteger($submitted['altTextMinLength'] ?? $settings['altTextMinLength'], 0, 250);
@@ -470,6 +490,7 @@ final readonly class SettingsController
     private function buildCheckedAttributes(array $settings): array
     {
         $attributes = [];
+        $attributes['telemetryEnabled'] = ConfigurationService::isExplicitConsent($settings['telemetryEnabled'] ?? null) ? ' checked="checked"' : '';
         foreach (['enabled', 'autoGenerateOnUpload', 'autoRenameOnUpload', 'overwriteExistingAltText', 'usePublicImageUrls', 'logApiErrors', 'notifyOnBulkComplete', 'ignoreMissingImages', 'generateTitle', 'generateDescription'] as $key) {
             $attributes[$key] = $this->isEnabled($settings[$key] ?? false) ? ' checked="checked"' : '';
         }

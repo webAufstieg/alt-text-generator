@@ -125,4 +125,4 @@ Review the `AutoAlt.ai Privacy Policy <https://www.autoalt.ai/privacy-policy/>`_
 and your organisation's data-protection requirements before enabling
 generation. For product help, see the `AutoAlt.ai TYPO3 guide
 <https://www.autoalt.ai/docs/typo3/>`__. For defects or feature requests, use
-the `GitHub issue tracker <https://github.com/autoaltai/alt-text-generator/issues>`__.
+the `GitHub issue tracker <https://github.com/webAufstieg/alt-text-generator/issues>`__.

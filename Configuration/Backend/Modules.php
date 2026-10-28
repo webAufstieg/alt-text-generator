@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 use AutoAltAi\AltTextGenerator\Controller\BackendModuleController;
 use AutoAltAi\AltTextGenerator\Controller\BulkRenameController;
+use AutoAltAi\AltTextGenerator\Controller\DiagnosticsController;
 use AutoAltAi\AltTextGenerator\Controller\HistoryController;
 use AutoAltAi\AltTextGenerator\Controller\SettingsController;
 use TYPO3\CMS\Core\Information\Typo3Version;
@@ -115,6 +116,11 @@ return [
         'routes' => [
             '_default' => [
                 'target' => SettingsController::class . '::handleRequest',
+                'methods' => ['GET', 'POST'],
+            ],
+            'diagnostics' => [
+                'path' => '/diagnostics',
+                'target' => DiagnosticsController::class . '::handleRequest',
                 'methods' => ['GET', 'POST'],
             ],
         ],

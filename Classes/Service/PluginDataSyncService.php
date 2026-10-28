@@ -10,7 +10,7 @@ use TYPO3\CMS\Core\Information\Typo3Version;
 use TYPO3\CMS\Core\Utility\ExtensionManagementUtility;
 
 /**
- * Performs a best-effort synchronization of installation information. It is
+ * Performs a consent-gated synchronization of installation information. It is
  * deliberately fire-and-forget from the caller's perspective: a remote API or
  * database failure is logged and can never break a TYPO3 request.
  */
@@ -23,7 +23,8 @@ final readonly class PluginDataSyncService
         private ConfigurationService $configurationService,
         private ImageScannerService $imageScannerService,
         private HistoryService $historyService,
-        private ErrorLogService $errorLogService,
+        // Retained for warmed containers; local error logs are never collected.
+        ErrorLogService $legacyErrorLogService,
         private PluginDataSyncPayloadBuilder $payloadBuilder,
         private LoggerInterface $logger,
     ) {}
@@ -31,52 +32,40 @@ final readonly class PluginDataSyncService
     public function synchronize(string $websiteDomain): void
     {
         try {
-            $configuration = $this->configurationService->get();
-            if (trim((string)($configuration['apiKey'] ?? '')) === '') {
+            if (!$this->configurationService->isTelemetryEnabled()) {
                 return;
             }
 
-            $imageStatistics = $this->imageScannerService->scan(
-                allowedImageExtensions: trim((string)($configuration['allowedImageExtensions'] ?? '')),
-                limit: 1,
-                shortAltTextLength: max(1, (int)($configuration['shortAltTextLength'] ?? 40)),
-            );
-
-            $payload = $this->payloadBuilder->build(
-                configuration: $configuration,
-                imageStatistics: $imageStatistics,
-                processedByPlugin: $this->historyService->countSuccessfullyProcessedFileUids(),
-                siteUrl: $websiteDomain,
-                typo3Version: (new Typo3Version())->getVersion(),
-                extensionVersion: $this->resolveExtensionVersion(),
-                errorLogs: $this->buildErrorLogPayload(),
-            );
-
-            $this->autoAltApiService->synchronizePluginData($payload);
-        } catch (\Throwable $exception) {
-            // Never add configuration values or the API key to this context.
-            $this->logger->warning('AutoAlt.ai plugin data synchronization failed.', [
-                'websiteDomain' => $websiteDomain,
-                'exception' => $exception,
-            ]);
+            $this->autoAltApiService->synchronizePluginData($this->collectPayload($websiteDomain));
+        } catch (\Throwable) {
+            // Exceptions can contain authenticated requests. Never log them.
+            $this->logger->warning('AutoAlt.ai optional diagnostic submission failed.');
         }
     }
 
-    /**
-     * @return array<int, array{level: string, message: string, created_at: int}>
-     */
-    private function buildErrorLogPayload(): array
+    /** @return array<string, mixed> Locally collected; no data is transmitted. */
+    public function collectPayload(string $websiteDomain, string $diagnosticType = 'telemetry'): array
     {
-        $logs = [];
-        foreach ($this->errorLogService->getRecent(20) as $entry) {
-            $logs[] = [
-                'level' => (string)($entry['level'] ?? 'error'),
-                'message' => (string)($entry['message'] ?? ''),
-                'created_at' => (int)($entry['crdate'] ?? 0),
-            ];
+        $configuration = $this->configurationService->get();
+        if (trim((string)($configuration['apiKey'] ?? '')) === '') {
+            throw new \RuntimeException('Connect an AutoAlt.ai API key before sending diagnostics.');
         }
 
-        return $logs;
+        $imageStatistics = $this->imageScannerService->scan(
+            allowedImageExtensions: trim((string)($configuration['allowedImageExtensions'] ?? '')),
+            limit: 1,
+            shortAltTextLength: max(1, (int)($configuration['shortAltTextLength'] ?? 40)),
+        );
+
+        return $this->payloadBuilder->build(
+            configuration: $configuration,
+            imageStatistics: $imageStatistics,
+            processedByPlugin: $this->historyService->countSuccessfullyProcessedFileUids(),
+            siteUrl: $websiteDomain,
+            typo3Version: (new Typo3Version())->getVersion(),
+            extensionVersion: $this->resolveExtensionVersion(),
+            diagnosticType: $diagnosticType,
+        );
     }
 
     private function resolveExtensionVersion(): string

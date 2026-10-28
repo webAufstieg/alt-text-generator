@@ -1,0 +1,88 @@
+<div class="autoalt-module autoalt-workspace" data-autoalt-page="diagnostics">
+    <div class="autoalt-diagnostics">
+        <a class="autoalt-diagnostics__back" href="{backUrl}"><span aria-hidden="true">&#8592;</span> <f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.action.back"/></a>
+        <header class="autoalt-page-hero">
+            <div>
+                <p class="autoalt-module__eyebrow"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.page.eyebrow"/></p>
+                <h1 class="autoalt-module__title"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.page.title"/></h1>
+                <p class="autoalt-module__intro"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.description"/></p>
+            </div>
+        </header>
+
+        <f:if condition="{result}">
+            <section class="autoalt-panel autoalt-diagnostics-result autoalt-diagnostics-result--{result}" role="status" aria-labelledby="autoalt-diagnostic-result-heading">
+                <span class="autoalt-diagnostics-result__icon" aria-hidden="true"><f:if condition="{result} == 'success'"><f:then>&#10003;</f:then><f:else>!</f:else></f:if></span>
+                <h2 id="autoalt-diagnostic-result-heading"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.result.heading.{result}"/></h2>
+                <p><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.result.{result}"/></p>
+                <div class="autoalt-diagnostics-result__actions">
+                    <a class="btn btn-default" href="{backUrl}"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.action.back"/></a>
+                    <f:if condition="{result} != 'success'">
+                        <a class="btn autoalt-btn-brand" href="{actionUrl}"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.action.retry"/></a>
+                    </f:if>
+                </div>
+            </section>
+        </f:if>
+
+        <f:if condition="{canConfirm}">
+            <div class="autoalt-diagnostics__layout">
+                <section class="autoalt-panel autoalt-diagnostics-report" aria-labelledby="autoalt-diagnostic-report-heading">
+                    <div class="autoalt-panel__header">
+                        <div class="autoalt-diagnostics-report__heading">
+                            <span class="autoalt-diagnostics-report__icon" aria-hidden="true">&#123; &#125;</span>
+                            <div>
+                                <h2 id="autoalt-diagnostic-report-heading"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.report.title"/></h2>
+                                <p><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.report.description"/></p>
+                            </div>
+                        </div>
+                        <span class="autoalt-privacy-card__badge">JSON</span>
+                    </div>
+                    <div class="autoalt-diagnostics-report__body">
+                        <pre class="autoalt-diagnostics-report__payload" tabindex="0" aria-labelledby="autoalt-diagnostic-report-heading"><code>{payload}</code></pre>
+                    </div>
+                    <form class="autoalt-diagnostics-report__actions" action="{actionUrl}" method="post">
+                        <input type="hidden" name="formToken" value="{formToken}">
+                        <input type="hidden" name="reviewToken" value="{reviewToken}">
+                        <p><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.report.confirmHint"/></p>
+                        <div class="autoalt-diagnostics-report__buttons">
+                            <button class="btn btn-default" type="submit" name="diagnosticAction" value="cancel"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.action.cancel"/></button>
+                            <button class="btn autoalt-btn-brand" type="submit" name="diagnosticAction" value="confirm"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.action.confirm"/></button>
+                        </div>
+                    </form>
+                </section>
+
+                <aside class="autoalt-panel autoalt-diagnostics-guide" aria-labelledby="autoalt-diagnostic-guide-heading">
+                    <div class="autoalt-panel__header">
+                        <span class="autoalt-privacy-card__icon" aria-hidden="true">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" focusable="false"><path d="M12 3 4 6v6c0 5 8 9 8 9s8-4 8-9V6l-8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/></svg>
+                        </span>
+                        <h2 id="autoalt-diagnostic-guide-heading"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.title"/></h2>
+                    </div>
+                    <div class="autoalt-diagnostics-guide__body">
+                        <div>
+                            <h3><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.includesTitle"/></h3>
+                            <p><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.includes"/></p>
+                        </div>
+                        <dl class="autoalt-diagnostics-guide__facts">
+                            <div>
+                                <dt><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.onceTitle"/></dt>
+                                <dd><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.once"/></dd>
+                            </div>
+                            <div>
+                                <dt><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.authTitle"/></dt>
+                                <dd><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.auth"/></dd>
+                            </div>
+                            <div>
+                                <dt><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.expiryTitle"/></dt>
+                                <dd><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.expiry"/></dd>
+                            </div>
+                        </dl>
+                        <p class="autoalt-diagnostics-guide__note"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:diagnostics.guide.ticket"/></p>
+                    </div>
+                </aside>
+            </div>
+        </f:if>
+        <footer class="autoalt-diagnostics__footer">
+            <a class="autoalt-privacy-card__policy" href="https://www.autoalt.ai/privacy-policy/" target="_blank" rel="noopener noreferrer"><f:translate key="LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:settings.privacy.policy"/> <span aria-hidden="true">&#8599;</span></a>
+        </footer>
+    </div>
+</div>

@@ -3,6 +3,44 @@
     <file source-language="en" datatype="plaintext" original="messages" date="2026-08-03T00:00:00Z" product-name="alt_text_generator">
         <header/>
         <body>
+            <trans-unit id="settings.privacy.title" resname="settings.privacy.title"><source>Telemetry &amp; Privacy</source></trans-unit>
+            <trans-unit id="settings.privacy.consent" resname="settings.privacy.consent"><source>Share diagnostic data with AutoAlt.ai</source></trans-unit>
+            <trans-unit id="settings.privacy.description" resname="settings.privacy.description"><source>Optionally share your domain, software versions, image counts and selected settings to improve AutoAlt.ai. Disabled by default.</source></trans-unit>
+            <trans-unit id="settings.privacy.subtitle" resname="settings.privacy.subtitle"><source>You control what you share</source></trans-unit>
+            <trans-unit id="settings.privacy.optional" resname="settings.privacy.optional"><source>Optional</source></trans-unit>
+            <trans-unit id="settings.privacy.saveHint" resname="settings.privacy.saveHint"><source>Off by default. Save settings to apply your choice.</source></trans-unit>
+            <trans-unit id="settings.privacy.summary" resname="settings.privacy.summary"><source>Help improve AutoAlt.ai and troubleshoot issues by sharing your domain, software versions, image statistics and selected settings.</source></trans-unit>
+            <trans-unit id="settings.privacy.details" resname="settings.privacy.details"><source>What data is shared?</source></trans-unit>
+            <trans-unit id="settings.privacy.supportTitle" resname="settings.privacy.supportTitle"><source>One-time support report</source></trans-unit>
+            <trans-unit id="settings.privacy.supportHint" resname="settings.privacy.supportHint"><source>Review before sending. Ongoing sharing stays unchanged.</source></trans-unit>
+            <trans-unit id="settings.privacy.policy" resname="settings.privacy.policy"><source>Privacy Policy</source></trans-unit>
+            <trans-unit id="diagnostics.action.review" resname="diagnostics.action.review"><source>Send diagnostic data to support</source></trans-unit>
+            <trans-unit id="diagnostics.description" resname="diagnostics.description"><source>Review and send a one-time diagnostic report to help AutoAlt.ai support troubleshoot issues.</source></trans-unit>
+            <trans-unit id="diagnostics.page.eyebrow" resname="diagnostics.page.eyebrow"><source>AutoAlt.ai support</source></trans-unit>
+            <trans-unit id="diagnostics.page.title" resname="diagnostics.page.title"><source>Support diagnostics</source></trans-unit>
+            <trans-unit id="diagnostics.report.title" resname="diagnostics.report.title"><source>Review your diagnostic report</source></trans-unit>
+            <trans-unit id="diagnostics.report.description" resname="diagnostics.report.description"><source>The exact data that will be shared with AutoAlt.ai support.</source></trans-unit>
+            <trans-unit id="diagnostics.report.confirmHint" resname="diagnostics.report.confirmHint"><source>Nothing is sent until you confirm.</source></trans-unit>
+            <trans-unit id="diagnostics.guide.title" resname="diagnostics.guide.title"><source>Before you send</source></trans-unit>
+            <trans-unit id="diagnostics.guide.includesTitle" resname="diagnostics.guide.includesTitle"><source>What is included</source></trans-unit>
+            <trans-unit id="diagnostics.guide.includes" resname="diagnostics.guide.includes"><source>Your domain, software versions, image statistics and selected settings.</source></trans-unit>
+            <trans-unit id="diagnostics.guide.onceTitle" resname="diagnostics.guide.onceTitle"><source>One-time only</source></trans-unit>
+            <trans-unit id="diagnostics.guide.once" resname="diagnostics.guide.once"><source>Ongoing diagnostic sharing stays unchanged.</source></trans-unit>
+            <trans-unit id="diagnostics.guide.authTitle" resname="diagnostics.guide.authTitle"><source>API key excluded from the report</source></trans-unit>
+            <trans-unit id="diagnostics.guide.auth" resname="diagnostics.guide.auth"><source>Your saved key only authenticates the request.</source></trans-unit>
+            <trans-unit id="diagnostics.guide.expiryTitle" resname="diagnostics.guide.expiryTitle"><source>Valid for 15 minutes</source></trans-unit>
+            <trans-unit id="diagnostics.guide.expiry" resname="diagnostics.guide.expiry"><source>Open a new review if this one expires.</source></trans-unit>
+            <trans-unit id="diagnostics.guide.ticket" resname="diagnostics.guide.ticket"><source>Sending diagnostics does not create a support ticket.</source></trans-unit>
+            <trans-unit id="diagnostics.action.retry" resname="diagnostics.action.retry"><source>Review a new report</source></trans-unit>
+            <trans-unit id="diagnostics.result.heading.success" resname="diagnostics.result.heading.success"><source>Diagnostic report accepted</source></trans-unit>
+            <trans-unit id="diagnostics.result.heading.failure" resname="diagnostics.result.heading.failure"><source>Report could not be confirmed</source></trans-unit>
+            <trans-unit id="diagnostics.result.heading.collectionFailure" resname="diagnostics.result.heading.collectionFailure"><source>Report could not be prepared</source></trans-unit>
+            <trans-unit id="diagnostics.review.explanation" resname="diagnostics.review.explanation"><source>Review the exact JSON report below. Nothing is sent until you confirm. This review expires after 15 minutes. Your saved API key authenticates the HTTPS request and is excluded from the report. Sending does not change ongoing telemetry consent or create a support ticket.</source></trans-unit>
+            <trans-unit id="diagnostics.action.confirm" resname="diagnostics.action.confirm"><source>Confirm and send diagnostic data</source></trans-unit>
+            <trans-unit id="diagnostics.action.back" resname="diagnostics.action.back"><source>Back to settings</source></trans-unit>
+            <trans-unit id="diagnostics.result.success" resname="diagnostics.result.success"><source>AutoAlt.ai accepted the diagnostic report. Ongoing telemetry consent is unchanged.</source></trans-unit>
+            <trans-unit id="diagnostics.result.failure" resname="diagnostics.result.failure"><source>The diagnostic report could not be confirmed as accepted. Reopen the review to try again. Ongoing telemetry consent is unchanged.</source></trans-unit>
+            <trans-unit id="diagnostics.result.collectionFailure" resname="diagnostics.result.collectionFailure"><source>The diagnostic report could not be prepared. Check your API connection and database setup, then reopen the review. No report was sent.</source></trans-unit>
             <trans-unit id="module.title">
                 <source>AutoAlt.ai</source>
             </trans-unit>
@@ -254,6 +292,9 @@
                 <source>Available Credits</source>
             </trans-unit>
 
+            <trans-unit id="bulk.options.title">
+                <source>Generation options</source>
+            </trans-unit>
             <trans-unit id="bulk.options.keywordsTitle">
                 <source>Keywords</source>
             </trans-unit>

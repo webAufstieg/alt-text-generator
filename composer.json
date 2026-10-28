@@ -20,8 +20,8 @@
         }
     ],
     "support": {
-        "issues": "https://github.com/autoaltai/alt-text-generator/issues",
-        "source": "https://github.com/autoaltai/alt-text-generator",
+        "issues": "https://github.com/webAufstieg/alt-text-generator/issues",
+        "source": "https://github.com/webAufstieg/alt-text-generator",
         "docs": "https://docs.typo3.org/p/autoaltai/alt-text-generator/main/en-us/"
     },
     "require": {
@@ -56,15 +56,16 @@
     "scripts": {
         "lint:composer": "composer validate --strict --no-check-publish",
         "lint:php": "find . -path ./vendor -prune -o -name '*.php' -print0 | xargs -0 -n1 php -l",
-        "lint:yaml": "if [ -x vendor/bin/yaml-lint ]; then vendor/bin/yaml-lint Configuration/Services.yaml; else ../../vendor/bin/yaml-lint Configuration/Services.yaml; fi",
+        "lint:yaml": "php -r 'require \"vendor/autoload.php\"; foreach (glob(\"Configuration/*.yaml\") as $file) { \\Symfony\\Component\\Yaml\\Yaml::parseFile($file); } echo \"YAML configuration is valid.\" . PHP_EOL;'",
         "test": [
             "@lint:composer",
             "@lint:php",
             "@lint:yaml",
-            "@test:unit"
+            "@test:unit",
+            "@test:privacy"
         ],
-        "test:functional": "phpunit --testsuite Functional",
-        "test:unit": "phpunit --testsuite Unit"
+        "test:unit": "phpunit --testsuite Unit",
+        "test:privacy": "php Tests/Privacy/run.php"
     },
     "config": {
         "sort-packages": true
