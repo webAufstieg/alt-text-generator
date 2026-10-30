@@ -418,6 +418,7 @@ final readonly class BulkGenerationService
                     publicUrl: $item->publicUrl,
                     success: true,
                     message: $generatedValues['alternative'] ?? 'Metadata updated.',
+                    messageKey: isset($generatedValues['alternative']) ? '' : 'bulk.message.metadataUpdated',
                 );
                 ++$completed;
             } catch (MissingImageException $exception) {

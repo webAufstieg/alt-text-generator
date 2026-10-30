@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AutoAltAi\AltTextGenerator\Controller;
 
+use AutoAltAi\AltTextGenerator\Localization\BackendMessageLocalizer;
+
 use AutoAltAi\AltTextGenerator\Dto\BulkProcessResult;
 use AutoAltAi\AltTextGenerator\Dto\BulkProcessResultItem;
 use AutoAltAi\AltTextGenerator\Service\BulkGenerationService;
@@ -106,7 +108,7 @@ final readonly class BulkGenerationAjaxController
         } catch (\Throwable $exception) {
             return new JsonResponse([
                 'success' => false,
-                'message' => sprintf($languageService->sL(self::LLL . 'ajax.processingFailed'), $exception->getMessage()),
+                'message' => sprintf($languageService->sL(self::LLL . 'ajax.processingFailed'), BackendMessageLocalizer::localize($exception->getMessage(), $languageService)),
             ], 500);
         }
 
@@ -132,7 +134,9 @@ final readonly class BulkGenerationAjaxController
                         'fileName' => $item->fileName,
                         'publicUrl' => $item->publicUrl,
                         'success' => $item->success,
-                        'message' => $item->message,
+                        'message' => $item->success
+                            ? ($item->messageKey !== '' ? $languageService->sL(self::LLL . $item->messageKey) : $item->message)
+                            : BackendMessageLocalizer::localize($item->message, $languageService),
                     ],
                     $result->items
                 ),
@@ -228,7 +232,7 @@ final readonly class BulkGenerationAjaxController
         } catch (\Throwable $exception) {
             return new JsonResponse([
                 'success' => false,
-                'message' => sprintf($languageService->sL(self::LLL . 'ajax.processingFailed'), $exception->getMessage()),
+                'message' => sprintf($languageService->sL(self::LLL . 'ajax.processingFailed'), BackendMessageLocalizer::localize($exception->getMessage(), $languageService)),
             ], 500);
         }
 
@@ -249,7 +253,9 @@ final readonly class BulkGenerationAjaxController
                         'fileName' => $item->fileName,
                         'publicUrl' => $item->publicUrl,
                         'success' => $item->success,
-                        'message' => $item->message,
+                        'message' => $item->success
+                            ? ($item->messageKey !== '' ? $languageService->sL(self::LLL . $item->messageKey) : $item->message)
+                            : BackendMessageLocalizer::localize($item->message, $languageService),
                     ],
                     $result->items
                 ),

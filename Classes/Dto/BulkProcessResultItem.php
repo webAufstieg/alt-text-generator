@@ -16,5 +16,6 @@ final readonly class BulkProcessResultItem
         public ?string $publicUrl,
         public bool $success,
         public string $message,
+        public string $messageKey = '',
     ) {}
 }

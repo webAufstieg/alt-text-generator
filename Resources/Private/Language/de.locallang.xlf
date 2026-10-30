@@ -1,0 +1,2266 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
+    <file source-language="en" target-language="de" datatype="plaintext" original="messages" product-name="alt_text_generator">
+        <header/>
+        <body>
+            <trans-unit id="settings.privacy.title" resname="settings.privacy.title" approved="yes">
+                <source>Telemetry &amp; Privacy</source>
+                <target>Telemetrie &amp; Datenschutz</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.consent" resname="settings.privacy.consent" approved="yes">
+                <source>Share diagnostic data with AutoAlt.ai</source>
+                <target>Diagnosedaten mit AutoAlt.ai teilen</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.description" resname="settings.privacy.description" approved="yes">
+                <source>Optionally share your domain, software versions, image counts and selected settings to improve AutoAlt.ai. Disabled by default.</source>
+                <target>Teilen Sie optional Ihre Domain, Softwareversionen, Bildanzahl und ausgewählte Einstellungen, um AutoAlt.ai zu verbessern. Standardmäßig deaktiviert.</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.subtitle" resname="settings.privacy.subtitle" approved="yes">
+                <source>You control what you share</source>
+                <target>Sie entscheiden, was Sie teilen</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.optional" resname="settings.privacy.optional" approved="yes">
+                <source>Optional</source>
+                <target>Optional</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.saveHint" resname="settings.privacy.saveHint" approved="yes">
+                <source>Off by default. Save settings to apply your choice.</source>
+                <target>Standardmäßig deaktiviert. Speichern Sie die Einstellungen, um Ihre Auswahl zu übernehmen.</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.summary" resname="settings.privacy.summary" approved="yes">
+                <source>Help improve AutoAlt.ai and troubleshoot issues by sharing your domain, software versions, image statistics and selected settings.</source>
+                <target>Helfen Sie, AutoAlt.ai zu verbessern und Probleme zu beheben, indem Sie Ihre Domain, Softwareversionen, Bildstatistiken und ausgewählte Einstellungen teilen.</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.details" resname="settings.privacy.details" approved="yes">
+                <source>What data is shared?</source>
+                <target>Welche Daten werden geteilt?</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.supportTitle" resname="settings.privacy.supportTitle" approved="yes">
+                <source>One-time support report</source>
+                <target>Einmaliger Supportbericht</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.supportHint" resname="settings.privacy.supportHint" approved="yes">
+                <source>Review before sending. Ongoing sharing stays unchanged.</source>
+                <target>Vor dem Senden prüfen. Die dauerhafte Datenfreigabe bleibt unverändert.</target>
+            </trans-unit>
+            <trans-unit id="settings.privacy.policy" resname="settings.privacy.policy" approved="yes">
+                <source>Privacy Policy</source>
+                <target>Datenschutzerklärung</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.action.review" resname="diagnostics.action.review" approved="yes">
+                <source>Send diagnostic data to support</source>
+                <target>Diagnosedaten an den Support senden</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.description" resname="diagnostics.description" approved="yes">
+                <source>Review and send a one-time diagnostic report to help AutoAlt.ai support troubleshoot issues.</source>
+                <target>Prüfen und senden Sie einen einmaligen Diagnosebericht, damit der AutoAlt.ai-Support bei Problemen helfen kann.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.page.eyebrow" resname="diagnostics.page.eyebrow" approved="yes">
+                <source>AutoAlt.ai support</source>
+                <target>AutoAlt.ai-Support</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.page.title" resname="diagnostics.page.title" approved="yes">
+                <source>Support diagnostics</source>
+                <target>Supportdiagnose</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.report.title" resname="diagnostics.report.title" approved="yes">
+                <source>Review your diagnostic report</source>
+                <target>Diagnosebericht prüfen</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.report.description" resname="diagnostics.report.description" approved="yes">
+                <source>The exact data that will be shared with AutoAlt.ai support.</source>
+                <target>Genau diese Daten werden mit dem AutoAlt.ai-Support geteilt.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.report.confirmHint" resname="diagnostics.report.confirmHint" approved="yes">
+                <source>Nothing is sent until you confirm.</source>
+                <target>Ohne Ihre Bestätigung wird nichts gesendet.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.title" resname="diagnostics.guide.title" approved="yes">
+                <source>Before you send</source>
+                <target>Vor dem Senden</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.includesTitle" resname="diagnostics.guide.includesTitle" approved="yes">
+                <source>What is included</source>
+                <target>Enthaltene Daten</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.includes" resname="diagnostics.guide.includes" approved="yes">
+                <source>Your domain, software versions, image statistics and selected settings.</source>
+                <target>Ihre Domain, Softwareversionen, Bildstatistiken und ausgewählte Einstellungen.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.onceTitle" resname="diagnostics.guide.onceTitle" approved="yes">
+                <source>One-time only</source>
+                <target>Nur einmalig</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.once" resname="diagnostics.guide.once" approved="yes">
+                <source>Ongoing diagnostic sharing stays unchanged.</source>
+                <target>Die dauerhafte Freigabe von Diagnosedaten bleibt unverändert.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.authTitle" resname="diagnostics.guide.authTitle" approved="yes">
+                <source>API key excluded from the report</source>
+                <target>API-Schlüssel nicht im Bericht enthalten</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.auth" resname="diagnostics.guide.auth" approved="yes">
+                <source>Your saved key only authenticates the request.</source>
+                <target>Ihr gespeicherter Schlüssel dient nur zur Authentifizierung der Anfrage.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.expiryTitle" resname="diagnostics.guide.expiryTitle" approved="yes">
+                <source>Valid for 15 minutes</source>
+                <target>15 Minuten gültig</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.expiry" resname="diagnostics.guide.expiry" approved="yes">
+                <source>Open a new review if this one expires.</source>
+                <target>Öffnen Sie eine neue Vorschau, wenn diese abläuft.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.guide.ticket" resname="diagnostics.guide.ticket" approved="yes">
+                <source>Sending diagnostics does not create a support ticket.</source>
+                <target>Durch das Senden von Diagnosedaten wird kein Supportticket erstellt.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.action.retry" resname="diagnostics.action.retry" approved="yes">
+                <source>Review a new report</source>
+                <target>Neuen Bericht prüfen</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.result.heading.success" resname="diagnostics.result.heading.success" approved="yes">
+                <source>Diagnostic report accepted</source>
+                <target>Diagnosebericht angenommen</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.result.heading.failure" resname="diagnostics.result.heading.failure" approved="yes">
+                <source>Report could not be confirmed</source>
+                <target>Bericht konnte nicht bestätigt werden</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.result.heading.collectionFailure" resname="diagnostics.result.heading.collectionFailure" approved="yes">
+                <source>Report could not be prepared</source>
+                <target>Bericht konnte nicht vorbereitet werden</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.review.explanation" resname="diagnostics.review.explanation" approved="yes">
+                <source>Review the exact JSON report below. Nothing is sent until you confirm. This review expires after 15 minutes. Your saved API key authenticates the HTTPS request and is excluded from the report. Sending does not change ongoing telemetry consent or create a support ticket.</source>
+                <target>Prüfen Sie unten den vollständigen JSON-Bericht. Ohne Ihre Bestätigung wird nichts gesendet. Diese Vorschau läuft nach 15 Minuten ab. Ihr gespeicherter API-Schlüssel authentifiziert die HTTPS-Anfrage und ist nicht im Bericht enthalten. Das Senden ändert Ihre Telemetrie-Einwilligung nicht und erstellt kein Supportticket.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.action.confirm" resname="diagnostics.action.confirm" approved="yes">
+                <source>Confirm and send diagnostic data</source>
+                <target>Bestätigen und Diagnosedaten senden</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.action.back" resname="diagnostics.action.back" approved="yes">
+                <source>Back to settings</source>
+                <target>Zurück zu den Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.result.success" resname="diagnostics.result.success" approved="yes">
+                <source>AutoAlt.ai accepted the diagnostic report. Ongoing telemetry consent is unchanged.</source>
+                <target>AutoAlt.ai hat den Diagnosebericht angenommen. Ihre Telemetrie-Einwilligung bleibt unverändert.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.result.failure" resname="diagnostics.result.failure" approved="yes">
+                <source>The diagnostic report could not be confirmed as accepted. Reopen the review to try again. Ongoing telemetry consent is unchanged.</source>
+                <target>Die Annahme des Diagnoseberichts konnte nicht bestätigt werden. Öffnen Sie die Vorschau erneut, um es noch einmal zu versuchen. Ihre Telemetrie-Einwilligung bleibt unverändert.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.result.collectionFailure" resname="diagnostics.result.collectionFailure" approved="yes">
+                <source>The diagnostic report could not be prepared. Check your API connection and database setup, then reopen the review. No report was sent.</source>
+                <target>Der Diagnosebericht konnte nicht vorbereitet werden. Prüfen Sie Ihre API-Verbindung und Datenbankeinrichtung und öffnen Sie die Vorschau erneut. Es wurde kein Bericht gesendet.</target>
+            </trans-unit>
+            <trans-unit id="module.title" resname="module.title" approved="yes">
+                <source>AutoAlt.ai</source>
+                <target>AutoAlt.ai</target>
+            </trans-unit>
+            <trans-unit id="module.shortDescription" resname="module.shortDescription" approved="yes">
+                <source>Generate image alt text with AutoAlt.ai</source>
+                <target>Bild-Alt-Texte mit AutoAlt.ai generieren</target>
+            </trans-unit>
+            <trans-unit id="module.description" resname="module.description" approved="yes">
+                <source>Manage AutoAlt.ai image alt text generation for TYPO3 media assets.</source>
+                <target>Verwalten Sie die Generierung von Bild-Alt-Texten für TYPO3-Medien mit AutoAlt.ai.</target>
+            </trans-unit>
+            <trans-unit id="module.bulk.title" resname="module.bulk.title" approved="yes">
+                <source>Bulk Generate</source>
+                <target>Stapelgenerierung</target>
+            </trans-unit>
+            <trans-unit id="module.bulk.shortDescription" resname="module.bulk.shortDescription" approved="yes">
+                <source>Create and run bulk alt text generation</source>
+                <target>Alt-Texte in Stapeln generieren</target>
+            </trans-unit>
+            <trans-unit id="module.bulk.description" resname="module.bulk.description" approved="yes">
+                <source>Scan for images missing alt text and generate alt text for them in bulk.</source>
+                <target>Suchen Sie nach Bildern ohne Alt-Text und generieren Sie die Texte in Stapeln.</target>
+            </trans-unit>
+            <trans-unit id="module.history.title" resname="module.history.title" approved="yes">
+                <source>History</source>
+                <target>Verlauf</target>
+            </trans-unit>
+            <trans-unit id="module.history.shortDescription" resname="module.history.shortDescription" approved="yes">
+                <source>Review generated alt text and errors</source>
+                <target>Generierte Alt-Texte und Fehler prüfen</target>
+            </trans-unit>
+            <trans-unit id="module.history.description" resname="module.history.description" approved="yes">
+                <source>Review generated alt text, errors, and retry activity.</source>
+                <target>Prüfen Sie generierte Alt-Texte, Fehler und erneute Verarbeitungsversuche.</target>
+            </trans-unit>
+            <trans-unit id="module.settings.title" resname="module.settings.title" approved="yes">
+                <source>Settings</source>
+                <target>Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="module.settings.shortDescription" resname="module.settings.shortDescription" approved="yes">
+                <source>Configure AutoAlt.ai</source>
+                <target>AutoAlt.ai konfigurieren</target>
+            </trans-unit>
+            <trans-unit id="module.settings.description" resname="module.settings.description" approved="yes">
+                <source>Configure the AutoAlt.ai connection, generation rules, and filters.</source>
+                <target>Konfigurieren Sie die AutoAlt.ai-Verbindung, Generierungsregeln und Filter.</target>
+            </trans-unit>
+            <trans-unit id="nav.dashboard" resname="nav.dashboard" approved="yes">
+                <source>Dashboard</source>
+                <target>Dashboard</target>
+            </trans-unit>
+            <trans-unit id="nav.bulk" resname="nav.bulk" approved="yes">
+                <source>Bulk Alt Text Generator</source>
+                <target>Bulk-Alt-Text-Generator</target>
+            </trans-unit>
+            <trans-unit id="nav.rename" resname="nav.rename" approved="yes">
+                <source>Bulk Rename Images</source>
+                <target>Bilder stapelweise umbenennen</target>
+            </trans-unit>
+            <trans-unit id="nav.history" resname="nav.history" approved="yes">
+                <source>Alt Text History</source>
+                <target>Alt-Text-Verlauf</target>
+            </trans-unit>
+            <trans-unit id="nav.settings" resname="nav.settings" approved="yes">
+                <source>Extension Configuration</source>
+                <target>Erweiterungskonfiguration</target>
+            </trans-unit>
+            <trans-unit id="dashboard.title" resname="dashboard.title" approved="yes">
+                <source>Alt Text Generator</source>
+                <target>Alt-Text-Generator</target>
+            </trans-unit>
+            <trans-unit id="dashboard.eyebrow" resname="dashboard.eyebrow" approved="yes">
+                <source>AutoAlt.ai for TYPO3</source>
+                <target>AutoAlt.ai für TYPO3</target>
+            </trans-unit>
+            <trans-unit id="dashboard.intro" resname="dashboard.intro" approved="yes">
+                <source>Generate accessible, SEO-friendly image alt text for TYPO3 media assets.</source>
+                <target>Generieren Sie barrierefreie, SEO-freundliche Bild-Alt-Texte für TYPO3-Medien.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.nav.history" resname="dashboard.nav.history" approved="yes">
+                <source>History</source>
+                <target>Verlauf</target>
+            </trans-unit>
+            <trans-unit id="dashboard.nav.settings" resname="dashboard.nav.settings" approved="yes">
+                <source>Settings</source>
+                <target>Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="dashboard.nav.account" resname="dashboard.nav.account" approved="yes">
+                <source>Account</source>
+                <target>Konto</target>
+            </trans-unit>
+            <trans-unit id="dashboard.nav.apiKeys" resname="dashboard.nav.apiKeys" approved="yes">
+                <source>API keys</source>
+                <target>API-Schlüssel</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.connection.label" resname="dashboard.card.connection.label" approved="yes">
+                <source>Connection</source>
+                <target>Verbindung</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.connection.ready" resname="dashboard.card.connection.ready" approved="yes">
+                <source>Ready</source>
+                <target>Bereit</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.connection.needsApiKey" resname="dashboard.card.connection.needsApiKey" approved="yes">
+                <source>Needs API key</source>
+                <target>API-Schlüssel erforderlich</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.connection.detail.ready" resname="dashboard.card.connection.detail.ready" approved="yes">
+                <source>API key is configured.</source>
+                <target>API-Schlüssel ist konfiguriert.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.connection.detail.needsApiKey" resname="dashboard.card.connection.detail.needsApiKey" approved="yes">
+                <source>Add an API key in extension configuration.</source>
+                <target>Fügen Sie in der Erweiterungskonfiguration einen API-Schlüssel hinzu.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.extension.label" resname="dashboard.card.extension.label" approved="yes">
+                <source>Extension</source>
+                <target>Erweiterung</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.extension.enabled" resname="dashboard.card.extension.enabled" approved="yes">
+                <source>Enabled</source>
+                <target>Aktiviert</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.extension.disabled" resname="dashboard.card.extension.disabled" approved="yes">
+                <source>Disabled</source>
+                <target>Deaktiviert</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.extension.detail.enabled" resname="dashboard.card.extension.detail.enabled" approved="yes">
+                <source>Backend workflows are available.</source>
+                <target>Backend-Funktionen sind verfügbar.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.extension.detail.disabled" resname="dashboard.card.extension.detail.disabled" approved="yes">
+                <source>Generation workflows are paused.</source>
+                <target>Die Generierung ist pausiert.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.uploadAutomation.label" resname="dashboard.card.uploadAutomation.label" approved="yes">
+                <source>Upload Automation</source>
+                <target>Upload-Automatisierung</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.uploadAutomation.detail.enabled" resname="dashboard.card.uploadAutomation.detail.enabled" approved="yes">
+                <source>New uploads are processed immediately.</source>
+                <target>Neue Uploads werden sofort verarbeitet.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.uploadAutomation.detail.disabled" resname="dashboard.card.uploadAutomation.detail.disabled" approved="yes">
+                <source>Uploads require manual generation.</source>
+                <target>Bei Uploads ist eine manuelle Generierung erforderlich.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.credits.label" resname="dashboard.card.credits.label" approved="yes">
+                <source>Credits</source>
+                <target>Guthaben</target>
+            </trans-unit>
+            <trans-unit id="dashboard.card.imagesMissingAlt.label" resname="dashboard.card.imagesMissingAlt.label" approved="yes">
+                <source>Images Missing Alt</source>
+                <target>Bilder ohne Alt-Text</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.needsApiKey" resname="dashboard.credit.needsApiKey" approved="yes">
+                <source>Needs API key</source>
+                <target>API-Schlüssel erforderlich</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.needsApiKey.detail" resname="dashboard.credit.needsApiKey.detail" approved="yes">
+                <source>Add an API key in Settings to load your AutoAlt.ai credit balance.</source>
+                <target>Fügen Sie in den Einstellungen einen API-Schlüssel hinzu, um Ihr AutoAlt.ai-Guthaben zu laden.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.unavailable" resname="dashboard.credit.unavailable" approved="yes">
+                <source>Unavailable</source>
+                <target>Nicht verfügbar</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.lookupFailed" resname="dashboard.credit.lookupFailed" approved="yes">
+                <source>Credit lookup failed: %s</source>
+                <target>Guthabenabfrage fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.detail.available" resname="dashboard.credit.detail.available" approved="yes">
+                <source>Available credits from paid and free balances.</source>
+                <target>Verfügbares Guthaben aus kostenpflichtigen und kostenlosen Kontingenten.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.detail.none" resname="dashboard.credit.detail.none" approved="yes">
+                <source>No credits available. Add credits in your AutoAlt.ai account.</source>
+                <target>Kein Guthaben verfügbar. Laden Sie Ihr AutoAlt.ai-Konto auf.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.status.ready" resname="dashboard.credit.status.ready" approved="yes">
+                <source>Ready</source>
+                <target>Bereit</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credit.status.outOfCredits" resname="dashboard.credit.status.outOfCredits" approved="yes">
+                <source>Out of credits</source>
+                <target>Guthaben aufgebraucht</target>
+            </trans-unit>
+            <trans-unit id="dashboard.imageScan.unavailable" resname="dashboard.imageScan.unavailable" approved="yes">
+                <source>Unavailable</source>
+                <target>Nicht verfügbar</target>
+            </trans-unit>
+            <trans-unit id="dashboard.imageScan.failed" resname="dashboard.imageScan.failed" approved="yes">
+                <source>Image scan failed. Check the system log for details.</source>
+                <target>Bildsuche fehlgeschlagen. Details finden Sie im Systemprotokoll.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.imageScan.detail.hasMissing" resname="dashboard.imageScan.detail.hasMissing" approved="yes">
+                <source>Indexed images are ready for review and generation.</source>
+                <target>Indexierte Bilder stehen zur Prüfung und Generierung bereit.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.imageScan.detail.none" resname="dashboard.imageScan.detail.none" approved="yes">
+                <source>No indexed images currently need alt text.</source>
+                <target>Derzeit benötigen keine indexierten Bilder einen Alt-Text.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.imageScan.missingBadge" resname="dashboard.imageScan.missingBadge" approved="yes">
+                <source>Missing alt</source>
+                <target>Alt-Text fehlt</target>
+            </trans-unit>
+            <trans-unit id="dashboard.workbench.totalImages" resname="dashboard.workbench.totalImages" approved="yes">
+                <source>Total images</source>
+                <target>Bilder insgesamt</target>
+            </trans-unit>
+            <trans-unit id="dashboard.workbench.missingAltText" resname="dashboard.workbench.missingAltText" approved="yes">
+                <source>Missing alt text</source>
+                <target>Ohne Alt-Text</target>
+            </trans-unit>
+            <trans-unit id="dashboard.workbench.withAltText" resname="dashboard.workbench.withAltText" approved="yes">
+                <source>With alt text</source>
+                <target>Mit Alt-Text</target>
+            </trans-unit>
+            <trans-unit id="dashboard.quickLinks.title" resname="dashboard.quickLinks.title" approved="yes">
+                <source>Quick Actions</source>
+                <target>Schnellaktionen</target>
+            </trans-unit>
+            <trans-unit id="dashboard.quickLinks.open" resname="dashboard.quickLinks.open" approved="yes">
+                <source>Open</source>
+                <target>Öffnen</target>
+            </trans-unit>
+            <trans-unit id="dashboard.quickLinks.bulk.description" resname="dashboard.quickLinks.bulk.description" approved="yes">
+                <source>Scan for missing alt text and generate alt text for images in bulk.</source>
+                <target>Suchen Sie nach fehlenden Alt-Texten und generieren Sie diese für mehrere Bilder gleichzeitig.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.quickLinks.history.description" resname="dashboard.quickLinks.history.description" approved="yes">
+                <source>Review generated alt text, errors, and retry activity.</source>
+                <target>Prüfen Sie generierte Alt-Texte, Fehler und erneute Verarbeitungsversuche.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.quickLinks.settings.description" resname="dashboard.quickLinks.settings.description" approved="yes">
+                <source>Configure the API key, generation rules, and automation.</source>
+                <target>Konfigurieren Sie den API-Schlüssel, die Generierungsregeln und die Automatisierung.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.creditsPanel.title" resname="dashboard.creditsPanel.title" approved="yes">
+                <source>Credit Balance</source>
+                <target>Guthabenübersicht</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credits.status" resname="dashboard.credits.status" approved="yes">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credits.available" resname="dashboard.credits.available" approved="yes">
+                <source>Available</source>
+                <target>Verfügbar</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credits.used" resname="dashboard.credits.used" approved="yes">
+                <source>Used</source>
+                <target>Verbraucht</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credits.total" resname="dashboard.credits.total" approved="yes">
+                <source>Total</source>
+                <target>Gesamt</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credits.paid" resname="dashboard.credits.paid" approved="yes">
+                <source>Paid</source>
+                <target>Kostenpflichtig</target>
+            </trans-unit>
+            <trans-unit id="dashboard.credits.free" resname="dashboard.credits.free" approved="yes">
+                <source>Free</source>
+                <target>Kostenlos</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueuePanel.title" resname="dashboard.bulkQueuePanel.title" approved="yes">
+                <source>Generation Progress</source>
+                <target>Generierungsfortschritt</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.stop" resname="dashboard.bulkQueue.stop" approved="yes">
+                <source>Stop</source>
+                <target>Stoppen</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.noPermission" resname="dashboard.bulkQueue.noPermission" approved="yes">
+                <source>You do not have permission to generate alt text or update file metadata.</source>
+                <target>Sie haben keine Berechtigung, Alt-Texte zu generieren oder Dateimetadaten zu bearbeiten.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.liveLog.title" resname="dashboard.bulkQueue.liveLog.title" approved="yes">
+                <source>Live Generation Log</source>
+                <target>Live-Generierungsprotokoll</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.liveLog.image" resname="dashboard.bulkQueue.liveLog.image" approved="yes">
+                <source>Image</source>
+                <target>Bild</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.liveLog.result" resname="dashboard.bulkQueue.liveLog.result" approved="yes">
+                <source>Alt Text / Response</source>
+                <target>Alt-Text / Antwort</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.liveLog.status" resname="dashboard.bulkQueue.liveLog.status" approved="yes">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.liveLog.empty" resname="dashboard.bulkQueue.liveLog.empty" approved="yes">
+                <source>Nothing generated yet. Click Generate Alt Text to see live results appear here.</source>
+                <target>Noch nichts generiert. Klicken Sie auf „Alt-Text generieren“, um hier Live-Ergebnisse zu sehen.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.liveLog.success" resname="dashboard.bulkQueue.liveLog.success" approved="yes">
+                <source>Success</source>
+                <target>Erfolgreich</target>
+            </trans-unit>
+            <trans-unit id="dashboard.bulkQueue.liveLog.failed" resname="dashboard.bulkQueue.liveLog.failed" approved="yes">
+                <source>Failed</source>
+                <target>Fehlgeschlagen</target>
+            </trans-unit>
+            <trans-unit id="bulk.intro" resname="bulk.intro" approved="yes">
+                <source>Scan your media library for images missing alt text and generate alt text for them in bulk.</source>
+                <target>Durchsuchen Sie Ihre Medienbibliothek nach Bildern ohne Alt-Text und generieren Sie die Texte in Stapeln.</target>
+            </trans-unit>
+            <trans-unit id="bulk.stats.shortAltText" resname="bulk.stats.shortAltText" approved="yes">
+                <source>Short Alt Text</source>
+                <target>Kurzer Alt-Text</target>
+            </trans-unit>
+            <trans-unit id="bulk.stats.availableCredits" resname="bulk.stats.availableCredits" approved="yes">
+                <source>Available Credits</source>
+                <target>Verfügbares Guthaben</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.title" resname="bulk.options.title" approved="yes">
+                <source>Generation options</source>
+                <target>Generierungsoptionen</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.keywordsTitle" resname="bulk.options.keywordsTitle" approved="yes">
+                <source>Keywords</source>
+                <target>Schlüsselwörter</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.title" resname="bulk.fieldActions.title" approved="yes">
+                <source>Field Actions</source>
+                <target>Feldaktionen</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.intro" resname="bulk.fieldActions.intro" approved="yes">
+                <source>Choose an action for each metadata field. Generate creates new AI text, Keep leaves the current value unchanged, and Clear deletes the existing value.</source>
+                <target>Wählen Sie für jedes Metadatenfeld eine Aktion. „Generieren“ erstellt neuen KI-Text, „Beibehalten“ lässt den aktuellen Wert unverändert und „Leeren“ entfernt den vorhandenen Wert.</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.field" resname="bulk.fieldActions.field" approved="yes">
+                <source>Field</source>
+                <target>Feld</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.action" resname="bulk.fieldActions.action" approved="yes">
+                <source>Action</source>
+                <target>Aktion</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.altText" resname="bulk.fieldActions.altText" approved="yes">
+                <source>Alt Text</source>
+                <target>Alt-Text</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.altTextHelp" resname="bulk.fieldActions.altTextHelp" approved="yes">
+                <source>Image description for SEO and accessibility</source>
+                <target>Bildbeschreibung für SEO und Barrierefreiheit</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.titleField" resname="bulk.fieldActions.titleField" approved="yes">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.titleHelp" resname="bulk.fieldActions.titleHelp" approved="yes">
+                <source>Media library title attribute</source>
+                <target>Titelattribut in der Medienbibliothek</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.description" resname="bulk.fieldActions.description" approved="yes">
+                <source>Description</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.descriptionHelp" resname="bulk.fieldActions.descriptionHelp" approved="yes">
+                <source>Attachment page long description</source>
+                <target>Ausführliche Beschreibung der Anhangsseite</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.generate" resname="bulk.fieldActions.generate" approved="yes">
+                <source>Generate</source>
+                <target>Generieren</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.keep" resname="bulk.fieldActions.keep" approved="yes">
+                <source>Keep</source>
+                <target>Beibehalten</target>
+            </trans-unit>
+            <trans-unit id="bulk.fieldActions.clear" resname="bulk.fieldActions.clear" approved="yes">
+                <source>Clear</source>
+                <target>Leeren</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.seoKeywords" resname="bulk.options.seoKeywords" approved="yes">
+                <source>SEO keywords</source>
+                <target>SEO-Schlüsselwörter</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.seoKeywordsPlaceholder" resname="bulk.options.seoKeywordsPlaceholder" approved="yes">
+                <source>Keyword1, Keyword2</source>
+                <target>Schlüsselwort1, Schlüsselwort2</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.negativeKeywords" resname="bulk.options.negativeKeywords" approved="yes">
+                <source>Negative keywords</source>
+                <target>Auszuschließende Schlüsselwörter</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.negativeKeywordsPlaceholder" resname="bulk.options.negativeKeywordsPlaceholder" approved="yes">
+                <source>Keyword to avoid</source>
+                <target>Zu vermeidendes Schlüsselwort</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.keywordsHelp" resname="bulk.options.keywordsHelp" approved="yes">
+                <source>Separate with commas. Use up to 6 keywords or phrases.</source>
+                <target>Mit Kommas trennen. Bis zu 6 Schlüsselwörter oder Wortgruppen verwenden.</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.overwriteExisting" resname="bulk.options.overwriteExisting" approved="yes">
+                <source>Include images with existing alt text and overwrite them</source>
+                <target>Bilder mit vorhandenem Alt-Text einbeziehen und diesen überschreiben</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.skipProcessed" resname="bulk.options.skipProcessed" approved="yes">
+                <source>Skip images already processed by AutoAlt.ai</source>
+                <target>Bereits von AutoAlt.ai verarbeitete Bilder überspringen</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.onlyShortAltText" resname="bulk.options.onlyShortAltText" approved="yes">
+                <source>Generate alt text only for images with short alt text</source>
+                <target>Alt-Texte nur für Bilder mit kurzem Alt-Text generieren</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.characterRange" resname="bulk.options.characterRange" approved="yes">
+                <source>(1-%1$d characters)</source>
+                <target>(1–%1$d Zeichen)</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.dimensionNote" resname="bulk.options.dimensionNote" approved="yes">
+                <source>Images smaller than 30x30 pixels are always skipped to avoid wasting credits on decorative icons.</source>
+                <target>Bilder unter 30 × 30 Pixeln werden immer übersprungen, damit dekorative Symbole kein Guthaben verbrauchen.</target>
+            </trans-unit>
+            <trans-unit id="bulk.options.generateButton" resname="bulk.options.generateButton" approved="yes">
+                <source>Generate alt text for %1$d images</source>
+                <target>Alt-Texte für %1$d Bilder generieren</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.title" resname="bulk.confirm.title" approved="yes">
+                <source>Start bulk generation?</source>
+                <target>Stapelgenerierung starten?</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.subjectLabel" resname="bulk.confirm.subjectLabel" approved="yes">
+                <source>Images</source>
+                <target>Bilder</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.subject" resname="bulk.confirm.subject" approved="yes">
+                <source>%1$d images</source>
+                <target>%1$d Bilder</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.message.generateFields" resname="bulk.confirm.message.generateFields" approved="yes">
+                <source>AutoAlt.ai will generate: %1$s.</source>
+                <target>AutoAlt.ai generiert: %1$s.</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.message.noGeneratedFields" resname="bulk.confirm.message.noGeneratedFields" approved="yes">
+                <source>No fields are set to Generate. Keep and Clear actions will be applied without creating generation history.</source>
+                <target>Kein Feld ist auf „Generieren“ eingestellt. „Beibehalten“ und „Leeren“ werden ohne Eintrag im Generierungsverlauf angewendet.</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.note.default" resname="bulk.confirm.note.default" approved="yes">
+                <source>Stop finishes the current image, and completed changes are kept.</source>
+                <target>Beim Stoppen wird das aktuelle Bild noch fertiggestellt. Bereits abgeschlossene Änderungen bleiben erhalten.</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.note.overwrite" resname="bulk.confirm.note.overwrite" approved="yes">
+                <source>Existing metadata may be overwritten. Stop finishes the current image, and completed changes are kept.</source>
+                <target>Vorhandene Metadaten können überschrieben werden. Beim Stoppen wird das aktuelle Bild noch fertiggestellt. Bereits abgeschlossene Änderungen bleiben erhalten.</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.confirm" resname="bulk.confirm.confirm" approved="yes">
+                <source>Start generation</source>
+                <target>Generierung starten</target>
+            </trans-unit>
+            <trans-unit id="bulk.confirm.cancel" resname="bulk.confirm.cancel" approved="yes">
+                <source>Cancel</source>
+                <target>Abbrechen</target>
+            </trans-unit>
+            <trans-unit id="bulk.stop.button" resname="bulk.stop.button" approved="yes">
+                <source>Stop generation</source>
+                <target>Generierung stoppen</target>
+            </trans-unit>
+            <trans-unit id="bulk.stop.stopping" resname="bulk.stop.stopping" approved="yes">
+                <source>Stopping…</source>
+                <target>Wird gestoppt…</target>
+            </trans-unit>
+            <trans-unit id="bulk.stop.stopped" resname="bulk.stop.stopped" approved="yes">
+                <source>Generation stopped. Completed images remain saved.</source>
+                <target>Generierung gestoppt. Bereits verarbeitete Bilder bleiben gespeichert.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.fixErrors" resname="bulk.keywordValidation.fixErrors" approved="yes">
+                <source>Fix the keyword validation errors before starting generation.</source>
+                <target>Korrigieren Sie die Schlüsselwortfehler, bevor Sie die Generierung starten.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.seoTotal" resname="bulk.keywordValidation.seoTotal" approved="yes">
+                <source>SEO keywords must not exceed %1$d characters.</source>
+                <target>SEO-Schlüsselwörter dürfen insgesamt höchstens %1$d Zeichen enthalten.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.negativeTotal" resname="bulk.keywordValidation.negativeTotal" approved="yes">
+                <source>Negative keywords must not exceed %1$d characters.</source>
+                <target>Auszuschließende Schlüsselwörter dürfen insgesamt höchstens %1$d Zeichen enthalten.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.seoCount" resname="bulk.keywordValidation.seoCount" approved="yes">
+                <source>SEO keywords can contain a maximum of %1$d keywords.</source>
+                <target>Es sind höchstens %1$d SEO-Schlüsselwörter zulässig.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.negativeCount" resname="bulk.keywordValidation.negativeCount" approved="yes">
+                <source>Negative keywords can contain a maximum of %1$d keywords.</source>
+                <target>Es sind höchstens %1$d auszuschließende Schlüsselwörter zulässig.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.seoKeywordLength" resname="bulk.keywordValidation.seoKeywordLength" approved="yes">
+                <source>Each SEO keyword must be at most %1$d characters.</source>
+                <target>Jedes SEO-Schlüsselwort darf höchstens %1$d Zeichen enthalten.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.negativeKeywordLength" resname="bulk.keywordValidation.negativeKeywordLength" approved="yes">
+                <source>Each negative keyword must be at most %1$d characters.</source>
+                <target>Jedes auszuschließende Schlüsselwort darf höchstens %1$d Zeichen enthalten.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.seoDuplicates" resname="bulk.keywordValidation.seoDuplicates" approved="yes">
+                <source>SEO keywords contain duplicate values.</source>
+                <target>Die SEO-Schlüsselwörter enthalten doppelte Werte.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.negativeDuplicates" resname="bulk.keywordValidation.negativeDuplicates" approved="yes">
+                <source>Negative keywords contain duplicate values.</source>
+                <target>Die auszuschließenden Schlüsselwörter enthalten doppelte Werte.</target>
+            </trans-unit>
+            <trans-unit id="bulk.keywordValidation.conflict" resname="bulk.keywordValidation.conflict" approved="yes">
+                <source>Negative keywords must not match SEO keywords: %1$s.</source>
+                <target>Auszuschließende Schlüsselwörter dürfen nicht mit SEO-Schlüsselwörtern übereinstimmen: %1$s.</target>
+            </trans-unit>
+            <trans-unit id="bulk.message.noApiKey" resname="bulk.message.noApiKey" approved="yes">
+                <source>Configure an AutoAlt.ai API key before generating alt text.</source>
+                <target>Konfigurieren Sie einen AutoAlt.ai-API-Schlüssel, bevor Sie Alt-Texte generieren.</target>
+            </trans-unit>
+            <trans-unit id="bulk.message.creditExhausted" resname="bulk.message.creditExhausted" approved="yes">
+                <source>You have run out of AutoAlt.ai credits. Add more credits to your account to continue.</source>
+                <target>Ihr AutoAlt.ai-Guthaben ist aufgebraucht. Laden Sie Ihr Konto auf, um fortzufahren.</target>
+            </trans-unit>
+            <trans-unit id="bulk.message.noneEligible" resname="bulk.message.noneEligible" approved="yes">
+                <source>No eligible images were available to process.</source>
+                <target>Es waren keine geeigneten Bilder zur Verarbeitung verfügbar.</target>
+            </trans-unit>
+            <trans-unit id="bulk.message.noneMatchingSelection" resname="bulk.message.noneMatchingSelection" approved="yes">
+                <source>No matching images were found for the selected files.</source>
+                <target>Für die ausgewählten Dateien wurden keine passenden Bilder gefunden.</target>
+            </trans-unit>
+            <trans-unit id="bulk.message.selectionTruncated" resname="bulk.message.selectionTruncated" approved="yes">
+                <source>Only the first %1$d matching images were processed. Run the action again for the rest.</source>
+                <target>Nur die ersten %1$d passenden Bilder wurden verarbeitet. Führen Sie die Aktion für die übrigen erneut aus.</target>
+            </trans-unit>
+            <trans-unit id="ajax.noPermission" resname="ajax.noPermission" approved="yes">
+                <source>You do not have permission to generate alt text or update file metadata.</source>
+                <target>Sie haben keine Berechtigung, Alt-Texte zu generieren oder Dateimetadaten zu bearbeiten.</target>
+            </trans-unit>
+            <trans-unit id="ajax.processingFailed" resname="ajax.processingFailed" approved="yes">
+                <source>Batch processing failed: %s</source>
+                <target>Stapelverarbeitung fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="single.button" resname="single.button" approved="yes">
+                <source>Generate Alt Text - AutoAlt.ai</source>
+                <target>Alt-Text generieren – AutoAlt.ai</target>
+            </trans-unit>
+            <trans-unit id="single.invalidFile" resname="single.invalidFile" approved="yes">
+                <source>The selected file could not be found.</source>
+                <target>Die ausgewählte Datei wurde nicht gefunden.</target>
+            </trans-unit>
+            <trans-unit id="single.notAnImage" resname="single.notAnImage" approved="yes">
+                <source>AutoAlt.ai can only generate alt text for images.</source>
+                <target>AutoAlt.ai kann Alt-Texte nur für Bilder generieren.</target>
+            </trans-unit>
+            <trans-unit id="single.noApiKey" resname="single.noApiKey" approved="yes">
+                <source>Configure an AutoAlt.ai API key in Settings before generating alt text.</source>
+                <target>Konfigurieren Sie in den Einstellungen einen AutoAlt.ai-API-Schlüssel, bevor Sie Alt-Texte generieren.</target>
+            </trans-unit>
+            <trans-unit id="single.success" resname="single.success" approved="yes">
+                <source>Alt text generated. Remember to save the record.</source>
+                <target>Alt-Text generiert. Denken Sie daran, den Datensatz zu speichern.</target>
+            </trans-unit>
+            <trans-unit id="single.failed" resname="single.failed" approved="yes">
+                <source>Alt text generation failed.</source>
+                <target>Alt-Text-Generierung fehlgeschlagen.</target>
+            </trans-unit>
+            <trans-unit id="dashboard.defaultsPanel.title" resname="dashboard.defaultsPanel.title" approved="yes">
+                <source>Current Defaults</source>
+                <target>Aktuelle Vorgaben</target>
+            </trans-unit>
+            <trans-unit id="dashboard.defaults.apiKey" resname="dashboard.defaults.apiKey" approved="yes">
+                <source>API key</source>
+                <target>API-Schlüssel</target>
+            </trans-unit>
+            <trans-unit id="dashboard.defaults.writingStyle" resname="dashboard.defaults.writingStyle" approved="yes">
+                <source>Writing style</source>
+                <target>Schreibstil</target>
+            </trans-unit>
+            <trans-unit id="dashboard.defaults.imageExtensions" resname="dashboard.defaults.imageExtensions" approved="yes">
+                <source>Image extensions</source>
+                <target>Bilddateiendungen</target>
+            </trans-unit>
+            <trans-unit id="dashboard.defaults.configured" resname="dashboard.defaults.configured" approved="yes">
+                <source>Configured</source>
+                <target>Konfiguriert</target>
+            </trans-unit>
+            <trans-unit id="dashboard.defaults.missing" resname="dashboard.defaults.missing" approved="yes">
+                <source>Missing</source>
+                <target>Fehlt</target>
+            </trans-unit>
+            <trans-unit id="dashboard.defaults.allExtensions" resname="dashboard.defaults.allExtensions" approved="yes">
+                <source>All supported image types</source>
+                <target>Alle unterstützten Bildtypen</target>
+            </trans-unit>
+            <trans-unit id="js.processing" resname="js.processing" approved="yes">
+                <source>Processing images…</source>
+                <target>Bilder werden verarbeitet…</target>
+            </trans-unit>
+            <trans-unit id="js.stopping" resname="js.stopping" approved="yes">
+                <source>Stopping after the current batch…</source>
+                <target>Wird nach dem aktuellen Stapel gestoppt…</target>
+            </trans-unit>
+            <trans-unit id="js.requestFailed" resname="js.requestFailed" approved="yes">
+                <source>Batch processing request failed.</source>
+                <target>Anfrage zur Stapelverarbeitung fehlgeschlagen.</target>
+            </trans-unit>
+            <trans-unit id="js.processingFailed" resname="js.processingFailed" approved="yes">
+                <source>Batch processing failed.</source>
+                <target>Stapelverarbeitung fehlgeschlagen.</target>
+            </trans-unit>
+            <trans-unit id="js.noneAvailable" resname="js.noneAvailable" approved="yes">
+                <source>No eligible images were available in this batch.</source>
+                <target>In diesem Stapel waren keine geeigneten Bilder verfügbar.</target>
+            </trans-unit>
+            <trans-unit id="js.complete" resname="js.complete" approved="yes">
+                <source>Bulk generation is complete.</source>
+                <target>Stapelgenerierung abgeschlossen.</target>
+            </trans-unit>
+            <trans-unit id="js.creditExhausted" resname="js.creditExhausted" approved="yes">
+                <source>You have run out of AutoAlt.ai credits. Add more credits to your account to continue.</source>
+                <target>Ihr AutoAlt.ai-Guthaben ist aufgebraucht. Laden Sie Ihr Konto auf, um fortzufahren.</target>
+            </trans-unit>
+            <trans-unit id="settings.title" resname="settings.title" approved="yes">
+                <source>Settings</source>
+                <target>Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="settings.intro" resname="settings.intro" approved="yes">
+                <source>Configure the AutoAlt.ai connection, generation rules, and filters.</source>
+                <target>Konfigurieren Sie die AutoAlt.ai-Verbindung, Generierungsregeln und Filter.</target>
+            </trans-unit>
+            <trans-unit id="settings.nav.dashboard" resname="settings.nav.dashboard" approved="yes">
+                <source>Dashboard</source>
+                <target>Dashboard</target>
+            </trans-unit>
+            <trans-unit id="settings.nav.apiKeys" resname="settings.nav.apiKeys" approved="yes">
+                <source>Visit AutoAlt.ai</source>
+                <target>AutoAlt.ai besuchen</target>
+            </trans-unit>
+            <trans-unit id="settings.credits.short" resname="settings.credits.short" approved="yes">
+                <source>Credits</source>
+                <target>Guthaben</target>
+            </trans-unit>
+            <trans-unit id="settings.saved" resname="settings.saved" approved="yes">
+                <source>Settings saved.</source>
+                <target>Einstellungen gespeichert.</target>
+            </trans-unit>
+            <trans-unit id="settings.saved.description" resname="settings.saved.description" approved="yes">
+                <source>Your AutoAlt.ai settings have been saved successfully.</source>
+                <target>Ihre AutoAlt.ai-Einstellungen wurden erfolgreich gespeichert.</target>
+            </trans-unit>
+            <trans-unit id="settings.noPermission" resname="settings.noPermission" approved="yes">
+                <source>You do not have permission to change global AutoAlt.ai settings.</source>
+                <target>Sie haben keine Berechtigung, die globalen AutoAlt.ai-Einstellungen zu ändern.</target>
+            </trans-unit>
+            <trans-unit id="settings.apiKeyPlaceholder.configured" resname="settings.apiKeyPlaceholder.configured" approved="yes">
+                <source>Configured - leave blank to keep current key</source>
+                <target>Konfiguriert – leer lassen, um den aktuellen Schlüssel beizubehalten</target>
+            </trans-unit>
+            <trans-unit id="settings.apiKeyPlaceholder.empty" resname="settings.apiKeyPlaceholder.empty" approved="yes">
+                <source>Paste your AutoAlt.ai API key</source>
+                <target>AutoAlt.ai-API-Schlüssel einfügen</target>
+            </trans-unit>
+            <trans-unit id="connect.title" resname="connect.title" approved="yes">
+                <source>Welcome to AutoAlt.ai</source>
+                <target>Willkommen bei AutoAlt.ai</target>
+            </trans-unit>
+            <trans-unit id="connect.subtitle" resname="connect.subtitle" approved="yes">
+                <source>Generate AI alt text faster with your AutoAlt.ai account.</source>
+                <target>Generieren Sie mit Ihrem AutoAlt.ai-Konto schneller KI-Alt-Texte.</target>
+            </trans-unit>
+            <trans-unit id="connect.card.connect.title" resname="connect.card.connect.title" approved="yes">
+                <source>Connect API Key</source>
+                <target>API-Schlüssel verbinden</target>
+            </trans-unit>
+            <trans-unit id="connect.card.connect.subtitle" resname="connect.card.connect.subtitle" approved="yes">
+                <source>Already have an API key?</source>
+                <target>Haben Sie bereits einen API-Schlüssel?</target>
+            </trans-unit>
+            <trans-unit id="connect.field.apiKeyPlaceholder" resname="connect.field.apiKeyPlaceholder" approved="yes">
+                <source>Paste your AutoAlt.ai API key</source>
+                <target>AutoAlt.ai-API-Schlüssel einfügen</target>
+            </trans-unit>
+            <trans-unit id="connect.action.show" resname="connect.action.show" approved="yes">
+                <source>Show</source>
+                <target>Anzeigen</target>
+            </trans-unit>
+            <trans-unit id="connect.action.hide" resname="connect.action.hide" approved="yes">
+                <source>Hide</source>
+                <target>Ausblenden</target>
+            </trans-unit>
+            <trans-unit id="connect.action.connectAndSave" resname="connect.action.connectAndSave" approved="yes">
+                <source>Connect &amp; Save</source>
+                <target>Verbinden &amp; speichern</target>
+            </trans-unit>
+            <trans-unit id="connect.action.connecting" resname="connect.action.connecting" approved="yes">
+                <source>Connecting…</source>
+                <target>Verbindung wird hergestellt…</target>
+            </trans-unit>
+            <trans-unit id="connect.action.connected" resname="connect.action.connected" approved="yes">
+                <source>Connected</source>
+                <target>Verbunden</target>
+            </trans-unit>
+            <trans-unit id="connect.action.clearApiKey" resname="connect.action.clearApiKey" approved="yes">
+                <source>Clear API Key</source>
+                <target>API-Schlüssel entfernen</target>
+            </trans-unit>
+            <trans-unit id="connect.clearConfirm.title" resname="connect.clearConfirm.title" approved="yes">
+                <source>Clear the API key?</source>
+                <target>API-Schlüssel entfernen?</target>
+            </trans-unit>
+            <trans-unit id="connect.clearConfirm.subjectLabel" resname="connect.clearConfirm.subjectLabel" approved="yes">
+                <source>Connection</source>
+                <target>Verbindung</target>
+            </trans-unit>
+            <trans-unit id="connect.clearConfirm.subject" resname="connect.clearConfirm.subject" approved="yes">
+                <source>AutoAlt.ai API key</source>
+                <target>AutoAlt.ai-API-Schlüssel</target>
+            </trans-unit>
+            <trans-unit id="connect.clearConfirm" resname="connect.clearConfirm" approved="yes">
+                <source>You will need to reconnect to AutoAlt.ai before generating alt text again.</source>
+                <target>Sie müssen AutoAlt.ai erneut verbinden, bevor Sie wieder Alt-Texte generieren können.</target>
+            </trans-unit>
+            <trans-unit id="connect.apiKeyConnected" resname="connect.apiKeyConnected" approved="yes">
+                <source>API key connected successfully.</source>
+                <target>API-Schlüssel erfolgreich verbunden.</target>
+            </trans-unit>
+            <trans-unit id="connect.apiKeyCleared" resname="connect.apiKeyCleared" approved="yes">
+                <source>API key has been cleared.</source>
+                <target>API-Schlüssel wurde entfernt.</target>
+            </trans-unit>
+            <trans-unit id="connect.credit.usage" resname="connect.credit.usage" approved="yes">
+                <source>Your Credit Current Balance is %1$s / %2$s.</source>
+                <target>Ihr aktuelles Guthaben beträgt %1$s / %2$s.</target>
+            </trans-unit>
+            <trans-unit id="connect.credit.getMore" resname="connect.credit.getMore" approved="yes">
+                <source>Get additional credits from AutoAlt.ai</source>
+                <target>Zusätzliches Guthaben bei AutoAlt.ai erhalten</target>
+            </trans-unit>
+            <trans-unit id="connect.card.register.title" resname="connect.card.register.title" approved="yes">
+                <source>Login / Register</source>
+                <target>Anmelden / Registrieren</target>
+            </trans-unit>
+            <trans-unit id="connect.card.register.subtitle" resname="connect.card.register.subtitle" approved="yes">
+                <source>New user? Get your API key</source>
+                <target>Neu hier? API-Schlüssel erhalten</target>
+            </trans-unit>
+            <trans-unit id="connect.field.emailPlaceholder" resname="connect.field.emailPlaceholder" approved="yes">
+                <source>Enter Email ID</source>
+                <target>E-Mail-Adresse eingeben</target>
+            </trans-unit>
+            <trans-unit id="connect.action.sendCode" resname="connect.action.sendCode" approved="yes">
+                <source>Send Verification Code</source>
+                <target>Bestätigungscode senden</target>
+            </trans-unit>
+            <trans-unit id="connect.action.sending" resname="connect.action.sending" approved="yes">
+                <source>Sending…</source>
+                <target>Wird gesendet…</target>
+            </trans-unit>
+            <trans-unit id="connect.action.verifyOtp" resname="connect.action.verifyOtp" approved="yes">
+                <source>Verify OTP</source>
+                <target>Einmalcode bestätigen</target>
+            </trans-unit>
+            <trans-unit id="connect.action.verifying" resname="connect.action.verifying" approved="yes">
+                <source>Verifying…</source>
+                <target>Wird überprüft…</target>
+            </trans-unit>
+            <trans-unit id="connect.action.changeEmail" resname="connect.action.changeEmail" approved="yes">
+                <source>Change email</source>
+                <target>E-Mail-Adresse ändern</target>
+            </trans-unit>
+            <trans-unit id="connect.otp.expiresIn" resname="connect.otp.expiresIn" approved="yes">
+                <source>OTP expires in</source>
+                <target>Einmalcode läuft ab in</target>
+            </trans-unit>
+            <trans-unit id="connect.otp.expired" resname="connect.otp.expired" approved="yes">
+                <source>The verification code has expired. Please request a new one.</source>
+                <target>Der Bestätigungscode ist abgelaufen. Bitte fordern Sie einen neuen an.</target>
+            </trans-unit>
+            <trans-unit id="connect.action.resend" resname="connect.action.resend" approved="yes">
+                <source>Resend verification code</source>
+                <target>Bestätigungscode erneut senden</target>
+            </trans-unit>
+            <trans-unit id="connect.otpSent" resname="connect.otpSent" approved="yes">
+                <source>OTP sent to your email.</source>
+                <target>Einmalcode wurde an Ihre E-Mail-Adresse gesendet.</target>
+            </trans-unit>
+            <trans-unit id="connect.otpVerified" resname="connect.otpVerified" approved="yes">
+                <source>API key verified and saved successfully.</source>
+                <target>API-Schlüssel erfolgreich überprüft und gespeichert.</target>
+            </trans-unit>
+            <trans-unit id="connect.error.invalidEmail" resname="connect.error.invalidEmail" approved="yes">
+                <source>Please enter a valid email address.</source>
+                <target>Bitte geben Sie eine gültige E-Mail-Adresse ein.</target>
+            </trans-unit>
+            <trans-unit id="connect.error.emptyKey" resname="connect.error.emptyKey" approved="yes">
+                <source>Enter an API key before connecting.</source>
+                <target>Geben Sie vor dem Verbinden einen API-Schlüssel ein.</target>
+            </trans-unit>
+            <trans-unit id="connect.error.invalidKey" resname="connect.error.invalidKey" approved="yes">
+                <source>This API key could not be verified. Check the key and try again.</source>
+                <target>Dieser API-Schlüssel konnte nicht überprüft werden. Prüfen Sie den Schlüssel und versuchen Sie es erneut.</target>
+            </trans-unit>
+            <trans-unit id="connect.error.otpRequired" resname="connect.error.otpRequired" approved="yes">
+                <source>Enter the verification code.</source>
+                <target>Geben Sie den Bestätigungscode ein.</target>
+            </trans-unit>
+            <trans-unit id="connect.error.otpFormat" resname="connect.error.otpFormat" approved="yes">
+                <source>The verification code must be 6 digits.</source>
+                <target>Der Bestätigungscode muss aus 6 Ziffern bestehen.</target>
+            </trans-unit>
+            <trans-unit id="connect.error.otpVerifyFailed" resname="connect.error.otpVerifyFailed" approved="yes">
+                <source>The verification code could not be confirmed. Please try again.</source>
+                <target>Der Bestätigungscode konnte nicht bestätigt werden. Bitte versuchen Sie es erneut.</target>
+            </trans-unit>
+            <trans-unit id="settings.field.enabled" resname="settings.field.enabled" approved="yes">
+                <source>Enable AutoAlt.ai</source>
+                <target>AutoAlt.ai aktivieren</target>
+            </trans-unit>
+            <trans-unit id="settings.connectionState.connected" resname="settings.connectionState.connected" approved="yes">
+                <source>Connected</source>
+                <target>Verbunden</target>
+            </trans-unit>
+            <trans-unit id="settings.connectionState.needsApiKey" resname="settings.connectionState.needsApiKey" approved="yes">
+                <source>API key required</source>
+                <target>API-Schlüssel erforderlich</target>
+            </trans-unit>
+            <trans-unit id="settings.credit.usage" resname="settings.credit.usage" approved="yes">
+                <source>%1$s of %2$s credits available</source>
+                <target>%1$s von %2$s Guthabeneinheiten verfügbar</target>
+            </trans-unit>
+            <trans-unit id="settings.credit.low" resname="settings.credit.low" approved="yes">
+                <source>Running low on credits.</source>
+                <target>Ihr Guthaben wird knapp.</target>
+            </trans-unit>
+            <trans-unit id="settings.credit.upgrade" resname="settings.credit.upgrade" approved="yes">
+                <source>Upgrade plan</source>
+                <target>Tarif erweitern</target>
+            </trans-unit>
+            <trans-unit id="settings.status.connection" resname="settings.status.connection" approved="yes">
+                <source>Connection</source>
+                <target>Verbindung</target>
+            </trans-unit>
+            <trans-unit id="settings.status.credits" resname="settings.status.credits" approved="yes">
+                <source>Credits</source>
+                <target>Guthaben</target>
+            </trans-unit>
+            <trans-unit id="settings.status.stored" resname="settings.status.stored" approved="yes">
+                <source>Stored settings</source>
+                <target>Gespeicherte Einstellungen</target>
+            </trans-unit>
+            <trans-unit id="settings.summary.title" resname="settings.summary.title" approved="yes">
+                <source>Quick summary</source>
+                <target>Kurzübersicht</target>
+            </trans-unit>
+            <trans-unit id="settings.summary.intro" resname="settings.summary.intro" approved="yes">
+                <source>A compact overview of the current configuration.</source>
+                <target>Eine kompakte Übersicht der aktuellen Konfiguration.</target>
+            </trans-unit>
+            <trans-unit id="settings.summary.connection" resname="settings.summary.connection" approved="yes">
+                <source>Connection status</source>
+                <target>Verbindungsstatus</target>
+            </trans-unit>
+            <trans-unit id="settings.summary.formats" resname="settings.summary.formats" approved="yes">
+                <source>Formats</source>
+                <target>Formate</target>
+            </trans-unit>
+            <trans-unit id="settings.summary.allFormats" resname="settings.summary.allFormats" approved="yes">
+                <source>All supported formats</source>
+                <target>Alle unterstützten Formate</target>
+            </trans-unit>
+            <trans-unit id="settings.section.generationDefaults" resname="settings.section.generationDefaults" approved="yes">
+                <source>Generation Defaults</source>
+                <target>Generierungsvorgaben</target>
+            </trans-unit>
+            <trans-unit id="settings.field.writingStyle" resname="settings.field.writingStyle" approved="yes">
+                <source>Writing style</source>
+                <target>Schreibstil</target>
+            </trans-unit>
+            <trans-unit id="settings.field.minLength" resname="settings.field.minLength" approved="yes">
+                <source>Minimum characters</source>
+                <target>Mindestzeichenzahl</target>
+            </trans-unit>
+            <trans-unit id="settings.field.maxLength" resname="settings.field.maxLength" approved="yes">
+                <source>Maximum characters</source>
+                <target>Höchstzeichenzahl</target>
+            </trans-unit>
+            <trans-unit id="settings.length.title" resname="settings.length.title" approved="yes">
+                <source>Alt text length</source>
+                <target>Alt-Text-Länge</target>
+            </trans-unit>
+            <trans-unit id="settings.length.description" resname="settings.length.description" approved="yes">
+                <source>Control how concise or descriptive each generated alt text should be.</source>
+                <target>Legen Sie fest, wie kurz oder ausführlich die generierten Alt-Texte sein sollen.</target>
+            </trans-unit>
+            <trans-unit id="settings.length.minimumHint" resname="settings.length.minimumHint" approved="yes">
+                <source>Shortest acceptable result</source>
+                <target>Kürzestes zulässiges Ergebnis</target>
+            </trans-unit>
+            <trans-unit id="settings.length.maximumHint" resname="settings.length.maximumHint" approved="yes">
+                <source>Longest acceptable result</source>
+                <target>Längstes zulässiges Ergebnis</target>
+            </trans-unit>
+            <trans-unit id="settings.length.characters" resname="settings.length.characters" approved="yes">
+                <source>characters</source>
+                <target>Zeichen</target>
+            </trans-unit>
+            <trans-unit id="settings.length.recommended" resname="settings.length.recommended" approved="yes">
+                <source>Recommended: 125-150 characters.</source>
+                <target>Empfohlen: 125–150 Zeichen.</target>
+            </trans-unit>
+            <trans-unit id="settings.length.seoStatus.optimal" resname="settings.length.seoStatus.optimal" approved="yes">
+                <source>Optimal</source>
+                <target>Optimal</target>
+            </trans-unit>
+            <trans-unit id="settings.length.seoStatus.long" resname="settings.length.seoStatus.long" approved="yes">
+                <source>Long</source>
+                <target>Lang</target>
+            </trans-unit>
+            <trans-unit id="settings.length.seoStatus.short" resname="settings.length.seoStatus.short" approved="yes">
+                <source>Short</source>
+                <target>Kurz</target>
+            </trans-unit>
+            <trans-unit id="settings.field.prefix" resname="settings.field.prefix" approved="yes">
+                <source>Insert before the alt text</source>
+                <target>Vor dem Alt-Text einfügen</target>
+            </trans-unit>
+            <trans-unit id="settings.field.suffix" resname="settings.field.suffix" approved="yes">
+                <source>Insert after the alt text</source>
+                <target>Nach dem Alt-Text einfügen</target>
+            </trans-unit>
+            <trans-unit id="settings.affix.title" resname="settings.affix.title" approved="yes">
+                <source>Prefix and suffix</source>
+                <target>Präfix und Suffix</target>
+            </trans-unit>
+            <trans-unit id="settings.affix.description" resname="settings.affix.description" approved="yes">
+                <source>Add consistent text before or after every generated alt text.</source>
+                <target>Fügen Sie vor oder nach jedem generierten Alt-Text einen einheitlichen Text hinzu.</target>
+            </trans-unit>
+            <trans-unit id="settings.affix.prefixHint" resname="settings.affix.prefixHint" approved="yes">
+                <source>Placed at the beginning</source>
+                <target>Wird am Anfang eingefügt</target>
+            </trans-unit>
+            <trans-unit id="settings.affix.suffixHint" resname="settings.affix.suffixHint" approved="yes">
+                <source>Placed at the end</source>
+                <target>Wird am Ende eingefügt</target>
+            </trans-unit>
+            <trans-unit id="settings.affix.optional" resname="settings.affix.optional" approved="yes">
+                <source>Optional</source>
+                <target>Optional</target>
+            </trans-unit>
+            <trans-unit id="settings.affix.preview" resname="settings.affix.preview" approved="yes">
+                <source>Example</source>
+                <target>Beispiel</target>
+            </trans-unit>
+            <trans-unit id="settings.affix.previewText" resname="settings.affix.previewText" approved="yes">
+                <source>Generated alt text</source>
+                <target>Generierter Alt-Text</target>
+            </trans-unit>
+            <trans-unit id="settings.field.generateTitle" resname="settings.field.generateTitle" approved="yes">
+                <source>Also generate a title</source>
+                <target>Auch einen Titel generieren</target>
+            </trans-unit>
+            <trans-unit id="settings.field.generateDescription" resname="settings.field.generateDescription" approved="yes">
+                <source>Also generate a description</source>
+                <target>Auch eine Beschreibung generieren</target>
+            </trans-unit>
+            <trans-unit id="settings.section.seo" resname="settings.section.seo" approved="yes">
+                <source>SEO Guidance</source>
+                <target>SEO-Vorgaben</target>
+            </trans-unit>
+            <trans-unit id="settings.field.seoKeywords" resname="settings.field.seoKeywords" approved="yes">
+                <source>SEO keywords</source>
+                <target>SEO-Schlüsselwörter</target>
+            </trans-unit>
+            <trans-unit id="settings.field.negativeKeywords" resname="settings.field.negativeKeywords" approved="yes">
+                <source>Negative keywords</source>
+                <target>Auszuschließende Schlüsselwörter</target>
+            </trans-unit>
+            <trans-unit id="settings.field.customPrompt" resname="settings.field.customPrompt" approved="yes">
+                <source>Custom instructions</source>
+                <target>Eigene Anweisungen</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.description" resname="settings.seo.description" approved="yes">
+                <source>Guide the AI toward relevant wording and away from terms that do not fit your content.</source>
+                <target>Lenken Sie die KI auf passende Formulierungen und vermeiden Sie Begriffe, die nicht zu Ihren Inhalten passen.</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.keywordsHint" resname="settings.seo.keywordsHint" approved="yes">
+                <source>Words or phrases to emphasize</source>
+                <target>Hervorzuhebende Wörter oder Wortgruppen</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.keywordsPlaceholder" resname="settings.seo.keywordsPlaceholder" approved="yes">
+                <source>e.g. sustainable, handmade, premium</source>
+                <target>z. B. nachhaltig, handgefertigt, hochwertig</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.negativeKeywordsHint" resname="settings.seo.negativeKeywordsHint" approved="yes">
+                <source>Words or phrases the AI should avoid</source>
+                <target>Wörter oder Wortgruppen, die die KI vermeiden soll</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.negativeKeywordsPlaceholder" resname="settings.seo.negativeKeywordsPlaceholder" approved="yes">
+                <source>e.g. cheap, generic, stock photo</source>
+                <target>z. B. billig, generisch, Stockfoto</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.separateWithCommas" resname="settings.seo.separateWithCommas" approved="yes">
+                <source>Separate entries with commas</source>
+                <target>Einträge mit Kommas trennen</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.keywordCount" resname="settings.seo.keywordCount" approved="yes">
+                <source>%1$d / 6 keywords</source>
+                <target>%1$d / 6 Schlüsselwörter</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.customPromptHint" resname="settings.seo.customPromptHint" approved="yes">
+                <source>Add specific context, tone, or requirements for every generated alt text.</source>
+                <target>Ergänzen Sie Kontext, Tonfall oder Anforderungen für jeden generierten Alt-Text.</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.customPromptPlaceholder" resname="settings.seo.customPromptPlaceholder" approved="yes">
+                <source>e.g. Mention the product material and describe the setting in a natural sentence.</source>
+                <target>z. B. Nennen Sie das Produktmaterial und beschreiben Sie die Umgebung in einem natürlichen Satz.</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.customPromptTip" resname="settings.seo.customPromptTip" approved="yes">
+                <source>Keep instructions clear and concise for more consistent results.</source>
+                <target>Formulieren Sie Anweisungen klar und kurz, um einheitlichere Ergebnisse zu erhalten.</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.characterCount" resname="settings.seo.characterCount" approved="yes">
+                <source>%1$d characters</source>
+                <target>%1$d Zeichen</target>
+            </trans-unit>
+            <trans-unit id="settings.seo.customPromptCharacterCount" resname="settings.seo.customPromptCharacterCount" approved="yes">
+                <source>%1$d / %2$d characters</source>
+                <target>%1$d / %2$d Zeichen</target>
+            </trans-unit>
+            <trans-unit id="settings.validation.customPromptTooLong" resname="settings.validation.customPromptTooLong" approved="yes">
+                <source>Custom instructions must not exceed %1$d characters.</source>
+                <target>Eigene Anweisungen dürfen höchstens %1$d Zeichen enthalten.</target>
+            </trans-unit>
+            <trans-unit id="settings.section.automation" resname="settings.section.automation" approved="yes">
+                <source>Automation &amp; Filters</source>
+                <target>Automatisierung &amp; Filter</target>
+            </trans-unit>
+            <trans-unit id="settings.field.autoGenerateOnUpload" resname="settings.field.autoGenerateOnUpload" approved="yes">
+                <source>Auto-generate on upload</source>
+                <target>Beim Upload automatisch generieren</target>
+            </trans-unit>
+            <trans-unit id="settings.field.autoRenameOnUpload" resname="settings.field.autoRenameOnUpload" approved="yes">
+                <source>Automatically Rename Uploaded Image Files</source>
+                <target>Hochgeladene Bilddateien automatisch umbenennen</target>
+            </trans-unit>
+            <trans-unit id="settings.field.overwriteExistingAltText" resname="settings.field.overwriteExistingAltText" approved="yes">
+                <source>Overwrite existing alt text</source>
+                <target>Vorhandenen Alt-Text überschreiben</target>
+            </trans-unit>
+            <trans-unit id="settings.field.allowedImageExtensions" resname="settings.field.allowedImageExtensions" approved="yes">
+                <source>Which image formats should be processed?</source>
+                <target>Welche Bildformate sollen verarbeitet werden?</target>
+            </trans-unit>
+            <trans-unit id="settings.field.allowedImageExtensionsHelp" resname="settings.field.allowedImageExtensionsHelp" approved="yes">
+                <source>Leave all unselected to process every image format.</source>
+                <target>Wählen Sie kein Format aus, um alle Bildformate zu verarbeiten.</target>
+            </trans-unit>
+            <trans-unit id="settings.field.shortAltTextLength" resname="settings.field.shortAltTextLength" approved="yes">
+                <source>Short alt text length</source>
+                <target>Länge für kurze Alt-Texte</target>
+            </trans-unit>
+            <trans-unit id="settings.section.notifications" resname="settings.section.notifications" approved="yes">
+                <source>Notifications</source>
+                <target>Benachrichtigungen</target>
+            </trans-unit>
+            <trans-unit id="settings.field.notifyOnBulkComplete" resname="settings.field.notifyOnBulkComplete" approved="yes">
+                <source>Send an email when a bulk job finishes</source>
+                <target>E-Mail nach Abschluss eines Stapelauftrags senden</target>
+            </trans-unit>
+            <trans-unit id="settings.field.notificationEmail" resname="settings.field.notificationEmail" approved="yes">
+                <source>Notification email address</source>
+                <target>E-Mail-Adresse für Benachrichtigungen</target>
+            </trans-unit>
+            <trans-unit id="settings.field.notificationEmailHelp" resname="settings.field.notificationEmailHelp" approved="yes">
+                <source>Sent when a bulk generation run finishes.</source>
+                <target>Wird nach Abschluss einer Stapelgenerierung gesendet.</target>
+            </trans-unit>
+            <trans-unit id="settings.section.errorLogs" resname="settings.section.errorLogs" approved="yes">
+                <source>Error Logs</source>
+                <target>Fehlerprotokolle</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.description" resname="settings.errorLogs.description" approved="yes">
+                <source>Review recent API and processing issues from this extension.</source>
+                <target>Prüfen Sie aktuelle API- und Verarbeitungsprobleme dieser Erweiterung.</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.clear" resname="settings.errorLogs.clear" approved="yes">
+                <source>Clear logs</source>
+                <target>Protokolle löschen</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.cleared" resname="settings.errorLogs.cleared" approved="yes">
+                <source>Error logs cleared.</source>
+                <target>Fehlerprotokolle gelöscht.</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.clearedDescription" resname="settings.errorLogs.clearedDescription" approved="yes">
+                <source>All stored AutoAlt.ai error log entries have been removed.</source>
+                <target>Alle gespeicherten AutoAlt.ai-Fehlerprotokolleinträge wurden entfernt.</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.latest" resname="settings.errorLogs.latest" approved="yes">
+                <source>Showing up to the latest %1$d entries.</source>
+                <target>Die letzten maximal %1$d Einträge werden angezeigt.</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.emptyTitle" resname="settings.errorLogs.emptyTitle" approved="yes">
+                <source>Everything looks good</source>
+                <target>Alles sieht gut aus</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.empty" resname="settings.errorLogs.empty" approved="yes">
+                <source>No error logs yet. Recent plugin warnings and API issues will appear here.</source>
+                <target>Noch keine Fehlerprotokolle vorhanden. Aktuelle Erweiterungswarnungen und API-Probleme werden hier angezeigt.</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.clearConfirm.title" resname="settings.errorLogs.clearConfirm.title" approved="yes">
+                <source>Clear all error logs?</source>
+                <target>Alle Fehlerprotokolle löschen?</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.clearConfirm.subjectLabel" resname="settings.errorLogs.clearConfirm.subjectLabel" approved="yes">
+                <source>Logs</source>
+                <target>Protokolle</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.clearConfirm.subject" resname="settings.errorLogs.clearConfirm.subject" approved="yes">
+                <source>All recent error entries</source>
+                <target>Alle aktuellen Fehlereinträge</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.clearConfirm.message" resname="settings.errorLogs.clearConfirm.message" approved="yes">
+                <source>This removes the stored API and processing issues from the Error Logs panel.</source>
+                <target>Die gespeicherten API- und Verarbeitungsprobleme werden aus dem Bereich „Fehlerprotokolle“ entfernt.</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.clearConfirm.note" resname="settings.errorLogs.clearConfirm.note" approved="yes">
+                <source>This action cannot be undone.</source>
+                <target>Diese Aktion kann nicht rückgängig gemacht werden.</target>
+            </trans-unit>
+            <trans-unit id="settings.action.cancel" resname="settings.action.cancel" approved="yes">
+                <source>Cancel</source>
+                <target>Abbrechen</target>
+            </trans-unit>
+            <trans-unit id="settings.action.save" resname="settings.action.save" approved="yes">
+                <source>Save settings</source>
+                <target>Einstellungen speichern</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.default" resname="settings.writingStyle.default" approved="yes">
+                <source>Use account default</source>
+                <target>Kontovorgabe verwenden</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.neutral" resname="settings.writingStyle.neutral" approved="yes">
+                <source>Neutral – Clear, balanced, and objective</source>
+                <target>Neutral – Klar, ausgewogen und sachlich</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.friendly" resname="settings.writingStyle.friendly" approved="yes">
+                <source>Friendly – Warm, approachable, and informal</source>
+                <target>Freundlich – Herzlich, zugänglich und ungezwungen</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.professional" resname="settings.writingStyle.professional" approved="yes">
+                <source>Professional – Polished and business-appropriate</source>
+                <target>Professionell – Stilsicher und geschäftlich angemessen</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.casual" resname="settings.writingStyle.casual" approved="yes">
+                <source>Casual – Laid-back and conversational</source>
+                <target>Locker – Entspannt und alltagssprachlich</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.witty" resname="settings.writingStyle.witty" approved="yes">
+                <source>Witty – Clever, playful, with light humor</source>
+                <target>Geistreich – Clever, verspielt und leicht humorvoll</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.confident" resname="settings.writingStyle.confident" approved="yes">
+                <source>Confident – Assertive and bold</source>
+                <target>Selbstbewusst – Bestimmt und mutig</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.empathetic" resname="settings.writingStyle.empathetic" approved="yes">
+                <source>Empathetic – Sensitive and understanding</source>
+                <target>Einfühlsam – Sensibel und verständnisvoll</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.inspiring" resname="settings.writingStyle.inspiring" approved="yes">
+                <source>Inspiring – Motivational and uplifting</source>
+                <target>Inspirierend – Motivierend und ermutigend</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.technical" resname="settings.writingStyle.technical" approved="yes">
+                <source>Technical – Precise, jargon-friendly, and expert-level</source>
+                <target>Technisch – Präzise, fachsprachlich und auf Expertenniveau</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.minimalist" resname="settings.writingStyle.minimalist" approved="yes">
+                <source>Minimalist – Simple, clean, and concise</source>
+                <target>Minimalistisch – Einfach, klar und knapp</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.luxury" resname="settings.writingStyle.luxury" approved="yes">
+                <source>Luxury – Elegant and premium-sounding</source>
+                <target>Luxuriös – Elegant und hochwertig</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.youthful" resname="settings.writingStyle.youthful" approved="yes">
+                <source>Youthful – Trendy, fresh, and informal</source>
+                <target>Jugendlich – Trendbewusst, frisch und ungezwungen</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.quirky" resname="settings.writingStyle.quirky" approved="yes">
+                <source>Quirky – Fun, offbeat, and creative</source>
+                <target>Unkonventionell – Originell, ausgefallen und kreativ</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.persuasive" resname="settings.writingStyle.persuasive" approved="yes">
+                <source>Persuasive – Convincing and sales-driven</source>
+                <target>Überzeugend – Argumentativ und verkaufsorientiert</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.playful" resname="settings.writingStyle.playful" approved="yes">
+                <source>Playful – Light, cheerful, and energetic</source>
+                <target>Verspielt – Leicht, fröhlich und lebendig</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.storytelling" resname="settings.writingStyle.storytelling" approved="yes">
+                <source>Storytelling – Narrative and engaging</source>
+                <target>Erzählerisch – Anschaulich und fesselnd</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.elegant" resname="settings.writingStyle.elegant" approved="yes">
+                <source>Elegant – Refined and graceful</source>
+                <target>Elegant – Stilvoll und anmutig</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.bold" resname="settings.writingStyle.bold" approved="yes">
+                <source>Bold – Strong, impactful, and direct</source>
+                <target>Kühn – Kraftvoll, wirkungsvoll und direkt</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.humorous" resname="settings.writingStyle.humorous" approved="yes">
+                <source>Humorous – Funny and entertaining</source>
+                <target>Humorvoll – Lustig und unterhaltsam</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.descriptive" resname="settings.writingStyle.descriptive" approved="yes">
+                <source>Descriptive – Rich in detail and imagery</source>
+                <target>Beschreibend – Detailreich und bildhaft</target>
+            </trans-unit>
+            <trans-unit id="settings.writingStyle.brandCentric" resname="settings.writingStyle.brandCentric" approved="yes">
+                <source>Brand-centric – Tailored to your brand voice</source>
+                <target>Markenorientiert – Auf Ihre Markensprache abgestimmt</target>
+            </trans-unit>
+            <trans-unit id="settings.shortAltTextLength.20" resname="settings.shortAltTextLength.20" approved="yes">
+                <source>1-20 characters</source>
+                <target>1–20 Zeichen</target>
+            </trans-unit>
+            <trans-unit id="settings.shortAltTextLength.30" resname="settings.shortAltTextLength.30" approved="yes">
+                <source>1-30 characters</source>
+                <target>1–30 Zeichen</target>
+            </trans-unit>
+            <trans-unit id="settings.shortAltTextLength.40" resname="settings.shortAltTextLength.40" approved="yes">
+                <source>1-40 characters</source>
+                <target>1–40 Zeichen</target>
+            </trans-unit>
+            <trans-unit id="settings.shortAltTextLength.50" resname="settings.shortAltTextLength.50" approved="yes">
+                <source>1-50 characters</source>
+                <target>1–50 Zeichen</target>
+            </trans-unit>
+            <trans-unit id="history.title" resname="history.title" approved="yes">
+                <source>History</source>
+                <target>Verlauf</target>
+            </trans-unit>
+            <trans-unit id="history.intro" resname="history.intro" approved="yes">
+                <source>Review generated alt text, errors, and retry activity across bulk generation and upload automation.</source>
+                <target>Prüfen Sie generierte Alt-Texte, Fehler und erneute Verarbeitungsversuche aus Stapelgenerierung und Upload-Automatisierung.</target>
+            </trans-unit>
+            <trans-unit id="history.nav.dashboard" resname="history.nav.dashboard" approved="yes">
+                <source>Dashboard</source>
+                <target>Dashboard</target>
+            </trans-unit>
+            <trans-unit id="history.stat.total" resname="history.stat.total" approved="yes">
+                <source>Total entries</source>
+                <target>Einträge insgesamt</target>
+            </trans-unit>
+            <trans-unit id="history.stat.successful" resname="history.stat.successful" approved="yes">
+                <source>Successful</source>
+                <target>Erfolgreich</target>
+            </trans-unit>
+            <trans-unit id="history.stat.failed" resname="history.stat.failed" approved="yes">
+                <source>Failed</source>
+                <target>Fehlgeschlagen</target>
+            </trans-unit>
+            <trans-unit id="history.panel.title" resname="history.panel.title" approved="yes">
+                <source>Generation History</source>
+                <target>Generierungsverlauf</target>
+            </trans-unit>
+            <trans-unit id="history.filter.status.all" resname="history.filter.status.all" approved="yes">
+                <source>All statuses</source>
+                <target>Alle Status</target>
+            </trans-unit>
+            <trans-unit id="history.filter.status.success" resname="history.filter.status.success" approved="yes">
+                <source>Success</source>
+                <target>Erfolgreich</target>
+            </trans-unit>
+            <trans-unit id="history.filter.status.failed" resname="history.filter.status.failed" approved="yes">
+                <source>Failed</source>
+                <target>Fehlgeschlagen</target>
+            </trans-unit>
+            <trans-unit id="history.filter.source.all" resname="history.filter.source.all" approved="yes">
+                <source>All sources</source>
+                <target>Alle Quellen</target>
+            </trans-unit>
+            <trans-unit id="history.filter.source.bulk" resname="history.filter.source.bulk" approved="yes">
+                <source>Bulk generation</source>
+                <target>Stapelgenerierung</target>
+            </trans-unit>
+            <trans-unit id="history.filter.source.upload" resname="history.filter.source.upload" approved="yes">
+                <source>Auto upload</source>
+                <target>Automatischer Upload</target>
+            </trans-unit>
+            <trans-unit id="history.filter.source.manual" resname="history.filter.source.manual" approved="yes">
+                <source>Manual</source>
+                <target>Manuell</target>
+            </trans-unit>
+            <trans-unit id="history.filter.source.selection" resname="history.filter.source.selection" approved="yes">
+                <source>File list selection</source>
+                <target>Dateilistenauswahl</target>
+            </trans-unit>
+            <trans-unit id="history.filter.language.all" resname="history.filter.language.all" approved="yes">
+                <source>All languages</source>
+                <target>Alle Sprachen</target>
+            </trans-unit>
+            <trans-unit id="history.filter.search.label" resname="history.filter.search.label" approved="yes">
+                <source>Search images</source>
+                <target>Bilder suchen</target>
+            </trans-unit>
+            <trans-unit id="history.filter.search.placeholder" resname="history.filter.search.placeholder" approved="yes">
+                <source>Filename...</source>
+                <target>Dateiname…</target>
+            </trans-unit>
+            <trans-unit id="history.filter.language.label" resname="history.filter.language.label" approved="yes">
+                <source>Language</source>
+                <target>Sprache</target>
+            </trans-unit>
+            <trans-unit id="history.filter.submit" resname="history.filter.submit" approved="yes">
+                <source>Filter</source>
+                <target>Filtern</target>
+            </trans-unit>
+            <trans-unit id="history.filter.status.label" resname="history.filter.status.label" approved="yes">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="history.filter.source.label" resname="history.filter.source.label" approved="yes">
+                <source>Source</source>
+                <target>Quelle</target>
+            </trans-unit>
+            <trans-unit id="history.table.imageDetails" resname="history.table.imageDetails" approved="yes">
+                <source>Image Details &amp; Language</source>
+                <target>Bilddetails &amp; Sprache</target>
+            </trans-unit>
+            <trans-unit id="history.table.idLabel" resname="history.table.idLabel" approved="yes">
+                <source>ID:</source>
+                <target>ID:</target>
+            </trans-unit>
+            <trans-unit id="history.table.result" resname="history.table.result" approved="yes">
+                <source>Result</source>
+                <target>Ergebnis</target>
+            </trans-unit>
+            <trans-unit id="history.result.altText" resname="history.result.altText" approved="yes">
+                <source>Alt text</source>
+                <target>Alt-Text</target>
+            </trans-unit>
+            <trans-unit id="history.result.title" resname="history.result.title" approved="yes">
+                <source>Title</source>
+                <target>Titel</target>
+            </trans-unit>
+            <trans-unit id="history.result.description" resname="history.result.description" approved="yes">
+                <source>Description</source>
+                <target>Beschreibung</target>
+            </trans-unit>
+            <trans-unit id="history.badge.success" resname="history.badge.success" approved="yes">
+                <source>Success</source>
+                <target>Erfolgreich</target>
+            </trans-unit>
+            <trans-unit id="history.badge.failed" resname="history.badge.failed" approved="yes">
+                <source>Failed</source>
+                <target>Fehlgeschlagen</target>
+            </trans-unit>
+            <trans-unit id="history.action.retry" resname="history.action.retry" approved="yes">
+                <source>Retry</source>
+                <target>Erneut versuchen</target>
+            </trans-unit>
+            <trans-unit id="history.action.edit" resname="history.action.edit" approved="yes">
+                <source>Edit</source>
+                <target>Bearbeiten</target>
+            </trans-unit>
+            <trans-unit id="history.action.cancel" resname="history.action.cancel" approved="yes">
+                <source>Cancel</source>
+                <target>Abbrechen</target>
+            </trans-unit>
+            <trans-unit id="history.action.save" resname="history.action.save" approved="yes">
+                <source>Save</source>
+                <target>Speichern</target>
+            </trans-unit>
+            <trans-unit id="history.edit.saving" resname="history.edit.saving" approved="yes">
+                <source>Saving…</source>
+                <target>Wird gespeichert…</target>
+            </trans-unit>
+            <trans-unit id="history.edit.updated" resname="history.edit.updated" approved="yes">
+                <source>Alt text updated.</source>
+                <target>Alt-Text aktualisiert.</target>
+            </trans-unit>
+            <trans-unit id="history.edit.title.updated" resname="history.edit.title.updated" approved="yes">
+                <source>Title updated.</source>
+                <target>Titel aktualisiert.</target>
+            </trans-unit>
+            <trans-unit id="history.edit.description.updated" resname="history.edit.description.updated" approved="yes">
+                <source>Description updated.</source>
+                <target>Beschreibung aktualisiert.</target>
+            </trans-unit>
+            <trans-unit id="history.edit.empty" resname="history.edit.empty" approved="yes">
+                <source>Alt text cannot be empty.</source>
+                <target>Der Alt-Text darf nicht leer sein.</target>
+            </trans-unit>
+            <trans-unit id="history.edit.failed" resname="history.edit.failed" approved="yes">
+                <source>Could not save. Please try again.</source>
+                <target>Speichern fehlgeschlagen. Bitte versuchen Sie es erneut.</target>
+            </trans-unit>
+            <trans-unit id="history.edit.invalid" resname="history.edit.invalid" approved="yes">
+                <source>This entry could not be updated.</source>
+                <target>Dieser Eintrag konnte nicht aktualisiert werden.</target>
+            </trans-unit>
+            <trans-unit id="history.pagination.previous" resname="history.pagination.previous" approved="yes">
+                <source>Previous</source>
+                <target>Zurück</target>
+            </trans-unit>
+            <trans-unit id="history.pagination.next" resname="history.pagination.next" approved="yes">
+                <source>Next</source>
+                <target>Weiter</target>
+            </trans-unit>
+            <trans-unit id="history.pagination.page" resname="history.pagination.page" approved="yes">
+                <source>Page %1$d of %2$d</source>
+                <target>Seite %1$d von %2$d</target>
+            </trans-unit>
+            <trans-unit id="history.empty" resname="history.empty" approved="yes">
+                <source>No generation history yet. Entries appear here after bulk processing or upload automation runs.</source>
+                <target>Noch kein Generierungsverlauf vorhanden. Einträge erscheinen nach einer Stapelverarbeitung oder automatischen Upload-Verarbeitung.</target>
+            </trans-unit>
+            <trans-unit id="history.retry.success" resname="history.retry.success" approved="yes">
+                <source>The image was regenerated successfully.</source>
+                <target>Das Bild wurde erfolgreich erneut verarbeitet.</target>
+            </trans-unit>
+            <trans-unit id="history.retry.failure" resname="history.retry.failure" approved="yes">
+                <source>The image could not be regenerated. It may no longer exist, or the API request failed.</source>
+                <target>Das Bild konnte nicht erneut verarbeitet werden. Möglicherweise existiert es nicht mehr oder die API-Anfrage ist fehlgeschlagen.</target>
+            </trans-unit>
+            <trans-unit id="history.retry.noPermission" resname="history.retry.noPermission" approved="yes">
+                <source>You do not have permission to retry AutoAlt.ai generation.</source>
+                <target>Sie haben keine Berechtigung, die AutoAlt.ai-Generierung erneut auszuführen.</target>
+            </trans-unit>
+            <trans-unit id="selection.noFiles" resname="selection.noFiles" approved="yes">
+                <source>Select at least one file or folder before generating alt text.</source>
+                <target>Wählen Sie mindestens eine Datei oder einen Ordner aus, bevor Sie Alt-Texte generieren.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.button" resname="filelist.selection.button" approved="yes">
+                <source>Generate Alt Text - AutoAlt.ai</source>
+                <target>Alt-Text generieren – AutoAlt.ai</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.noImages" resname="filelist.selection.noImages" approved="yes">
+                <source>Select at least one image or folder. Other file types are skipped.</source>
+                <target>Wählen Sie mindestens ein Bild oder einen Ordner aus. Andere Dateitypen werden übersprungen.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.confirm.title" resname="filelist.selection.confirm.title" approved="yes">
+                <source>Generate alt text for selected images?</source>
+                <target>Alt-Texte für ausgewählte Bilder generieren?</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.confirm.subjectLabel" resname="filelist.selection.confirm.subjectLabel" approved="yes">
+                <source>Images</source>
+                <target>Bilder</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.confirm.subject" resname="filelist.selection.confirm.subject" approved="yes">
+                <source>%1$d selected</source>
+                <target>%1$d ausgewählt</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.confirm.cancel" resname="filelist.selection.confirm.cancel" approved="yes">
+                <source>Cancel</source>
+                <target>Abbrechen</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.confirm.ok" resname="filelist.selection.confirm.ok" approved="yes">
+                <source>Generate alt text</source>
+                <target>Alt-Text generieren</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.running" resname="filelist.selection.running" approved="yes">
+                <source>Generating alt text…</source>
+                <target>Alt-Text wird generiert…</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.failed" resname="filelist.selection.failed" approved="yes">
+                <source>Alt text generation failed.</source>
+                <target>Alt-Text-Generierung fehlgeschlagen.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.done" resname="filelist.selection.done" approved="yes">
+                <source>%1$d generated, %2$d failed.</source>
+                <target>%1$d generiert, %2$d fehlgeschlagen.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.resolving" resname="filelist.selection.resolving" approved="yes">
+                <source>Finding images…</source>
+                <target>Bilder werden gesucht…</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.resolveFailed" resname="filelist.selection.resolveFailed" approved="yes">
+                <source>Could not resolve the selected images.</source>
+                <target>Die ausgewählten Bilder konnten nicht ermittelt werden.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.confirm.note" resname="filelist.selection.confirm.note" approved="yes">
+                <source>Existing alt text will be overwritten. Keep this browser tab open until processing finishes.</source>
+                <target>Vorhandene Alt-Texte werden überschrieben. Lassen Sie diesen Browser-Tab bis zum Abschluss der Verarbeitung geöffnet.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.confirm.truncatedNote" resname="filelist.selection.confirm.truncatedNote" approved="yes">
+                <source>Only the first %d matching images will be processed - your selection contains more. Run this again afterwards for the rest.</source>
+                <target>Nur die ersten %d passenden Bilder werden verarbeitet; Ihre Auswahl enthält mehr. Führen Sie die Aktion anschließend erneut aus.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.progress.label" resname="filelist.selection.progress.label" approved="yes">
+                <source>%1$d of %2$d processed</source>
+                <target>%1$d von %2$d verarbeitet</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.beforeunload" resname="filelist.selection.beforeunload" approved="yes">
+                <source>AutoAlt.ai is still generating alt text. Anything not yet processed will be skipped if you leave now.</source>
+                <target>AutoAlt.ai generiert noch Alt-Texte. Wenn Sie die Seite jetzt verlassen, werden noch nicht verarbeitete Bilder übersprungen.</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.stoppedEarly" resname="filelist.selection.stoppedEarly" approved="yes">
+                <source>Stopped after %1$d of %2$d images: %3$s</source>
+                <target>Nach %1$d von %2$d Bildern gestoppt: %3$s</target>
+            </trans-unit>
+            <trans-unit id="filelist.selection.creditExhausted" resname="filelist.selection.creditExhausted" approved="yes">
+                <source>You have run out of AutoAlt.ai credits. Add more credits to your account to continue.</source>
+                <target>Ihr AutoAlt.ai-Guthaben ist aufgebraucht. Laden Sie Ihr Konto auf, um fortzufahren.</target>
+            </trans-unit>
+            <trans-unit id="module.rename.title" resname="module.rename.title" approved="yes">
+                <source>Bulk Rename Images</source>
+                <target>Bilder stapelweise umbenennen</target>
+            </trans-unit>
+            <trans-unit id="module.rename.shortDescription" resname="module.rename.shortDescription" approved="yes">
+                <source>Audit and rename image filenames</source>
+                <target>Bilddateinamen prüfen und umbenennen</target>
+            </trans-unit>
+            <trans-unit id="module.rename.description" resname="module.rename.description" approved="yes">
+                <source>Review weak filenames, rename images individually or in bulk, and undo previous renames.</source>
+                <target>Prüfen Sie ungeeignete Dateinamen, benennen Sie Bilder einzeln oder stapelweise um und machen Sie frühere Umbenennungen rückgängig.</target>
+            </trans-unit>
+            <trans-unit id="rename.intro" resname="rename.intro" approved="yes">
+                <source>Review weak filenames, rename images individually or in bulk, and undo previous renames.</source>
+                <target>Prüfen Sie ungeeignete Dateinamen, benennen Sie Bilder einzeln oder stapelweise um und machen Sie frühere Umbenennungen rückgängig.</target>
+            </trans-unit>
+            <trans-unit id="rename.intro.improved" resname="rename.intro.improved" approved="yes">
+                <source>Find weak filenames, review image details, rename safely, and undo previous changes from one place.</source>
+                <target>Finden Sie ungeeignete Dateinamen, prüfen Sie Bilddetails, benennen Sie Dateien sicher um und machen Sie frühere Änderungen zentral rückgängig.</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.total" resname="rename.stats.total" approved="yes">
+                <source>Total Images</source>
+                <target>Bilder insgesamt</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.poor" resname="rename.stats.poor" approved="yes">
+                <source>Poor File Names</source>
+                <target>Ungeeignete Dateinamen</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.attention" resname="rename.stats.attention" approved="yes">
+                <source>Needs Attention</source>
+                <target>Prüfung erforderlich</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.renamed" resname="rename.stats.renamed" approved="yes">
+                <source>Renamed Images</source>
+                <target>Umbenannte Bilder</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.credits" resname="rename.stats.credits" approved="yes">
+                <source>Available Credits</source>
+                <target>Verfügbares Guthaben</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.total.detail" resname="rename.stats.total.detail" approved="yes">
+                <source>Across all configured storages</source>
+                <target>In allen konfigurierten Dateispeichern</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.poor.detail" resname="rename.stats.poor.detail" approved="yes">
+                <source>%1$d%% have weak filenames</source>
+                <target>%1$d%% haben ungeeignete Dateinamen</target>
+            </trans-unit>
+            <trans-unit id="rename.stats.renamed.detail" resname="rename.stats.renamed.detail" approved="yes">
+                <source>%1$d%% of the library improved</source>
+                <target>%1$d%% der Medienbibliothek verbessert</target>
+            </trans-unit>
+            <trans-unit id="rename.credits.short" resname="rename.credits.short" approved="yes">
+                <source>credits</source>
+                <target>Guthaben</target>
+            </trans-unit>
+            <trans-unit id="rename.audit.title" resname="rename.audit.title" approved="yes">
+                <source>Filename Audit</source>
+                <target>Dateinamenprüfung</target>
+            </trans-unit>
+            <trans-unit id="rename.audit.description" resname="rename.audit.description" approved="yes">
+                <source>Review weak filenames, rename images individually, or undo the last rename.</source>
+                <target>Prüfen Sie ungeeignete Dateinamen, benennen Sie Bilder einzeln um oder machen Sie die letzte Umbenennung rückgängig.</target>
+            </trans-unit>
+            <trans-unit id="rename.audit.description.improved" resname="rename.audit.description.improved" approved="yes">
+                <source>Review filename quality and a complete, reversible history of changes.</source>
+                <target>Prüfen Sie die Qualität der Dateinamen und den vollständigen, rückgängig machbaren Änderungsverlauf.</target>
+            </trans-unit>
+            <trans-unit id="rename.tab.poor" resname="rename.tab.poor" approved="yes">
+                <source>Images with Poor Names</source>
+                <target>Bilder mit ungeeigneten Namen</target>
+            </trans-unit>
+            <trans-unit id="rename.tab.all" resname="rename.tab.all" approved="yes">
+                <source>All Images</source>
+                <target>Alle Bilder</target>
+            </trans-unit>
+            <trans-unit id="rename.tab.history" resname="rename.tab.history" approved="yes">
+                <source>Rename History</source>
+                <target>Umbenennungsverlauf</target>
+            </trans-unit>
+            <trans-unit id="rename.search.placeholder" resname="rename.search.placeholder" approved="yes">
+                <source>Search by filename or ID...</source>
+                <target>Nach Dateiname oder ID suchen…</target>
+            </trans-unit>
+            <trans-unit id="rename.filters.title" resname="rename.filters.title" approved="yes">
+                <source>Filters</source>
+                <target>Filter</target>
+            </trans-unit>
+            <trans-unit id="rename.filters.referenced" resname="rename.filters.referenced" approved="yes">
+                <source>Referenced images only</source>
+                <target>Nur referenzierte Bilder</target>
+            </trans-unit>
+            <trans-unit id="rename.filters.referenced.help" resname="rename.filters.referenced.help" approved="yes">
+                <source>Show only files currently referenced by TYPO3 content or records.</source>
+                <target>Nur Dateien anzeigen, die aktuell von TYPO3-Inhalten oder -Datensätzen referenziert werden.</target>
+            </trans-unit>
+            <trans-unit id="rename.filters.processed" resname="rename.filters.processed" approved="yes">
+                <source>Skip processed by AutoAlt.ai</source>
+                <target>Von AutoAlt.ai verarbeitete Bilder überspringen</target>
+            </trans-unit>
+            <trans-unit id="rename.filters.processed.help" resname="rename.filters.processed.help" approved="yes">
+                <source>Show only images that have not previously been renamed by AutoAlt.ai.</source>
+                <target>Nur Bilder anzeigen, die noch nicht von AutoAlt.ai umbenannt wurden.</target>
+            </trans-unit>
+            <trans-unit id="rename.column.selectAll" resname="rename.column.selectAll" approved="yes">
+                <source>Select all visible eligible images</source>
+                <target>Alle sichtbaren geeigneten Bilder auswählen</target>
+            </trans-unit>
+            <trans-unit id="rename.column.uid" resname="rename.column.uid" approved="yes">
+                <source>UID</source>
+                <target>UID</target>
+            </trans-unit>
+            <trans-unit id="rename.column.image" resname="rename.column.image" approved="yes">
+                <source>Image</source>
+                <target>Bild</target>
+            </trans-unit>
+            <trans-unit id="rename.column.imageDetails" resname="rename.column.imageDetails" approved="yes">
+                <source>Image details</source>
+                <target>Bilddetails</target>
+            </trans-unit>
+            <trans-unit id="rename.column.filename" resname="rename.column.filename" approved="yes">
+                <source>Filename</source>
+                <target>Dateiname</target>
+            </trans-unit>
+            <trans-unit id="rename.column.path" resname="rename.column.path" approved="yes">
+                <source>File identifier or relative path</source>
+                <target>Dateikennung oder relativer Pfad</target>
+            </trans-unit>
+            <trans-unit id="rename.column.status" resname="rename.column.status" approved="yes">
+                <source>Status</source>
+                <target>Status</target>
+            </trans-unit>
+            <trans-unit id="rename.column.actions" resname="rename.column.actions" approved="yes">
+                <source>Actions</source>
+                <target>Aktionen</target>
+            </trans-unit>
+            <trans-unit id="rename.status.good" resname="rename.status.good" approved="yes">
+                <source>Good filename</source>
+                <target>Geeigneter Dateiname</target>
+            </trans-unit>
+            <trans-unit id="rename.status.poor" resname="rename.status.poor" approved="yes">
+                <source>Poor filename</source>
+                <target>Ungeeigneter Dateiname</target>
+            </trans-unit>
+            <trans-unit id="rename.status.renamed" resname="rename.status.renamed" approved="yes">
+                <source>Renamed by AutoAlt.ai</source>
+                <target>Von AutoAlt.ai umbenannt</target>
+            </trans-unit>
+            <trans-unit id="rename.status.unsupported" resname="rename.status.unsupported" approved="yes">
+                <source>Unsupported</source>
+                <target>Nicht unterstützt</target>
+            </trans-unit>
+            <trans-unit id="rename.status.read_only" resname="rename.status.read_only" approved="yes">
+                <source>Read-only storage</source>
+                <target>Schreibgeschützter Dateispeicher</target>
+            </trans-unit>
+            <trans-unit id="rename.status.error" resname="rename.status.error" approved="yes">
+                <source>Error</source>
+                <target>Fehler</target>
+            </trans-unit>
+            <trans-unit id="rename.action.manual" resname="rename.action.manual" approved="yes">
+                <source>Manual Rename</source>
+                <target>Manuell umbenennen</target>
+            </trans-unit>
+            <trans-unit id="rename.action.ai" resname="rename.action.ai" approved="yes">
+                <source>AI Rename</source>
+                <target>Mit KI umbenennen</target>
+            </trans-unit>
+            <trans-unit id="rename.action.undo" resname="rename.action.undo" approved="yes">
+                <source>Undo</source>
+                <target>Rückgängig</target>
+            </trans-unit>
+            <trans-unit id="rename.action.open" resname="rename.action.open" approved="yes">
+                <source>Open</source>
+                <target>Öffnen</target>
+            </trans-unit>
+            <trans-unit id="rename.action.confirm" resname="rename.action.confirm" approved="yes">
+                <source>Confirm</source>
+                <target>Bestätigen</target>
+            </trans-unit>
+            <trans-unit id="rename.action.cancel" resname="rename.action.cancel" approved="yes">
+                <source>Cancel</source>
+                <target>Abbrechen</target>
+            </trans-unit>
+            <trans-unit id="rename.manual.current" resname="rename.manual.current" approved="yes">
+                <source>Current filename</source>
+                <target>Aktueller Dateiname</target>
+            </trans-unit>
+            <trans-unit id="rename.manual.preview" resname="rename.manual.preview" approved="yes">
+                <source>Normalized filename preview</source>
+                <target>Vorschau des normalisierten Dateinamens</target>
+            </trans-unit>
+            <trans-unit id="rename.manual.invalid" resname="rename.manual.invalid" approved="yes">
+                <source>Invalid filename</source>
+                <target>Ungültiger Dateiname</target>
+            </trans-unit>
+            <trans-unit id="rename.bulk.selected" resname="rename.bulk.selected" approved="yes">
+                <source>AI Rename Selected (%1$d)</source>
+                <target>Auswahl mit KI umbenennen (%1$d)</target>
+            </trans-unit>
+            <trans-unit id="rename.bulk.visible" resname="rename.bulk.visible" approved="yes">
+                <source>AI Rename Visible (%1$d)</source>
+                <target>Sichtbare mit KI umbenennen (%1$d)</target>
+            </trans-unit>
+            <trans-unit id="rename.bulk.done" resname="rename.bulk.done" approved="yes">
+                <source>%1$d successful, %2$d failed, %3$d skipped.</source>
+                <target>%1$d erfolgreich, %2$d fehlgeschlagen, %3$d übersprungen.</target>
+            </trans-unit>
+            <trans-unit id="rename.progress.label" resname="rename.progress.label" approved="yes">
+                <source>%1$d of %2$d processed</source>
+                <target>%1$d von %2$d verarbeitet</target>
+            </trans-unit>
+            <trans-unit id="rename.progress.summary" resname="rename.progress.summary" approved="yes">
+                <source>%1$d successful · %2$d failed · %3$d skipped</source>
+                <target>%1$d erfolgreich · %2$d fehlgeschlagen · %3$d übersprungen</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.imageLabel" resname="rename.confirm.imageLabel" approved="yes">
+                <source>Image</source>
+                <target>Bild</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.ai.title" resname="rename.confirm.ai.title" approved="yes">
+                <source>Rename this image with AI?</source>
+                <target>Dieses Bild mit KI umbenennen?</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.ai.note" resname="rename.confirm.ai.note" approved="yes">
+                <source>This action may use 1 credit. You can undo the rename from Rename History.</source>
+                <target>Diese Aktion kann eine Guthabeneinheit verbrauchen. Sie können die Umbenennung im Umbenennungsverlauf rückgängig machen.</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.ai.action" resname="rename.confirm.ai.action" approved="yes">
+                <source>Rename with AI</source>
+                <target>Mit KI umbenennen</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.undo.title" resname="rename.confirm.undo.title" approved="yes">
+                <source>Undo this rename?</source>
+                <target>Diese Umbenennung rückgängig machen?</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.undo.message" resname="rename.confirm.undo.message" approved="yes">
+                <source>The immediately previous filename will be restored and TYPO3 file references will remain connected.</source>
+                <target>Der unmittelbar vorherige Dateiname wird wiederhergestellt. TYPO3-Dateireferenzen bleiben verbunden.</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.undo.note" resname="rename.confirm.undo.note" approved="yes">
+                <source>This action does not use an API credit.</source>
+                <target>Diese Aktion verbraucht kein API-Guthaben.</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.undo.action" resname="rename.confirm.undo.action" approved="yes">
+                <source>Undo rename</source>
+                <target>Umbenennung rückgängig machen</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.bulk.title" resname="rename.confirm.bulk.title" approved="yes">
+                <source>Rename these images with AI?</source>
+                <target>Diese Bilder mit KI umbenennen?</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.bulk.message" resname="rename.confirm.bulk.message" approved="yes">
+                <source>%1$d images will be renamed one at a time with SEO-friendly filenames.</source>
+                <target>%1$d Bilder werden nacheinander mit SEO-freundlichen Dateinamen umbenannt.</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.bulk.note" resname="rename.confirm.bulk.note" approved="yes">
+                <source>Keep this tab open until processing finishes. Up to %1$d credits may be used.</source>
+                <target>Lassen Sie diesen Tab bis zum Abschluss der Verarbeitung geöffnet. Es können bis zu %1$d Guthabeneinheiten verbraucht werden.</target>
+            </trans-unit>
+            <trans-unit id="rename.confirm.bulk.action" resname="rename.confirm.bulk.action" approved="yes">
+                <source>Rename %1$d images</source>
+                <target>%1$d Bilder umbenennen</target>
+            </trans-unit>
+            <trans-unit id="rename.message.manualSuccess" resname="rename.message.manualSuccess" approved="yes">
+                <source>Filename updated successfully.</source>
+                <target>Dateiname erfolgreich aktualisiert.</target>
+            </trans-unit>
+            <trans-unit id="rename.message.aiSuccess" resname="rename.message.aiSuccess" approved="yes">
+                <source>AI filename generated and applied successfully.</source>
+                <target>KI-Dateiname erfolgreich generiert und angewendet.</target>
+            </trans-unit>
+            <trans-unit id="rename.message.undoSuccess" resname="rename.message.undoSuccess" approved="yes">
+                <source>Image rename undone successfully.</source>
+                <target>Bildumbenennung erfolgreich rückgängig gemacht.</target>
+            </trans-unit>
+            <trans-unit id="rename.message.failed" resname="rename.message.failed" approved="yes">
+                <source>The image could not be renamed.</source>
+                <target>Das Bild konnte nicht umbenannt werden.</target>
+            </trans-unit>
+            <trans-unit id="rename.empty" resname="rename.empty" approved="yes">
+                <source>No images match the selected tab, search, and filters.</source>
+                <target>Keine Bilder entsprechen dem ausgewählten Tab, Suchbegriff und den Filtern.</target>
+            </trans-unit>
+            <trans-unit id="rename.empty.title" resname="rename.empty.title" approved="yes">
+                <source>No matching images</source>
+                <target>Keine passenden Bilder</target>
+            </trans-unit>
+            <trans-unit id="rename.itemsPerPage" resname="rename.itemsPerPage" approved="yes">
+                <source>Items per page:</source>
+                <target>Einträge pro Seite:</target>
+            </trans-unit>
+            <trans-unit id="rename.pagination.label" resname="rename.pagination.label" approved="yes">
+                <source>Table pages</source>
+                <target>Tabellenseiten</target>
+            </trans-unit>
+            <trans-unit id="rename.pagination.previous" resname="rename.pagination.previous" approved="yes">
+                <source>Previous page</source>
+                <target>Vorherige Seite</target>
+            </trans-unit>
+            <trans-unit id="rename.pagination.next" resname="rename.pagination.next" approved="yes">
+                <source>Next page</source>
+                <target>Nächste Seite</target>
+            </trans-unit>
+            <trans-unit id="rename.pagination.previousShort" resname="rename.pagination.previousShort" approved="yes">
+                <source>Prev</source>
+                <target>Zurück</target>
+            </trans-unit>
+            <trans-unit id="rename.pagination.nextShort" resname="rename.pagination.nextShort" approved="yes">
+                <source>Next</source>
+                <target>Weiter</target>
+            </trans-unit>
+            <trans-unit id="rename.pagination.images" resname="rename.pagination.images" approved="yes">
+                <source>Showing %1$d–%2$d of %3$d images</source>
+                <target>%1$d–%2$d von %3$d Bildern</target>
+            </trans-unit>
+            <trans-unit id="rename.pagination.history" resname="rename.pagination.history" approved="yes">
+                <source>Showing %1$d–%2$d of %3$d history entries</source>
+                <target>%1$d–%2$d von %3$d Verlaufseinträgen</target>
+            </trans-unit>
+            <trans-unit id="rename.history.original" resname="rename.history.original" approved="yes">
+                <source>Original filename</source>
+                <target>Ursprünglicher Dateiname</target>
+            </trans-unit>
+            <trans-unit id="rename.history.new" resname="rename.history.new" approved="yes">
+                <source>New filename</source>
+                <target>Neuer Dateiname</target>
+            </trans-unit>
+            <trans-unit id="rename.history.change" resname="rename.history.change" approved="yes">
+                <source>Filename change</source>
+                <target>Dateinamenänderung</target>
+            </trans-unit>
+            <trans-unit id="rename.history.method" resname="rename.history.method" approved="yes">
+                <source>Method</source>
+                <target>Methode</target>
+            </trans-unit>
+            <trans-unit id="rename.history.date" resname="rename.history.date" approved="yes">
+                <source>Rename date</source>
+                <target>Datum der Umbenennung</target>
+            </trans-unit>
+            <trans-unit id="rename.history.user" resname="rename.history.user" approved="yes">
+                <source>Backend user</source>
+                <target>Backend-Benutzer</target>
+            </trans-unit>
+            <trans-unit id="rename.method.ai" resname="rename.method.ai" approved="yes">
+                <source>AI</source>
+                <target>KI</target>
+            </trans-unit>
+            <trans-unit id="rename.method.auto" resname="rename.method.auto" approved="yes">
+                <source>Automatic upload</source>
+                <target>Automatischer Upload</target>
+            </trans-unit>
+            <trans-unit id="rename.method.manual" resname="rename.method.manual" approved="yes">
+                <source>Manual</source>
+                <target>Manuell</target>
+            </trans-unit>
+            <trans-unit id="rename.method.undo" resname="rename.method.undo" approved="yes">
+                <source>Undo</source>
+                <target>Rückgängig</target>
+            </trans-unit>
+            <trans-unit id="settings.connectionState.invalid" resname="settings.connectionState.invalid" approved="yes">
+                <source>Invalid connection</source>
+                <target>Ungültige Verbindung</target>
+            </trans-unit>
+            <trans-unit id="bulk.progress.count" resname="bulk.progress.count" approved="yes">
+                <source>%1$d of %2$d</source>
+                <target>%1$d von %2$d</target>
+            </trans-unit>
+            <trans-unit id="bulk.message.metadataUpdated" resname="bulk.message.metadataUpdated" approved="yes">
+                <source>Metadata updated.</source>
+                <target>Metadaten aktualisiert.</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.level.error" resname="settings.errorLogs.level.error" approved="yes">
+                <source>error</source>
+                <target>Fehler</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.level.warning" resname="settings.errorLogs.level.warning" approved="yes">
+                <source>warning</source>
+                <target>Warnung</target>
+            </trans-unit>
+            <trans-unit id="settings.errorLogs.level.info" resname="settings.errorLogs.level.info" approved="yes">
+                <source>info</source>
+                <target>Information</target>
+            </trans-unit>
+            <trans-unit id="settings.error.invalidFormToken" resname="settings.error.invalidFormToken" approved="yes">
+                <source>Invalid form token. Reopen the settings page.</source>
+                <target>Ungültiges Formulartoken. Öffnen Sie die Einstellungsseite erneut.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.error.adminRequired" resname="diagnostics.error.adminRequired" approved="yes">
+                <source>Administrator access is required.</source>
+                <target>Administratorzugriff ist erforderlich.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.error.methodNotAllowed" resname="diagnostics.error.methodNotAllowed" approved="yes">
+                <source>Method not allowed.</source>
+                <target>Methode nicht zulässig.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.error.invalidFormToken" resname="diagnostics.error.invalidFormToken" approved="yes">
+                <source>Invalid form token. Reopen the diagnostic review.</source>
+                <target>Ungültiges Formulartoken. Öffnen Sie die Diagnosevorschau erneut.</target>
+            </trans-unit>
+            <trans-unit id="diagnostics.error.invalidAction" resname="diagnostics.error.invalidAction" approved="yes">
+                <source>Invalid diagnostic action.</source>
+                <target>Ungültige Diagnoseaktion.</target>
+            </trans-unit>
+            <trans-unit id="notification.bulk.subject" resname="notification.bulk.subject" approved="yes">
+                <source>AutoAlt.ai: Bulk alt text generation finished</source>
+                <target>AutoAlt.ai: Stapelgenerierung der Alt-Texte abgeschlossen</target>
+            </trans-unit>
+            <trans-unit xml:space="preserve" id="notification.bulk.body" resname="notification.bulk.body" approved="yes">
+                <source>Your AutoAlt.ai bulk generation queue has finished processing.
+
+Total images: %d
+Completed successfully: %d
+Failed: %d
+</source>
+                <target>Ihre AutoAlt.ai-Stapelgenerierung ist abgeschlossen.
+
+Bilder insgesamt: %d
+Erfolgreich abgeschlossen: %d
+Fehlgeschlagen: %d
+</target>
+            </trans-unit>
+            <trans-unit id="error.api.requestFailed" resname="error.api.requestFailed" approved="yes">
+                <source>AutoAlt.ai API request failed. Please try again later.</source>
+                <target>AutoAlt.ai-API-Anfrage fehlgeschlagen. Bitte versuchen Sie es später erneut.</target>
+            </trans-unit>
+            <trans-unit id="error.api.invalidJson" resname="error.api.invalidJson" approved="yes">
+                <source>AutoAlt.ai returned invalid JSON.</source>
+                <target>AutoAlt.ai hat ungültiges JSON zurückgegeben.</target>
+            </trans-unit>
+            <trans-unit id="error.api.emptyAltText" resname="error.api.emptyAltText" approved="yes">
+                <source>AutoAlt.ai returned an empty alt text response.</source>
+                <target>AutoAlt.ai hat keinen Alt-Text zurückgegeben.</target>
+            </trans-unit>
+            <trans-unit id="error.api.emptyTranslation" resname="error.api.emptyTranslation" approved="yes">
+                <source>AutoAlt.ai returned an empty translation.</source>
+                <target>AutoAlt.ai hat keine Übersetzung zurückgegeben.</target>
+            </trans-unit>
+            <trans-unit id="error.image.noPermission" resname="error.image.noPermission" approved="yes">
+                <source>You do not have permission to generate alt text for this image.</source>
+                <target>Sie haben keine Berechtigung, Alt-Text für dieses Bild zu generieren.</target>
+            </trans-unit>
+            <trans-unit id="error.image.missing" resname="error.image.missing" approved="yes">
+                <source>Image #%d no longer exists.</source>
+                <target>Bild Nr. %d existiert nicht mehr.</target>
+            </trans-unit>
+            <trans-unit id="error.image.unreadable" resname="error.image.unreadable" approved="yes">
+                <source>File contents could not be read for image #%d.</source>
+                <target>Der Dateiinhalt für Bild Nr. %d konnte nicht gelesen werden.</target>
+            </trans-unit>
+            <trans-unit id="error.diagnostics.noApiKey" resname="error.diagnostics.noApiKey" approved="yes">
+                <source>Connect an AutoAlt.ai API key before sending diagnostics.</source>
+                <target>Verbinden Sie einen AutoAlt.ai-API-Schlüssel, bevor Sie Diagnosedaten senden.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.noApiKey" resname="error.rename.noApiKey" approved="yes">
+                <source>Connect an AutoAlt.ai API key before using AI rename.</source>
+                <target>Verbinden Sie einen AutoAlt.ai-API-Schlüssel, bevor Sie Dateien mit KI umbenennen.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.invalidRequest" resname="error.rename.invalidRequest" approved="yes">
+                <source>Invalid rename request.</source>
+                <target>Ungültige Umbenennungsanfrage.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.busy" resname="error.rename.busy" approved="yes">
+                <source>This file is already being processed.</source>
+                <target>Diese Datei wird bereits verarbeitet.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.invalidUpload" resname="error.rename.invalidUpload" approved="yes">
+                <source>The uploaded file has no valid TYPO3 file UID.</source>
+                <target>Die hochgeladene Datei hat keine gültige TYPO3-Datei-UID.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.invalidUid" resname="error.rename.invalidUid" approved="yes">
+                <source>Invalid file UID.</source>
+                <target>Ungültige Datei-UID.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.noUndo" resname="error.rename.noUndo" approved="yes">
+                <source>No valid rename is available to undo.</source>
+                <target>Es ist keine gültige Umbenennung zum Rückgängigmachen vorhanden.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.nameOccupied" resname="error.rename.nameOccupied" approved="yes">
+                <source>The previous filename is already occupied and cannot be restored.</source>
+                <target>Der vorherige Dateiname ist bereits belegt und kann nicht wiederhergestellt werden.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.applyFailed" resname="error.rename.applyFailed" approved="yes">
+                <source>TYPO3 could not apply the requested filename.</source>
+                <target>TYPO3 konnte den gewünschten Dateinamen nicht anwenden.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.historyFailed" resname="error.rename.historyFailed" approved="yes">
+                <source>Rename history could not be saved; the file rename was rolled back.</source>
+                <target>Der Umbenennungsverlauf konnte nicht gespeichert werden; die Dateiumbenennung wurde rückgängig gemacht.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.fileMissing" resname="error.rename.fileMissing" approved="yes">
+                <source>The physical file is missing.</source>
+                <target>Die physische Datei fehlt.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.unsupported" resname="error.rename.unsupported" approved="yes">
+                <source>The file is not a supported image.</source>
+                <target>Die Datei ist kein unterstütztes Bild.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.unsupportedType" resname="error.rename.unsupportedType" approved="yes">
+                <source>This image type is not supported.</source>
+                <target>Dieser Bildtyp wird nicht unterstützt.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.storageOffline" resname="error.rename.storageOffline" approved="yes">
+                <source>The file storage is offline.</source>
+                <target>Der Dateispeicher ist offline.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.storageReadOnly" resname="error.rename.storageReadOnly" approved="yes">
+                <source>The file storage is read-only.</source>
+                <target>Der Dateispeicher ist schreibgeschützt.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.noPermission" resname="error.rename.noPermission" approved="yes">
+                <source>You do not have permission to rename this file.</source>
+                <target>Sie haben keine Berechtigung, diese Datei umzubenennen.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.emptyFilename" resname="error.rename.emptyFilename" approved="yes">
+                <source>AutoAlt.ai did not return a filename. The file was not changed.</source>
+                <target>AutoAlt.ai hat keinen Dateinamen zurückgegeben. Die Datei wurde nicht geändert.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.aiFailed" resname="error.rename.aiFailed" approved="yes">
+                <source>AI rename failed.</source>
+                <target>KI-Umbenennung fehlgeschlagen.</target>
+            </trans-unit>
+            <trans-unit id="error.rename.failed" resname="error.rename.failed" approved="yes">
+                <source>The file could not be renamed.</source>
+                <target>Die Datei konnte nicht umbenannt werden.</target>
+            </trans-unit>
+            <trans-unit id="error.filename.invalid" resname="error.filename.invalid" approved="yes">
+                <source>Invalid filename. Enter a basename without a path.</source>
+                <target>Ungültiger Dateiname. Geben Sie einen Dateinamen ohne Pfad ein.</target>
+            </trans-unit>
+            <trans-unit id="error.filename.pathTraversal" resname="error.filename.pathTraversal" approved="yes">
+                <source>Path traversal is not allowed in filenames.</source>
+                <target>Pfadwechsel sind in Dateinamen nicht zulässig.</target>
+            </trans-unit>
+            <trans-unit id="error.filename.reserved" resname="error.filename.reserved" approved="yes">
+                <source>The filename is empty or reserved after normalization.</source>
+                <target>Der Dateiname ist nach der Normalisierung leer oder reserviert.</target>
+            </trans-unit>
+            <trans-unit id="error.filename.empty" resname="error.filename.empty" approved="yes">
+                <source>The normalized filename is empty.</source>
+                <target>Der normalisierte Dateiname ist leer.</target>
+            </trans-unit>
+            <trans-unit id="error.filename.noAvailableName" resname="error.filename.noAvailableName" approved="yes">
+                <source>No available filename could be found.</source>
+                <target>Es wurde kein verfügbarer Dateiname gefunden.</target>
+            </trans-unit>
+            <trans-unit id="error.metadata.translationRequired" resname="error.metadata.translationRequired" approved="yes">
+                <source>A default metadata record, target language and translated ALT text are required.</source>
+                <target>Ein Standard-Metadatensatz, eine Zielsprache und ein übersetzter Alt-Text sind erforderlich.</target>
+            </trans-unit>
+            <trans-unit id="error.metadata.sourceRequired" resname="error.metadata.sourceRequired" approved="yes">
+                <source>Localized metadata must be created from its language-0 source record.</source>
+                <target>Übersetzte Metadaten müssen aus ihrem Quelldatensatz in Sprache 0 erstellt werden.</target>
+            </trans-unit>
+            <trans-unit id="error.metadata.backendRequired" resname="error.metadata.backendRequired" approved="yes">
+                <source>TYPO3 backend user context is required to localize file metadata.</source>
+                <target>Zum Übersetzen von Dateimetadaten ist ein TYPO3-Backend-Benutzerkontext erforderlich.</target>
+            </trans-unit>
+            <trans-unit id="error.metadata.localizeFailed" resname="error.metadata.localizeFailed" approved="yes">
+                <source>TYPO3 could not create metadata translation %d for record %d.</source>
+                <target>TYPO3 konnte die Metadatenübersetzung %d für Datensatz %d nicht erstellen.</target>
+            </trans-unit>
+            <trans-unit id="error.metadata.unsupportedField" resname="error.metadata.unsupportedField" approved="yes">
+                <source>Unsupported metadata field "%s".</source>
+                <target>Nicht unterstütztes Metadatenfeld „%s“.</target>
+            </trans-unit>
+            <trans-unit id="error.log.api" resname="error.log.api" approved="yes">
+                <source>API returned an error: %s</source>
+                <target>Die API hat einen Fehler zurückgegeben: %s</target>
+            </trans-unit>
+            <trans-unit id="error.log.manual" resname="error.log.manual" approved="yes">
+                <source>Manual generation failed for "%s": %s</source>
+                <target>Manuelle Generierung für „%s“ fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="error.log.retry" resname="error.log.retry" approved="yes">
+                <source>Retry generation failed for "%s": %s</source>
+                <target>Erneute Generierung für „%s“ fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="error.log.upload" resname="error.log.upload" approved="yes">
+                <source>Automatic upload processing failed for "%s": %s</source>
+                <target>Automatische Upload-Verarbeitung für „%s“ fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="error.log.rename" resname="error.log.rename" approved="yes">
+                <source>Auto-rename on upload failed for "%s": %s</source>
+                <target>Automatische Umbenennung beim Upload für „%s“ fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="error.log.bulk" resname="error.log.bulk" approved="yes">
+                <source>Bulk generation failed for "%s": %s</source>
+                <target>Stapelgenerierung für „%s“ fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="error.log.translation" resname="error.log.translation" approved="yes">
+                <source>ALT translation failed for language %s: %s</source>
+                <target>Alt-Text-Übersetzung für Sprache %s fehlgeschlagen: %s</target>
+            </trans-unit>
+            <trans-unit id="error.log.email" resname="error.log.email" approved="yes">
+                <source>Could not send bulk completion notification email: %s</source>
+                <target>E-Mail-Benachrichtigung zum Stapelabschluss konnte nicht gesendet werden: %s</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

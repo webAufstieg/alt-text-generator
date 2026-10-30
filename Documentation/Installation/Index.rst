@@ -15,7 +15,7 @@ Install the public Composer package from the TYPO3 project root:
 
 ..  code-block:: bash
 
-    composer require autoaltai/alt-text-generator:1.0.8
+    composer require autoaltai/alt-text-generator:1.0.9
 
 Composer installs the package and publishes its TYPO3 public assets. If the
 extension is not activated automatically, activate all newly installed

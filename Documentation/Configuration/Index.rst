@@ -183,7 +183,31 @@ causes.
 Language behaviour
 ==================
 
+Backend interface language
+--------------------------
+
+The AutoAlt.ai backend interface includes English and German translations.
+It follows the language selected in the current TYPO3 backend user's settings.
+Select German (Deutsch), save your user settings, and reload the backend to
+use the German interface. English remains the source and fallback language.
+The extension includes its German labels; no extension-specific language
+setting or additional translation download is required.
+
+The site's default content language does not determine the backend user's
+interface language. Configuring German as a site language alone therefore
+does not switch the AutoAlt.ai interface to German. Existing TYPO3 translation
+overrides and centrally downloaded language packs may override bundled labels;
+check those overrides if an installation still displays older wording.
+
+After updating the extension, clear TYPO3 caches and reload the backend so that
+cached labels and JavaScript labels are refreshed.
+
+Generated content language
+--------------------------
+
 The extension uses the TYPO3 site's default language as the source for
 generation and can create translations for active site languages. Existing
 editor-written translations are protected unless an overwrite option applies.
 Review translated content for terminology, product names, and legal wording.
+Changing a backend user's interface language does not change the language
+requested from the AI or translate existing image metadata.

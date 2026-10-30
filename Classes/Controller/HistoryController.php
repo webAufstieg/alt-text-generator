@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AutoAltAi\AltTextGenerator\Controller;
 
+use AutoAltAi\AltTextGenerator\Localization\BackendMessageLocalizer;
+
 use AutoAltAi\AltTextGenerator\Dto\HistoryEntry;
 use AutoAltAi\AltTextGenerator\Service\AutoAltApiService;
 use AutoAltAi\AltTextGenerator\Service\AltTextTranslationService;
@@ -123,7 +125,7 @@ final readonly class HistoryController
             ], $sourceFilter),
             'languageOptions' => $this->buildOptions(
                 ['' => $languageService->sL(self::LLL . 'history.filter.language.all')]
-                + $this->buildLanguageOptions($availableLanguages),
+                + $this->buildLanguageOptions($availableLanguages, $languageService),
                 $languageFilter
             ),
             'retryMessage' => $this->buildRetryMessage($languageService, $request),
@@ -333,13 +335,13 @@ final readonly class HistoryController
             // translations. A localized history row is independently editable
             // but must never expose an action that cannot be completed.
             'isLocalizedTranslation' => $entry->isLocalizedTranslation(),
-            ...$this->buildLanguagePresentation($entry->language),
+            ...$this->buildLanguagePresentation($entry->language, $languageService),
             'status' => $entry->status,
             'isSuccessful' => $entry->isSuccessful(),
             'generatedAltText' => $entry->generatedAltText,
             'generatedTitle' => $entry->generatedTitle,
             'generatedDescription' => $entry->generatedDescription,
-            'errorMessage' => $entry->errorMessage,
+            'errorMessage' => BackendMessageLocalizer::localize($entry->errorMessage, $languageService),
             'crdate' => $entry->crdate,
         ];
     }
@@ -358,11 +360,11 @@ final readonly class HistoryController
      * @param array<int, string> $historyLanguages
      * @return array<string, string>
      */
-    private function buildLanguageOptions(array $historyLanguages): array
+    private function buildLanguageOptions(array $historyLanguages, LanguageService $languageService): array
     {
         $options = [];
         foreach ($historyLanguages as $historyLanguage) {
-            $presentation = $this->buildLanguagePresentation($historyLanguage);
+            $presentation = $this->buildLanguagePresentation($historyLanguage, $languageService);
             $options[$historyLanguage] = $presentation['languageFlag'] . ' ' . $presentation['languageLabel'];
         }
 
@@ -376,17 +378,17 @@ final readonly class HistoryController
      *
      * @return array{languageLabel: string, languageFlag: string}
      */
-    private function buildLanguagePresentation(string $historyLanguage): array
+    private function buildLanguagePresentation(string $historyLanguage, LanguageService $languageService): array
     {
         $locale = trim(str_contains($historyLanguage, ':')
             ? (string)explode(':', $historyLanguage, 2)[1]
             : $historyLanguage);
         if ($locale === '') {
-            return ['languageLabel' => 'Language', 'languageFlag' => '🌐'];
+            return ['languageLabel' => $languageService->sL(self::LLL . 'history.filter.language.label'), 'languageFlag' => '🌐'];
         }
 
         $locale = str_replace('_', '-', $locale);
-        $languageLabel = \Locale::getDisplayLanguage($locale, 'en');
+        $languageLabel = \Locale::getDisplayLanguage($locale, $languageService->getLocale()?->getName() ?? 'en');
         if (!is_string($languageLabel) || $languageLabel === '') {
             $languageLabel = $locale;
         }

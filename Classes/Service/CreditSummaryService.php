@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace AutoAltAi\AltTextGenerator\Service;
 
 use AutoAltAi\AltTextGenerator\Dto\CreditInformation;
+use AutoAltAi\AltTextGenerator\Localization\BackendMessageLocalizer;
 use AutoAltAi\AltTextGenerator\Exception\AutoAltApiException;
 use TYPO3\CMS\Core\Localization\LanguageService;
 
@@ -40,7 +41,7 @@ final readonly class CreditSummaryService
             return $this->buildUnavailable(
                 'warning',
                 $languageService->sL(self::LLL . 'dashboard.credit.unavailable'),
-                sprintf($languageService->sL(self::LLL . 'dashboard.credit.lookupFailed'), $exception->getMessage())
+                sprintf($languageService->sL(self::LLL . 'dashboard.credit.lookupFailed'), BackendMessageLocalizer::localize($exception->getMessage(), $languageService))
             );
         }
 

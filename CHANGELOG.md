@@ -1,5 +1,15 @@
 # Changelog
 
+## 1.0.9 — 2026-10-30
+
+- Added a complete German backend catalogue while preserving English labels and
+  TYPO3's normal backend-user language selection and fallback behavior.
+- Localized progress counts, notifications, history language names, filename-audit
+  accessibility labels, and extension-owned error messages at the display layer.
+- Added the missing invalid-connection label and documented the distinction
+  between the backend interface language and AI-generated content language.
+- Added TYPO3 localization, catalogue-completeness and Fluid parser checks.
+
 ## 1.0.8 — 2026-10-28
 
 - Restyled the diagnostic review page with the shared backend stylesheet, a

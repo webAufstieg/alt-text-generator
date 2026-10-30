@@ -8,6 +8,18 @@ Changelog
 See the root CHANGELOG.md for the maintained Markdown history. Earlier release
 notes are preserved below.
 
+1.0.9 — 30 October 2026
+----------------------
+
+- Added all 562 German backend labels with English as the source and fallback.
+- Localized progress counts, settings notifications, history language names,
+  writing-style labels, error presentation and completion emails.
+- Added the missing invalid-connection label and translated accessibility text.
+- Documented backend-user language selection separately from site content and
+  AI generation languages. Existing generation-language behavior is preserved.
+- Added localization completeness, TYPO3 13/14 language-resolution and Fluid
+  parser tests. No database migration is required; clear TYPO3 caches after updating.
+
 1.0.8 — 28 October 2026
 ----------------------
 

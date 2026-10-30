@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AutoAltAi\AltTextGenerator\Controller;
 
+use AutoAltAi\AltTextGenerator\Localization\BackendMessageLocalizer;
+
 use AutoAltAi\AltTextGenerator\Dto\ImageScanResult;
 use AutoAltAi\AltTextGenerator\Service\BulkGenerationService;
 use AutoAltAi\AltTextGenerator\Service\ConfigurationService;
@@ -116,7 +118,10 @@ final readonly class BackendModuleController
             'apiKeyState' => trim((string)($configuration['apiKey'] ?? '')) !== ''
                 ? $languageService->sL(self::LLL . 'dashboard.defaults.configured')
                 : $languageService->sL(self::LLL . 'dashboard.defaults.missing'),
-            'writingStyle' => trim((string)($configuration['writingStyle'] ?? 'default')),
+            'writingStyle' => BackendMessageLocalizer::localize(
+                trim((string)($configuration['writingStyle'] ?? '')) ?: 'Use account default',
+                $languageService,
+            ),
             'allowedImageExtensions' => $allowedExtensions !== '' ? $allowedExtensions : $languageService->sL(self::LLL . 'dashboard.defaults.allExtensions'),
         ];
     }

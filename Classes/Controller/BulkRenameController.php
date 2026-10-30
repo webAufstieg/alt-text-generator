@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AutoAltAi\AltTextGenerator\Controller;
 
+use AutoAltAi\AltTextGenerator\Localization\BackendMessageLocalizer;
+
 use AutoAltAi\AltTextGenerator\Service\AiFilenameService;
 use AutoAltAi\AltTextGenerator\Service\ConfigurationService;
 use AutoAltAi\AltTextGenerator\Service\CreditSummaryService;
@@ -138,7 +140,7 @@ final readonly class BulkRenameController
             'fileUid' => $result->fileUid,
             'oldFilename' => $result->oldFilename,
             'newFilename' => $result->newFilename,
-            'message' => $result->success ? $languageService->sL(self::LLL . $successKey) : $result->message,
+            'message' => $result->success ? $languageService->sL(self::LLL . $successKey) : BackendMessageLocalizer::localize($result->message, $languageService),
             'creditExhausted' => !$result->success && preg_match('/credit|balance|quota/i', $result->message) === 1,
         ]);
     }

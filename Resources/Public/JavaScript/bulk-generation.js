@@ -424,7 +424,8 @@ class BulkGeneration {
 
   setMeta(finished, total) {
     if (this.meta) {
-      this.meta.textContent = finished + ' of ' + total;
+      this.meta.textContent = lang('bulk.progress.count', '%1$d of %2$d')
+        .replace('%1$d', String(finished)).replace('%2$d', String(total));
     }
     if (this.liveLogCount) {
       this.liveLogCount.textContent = finished + ' / ' + total;

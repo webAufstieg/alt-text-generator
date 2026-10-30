@@ -90,7 +90,7 @@
         </div>
 
         <div class="autoalt-rename-toolbar">
-            <nav class="autoalt-tabs" aria-label="Filename audit">
+            <nav class="autoalt-tabs" aria-label="{f:translate(key: 'LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:rename.audit.title')}">
                 <f:for each="{tabs}" as="tab">
                     <a class="autoalt-tabs__item{f:if(condition: tab.active, then: ' autoalt-tabs__item--active')}" href="{tab.url}"{f:if(condition: tab.active, then: ' aria-current="page"') -> f:format.raw()}>
                         <f:translate key="{tab.labelKey}"/>

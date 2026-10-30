@@ -22,7 +22,7 @@ export default function showAutoAltConfirmation({
   message = '',
   subject = '',
   subjectLabel = '',
-  cancelLabel = 'Cancel',
+  cancelLabel = window.TYPO3?.lang?.['settings.action.cancel'] || 'Cancel',
   icon = 'actions-wand-sparkles',
   variant = 'ai',
 }) {

@@ -8,6 +8,7 @@ use Psr\Log\LoggerInterface;
 use Symfony\Component\Mime\Address;
 use TYPO3\CMS\Core\Mail\MailerInterface;
 use TYPO3\CMS\Core\Mail\MailMessage;
+use TYPO3\CMS\Core\Localization\LanguageServiceFactory;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
 /**
@@ -39,13 +40,15 @@ final readonly class BulkCompletionNotifierService
         }
 
         try {
+            $languageService = GeneralUtility::makeInstance(LanguageServiceFactory::class)
+                ->createFromUserPreferences($GLOBALS['BE_USER'] ?? null);
+            $labelPrefix = 'LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:';
             $mailMessage = GeneralUtility::makeInstance(MailMessage::class);
             $mailMessage
                 ->to(new Address($recipient))
-                ->subject('AutoAlt.ai: Bulk alt text generation finished')
+                ->subject($languageService->sL($labelPrefix . 'notification.bulk.subject'))
                 ->text(sprintf(
-                    "Your AutoAlt.ai bulk generation queue has finished processing.\n\n" .
-                    "Total images: %d\nCompleted successfully: %d\nFailed: %d\n",
+                    $languageService->sL($labelPrefix . 'notification.bulk.body'),
                     $progress['total'],
                     $progress['completed'],
                     $progress['failed'],

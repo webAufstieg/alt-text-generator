@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<xliff version="1.0">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" version="1.2">
     <file source-language="en" datatype="plaintext" original="messages" date="2026-08-03T00:00:00Z" product-name="alt_text_generator">
         <header/>
         <body>
@@ -1292,6 +1292,68 @@
             <trans-unit id="rename.method.manual"><source>Manual</source></trans-unit>
             <trans-unit id="rename.method.undo"><source>Undo</source></trans-unit>
 
+            <trans-unit id="settings.connectionState.invalid" resname="settings.connectionState.invalid"><source>Invalid connection</source></trans-unit>
+            <trans-unit id="bulk.progress.count" resname="bulk.progress.count"><source>%1$d of %2$d</source></trans-unit>
+            <trans-unit id="bulk.message.metadataUpdated" resname="bulk.message.metadataUpdated"><source>Metadata updated.</source></trans-unit>
+            <trans-unit id="settings.errorLogs.level.error" resname="settings.errorLogs.level.error"><source>error</source></trans-unit>
+            <trans-unit id="settings.errorLogs.level.warning" resname="settings.errorLogs.level.warning"><source>warning</source></trans-unit>
+            <trans-unit id="settings.errorLogs.level.info" resname="settings.errorLogs.level.info"><source>info</source></trans-unit>
+            <trans-unit id="settings.error.invalidFormToken" resname="settings.error.invalidFormToken"><source>Invalid form token. Reopen the settings page.</source></trans-unit>
+            <trans-unit id="diagnostics.error.adminRequired" resname="diagnostics.error.adminRequired"><source>Administrator access is required.</source></trans-unit>
+            <trans-unit id="diagnostics.error.methodNotAllowed" resname="diagnostics.error.methodNotAllowed"><source>Method not allowed.</source></trans-unit>
+            <trans-unit id="diagnostics.error.invalidFormToken" resname="diagnostics.error.invalidFormToken"><source>Invalid form token. Reopen the diagnostic review.</source></trans-unit>
+            <trans-unit id="diagnostics.error.invalidAction" resname="diagnostics.error.invalidAction"><source>Invalid diagnostic action.</source></trans-unit>
+            <trans-unit id="notification.bulk.subject" resname="notification.bulk.subject"><source>AutoAlt.ai: Bulk alt text generation finished</source></trans-unit>
+            <trans-unit xml:space="preserve" id="notification.bulk.body" resname="notification.bulk.body"><source>Your AutoAlt.ai bulk generation queue has finished processing.
+
+Total images: %d
+Completed successfully: %d
+Failed: %d
+</source></trans-unit>
+            <trans-unit id="error.api.requestFailed" resname="error.api.requestFailed"><source>AutoAlt.ai API request failed. Please try again later.</source></trans-unit>
+            <trans-unit id="error.api.invalidJson" resname="error.api.invalidJson"><source>AutoAlt.ai returned invalid JSON.</source></trans-unit>
+            <trans-unit id="error.api.emptyAltText" resname="error.api.emptyAltText"><source>AutoAlt.ai returned an empty alt text response.</source></trans-unit>
+            <trans-unit id="error.api.emptyTranslation" resname="error.api.emptyTranslation"><source>AutoAlt.ai returned an empty translation.</source></trans-unit>
+            <trans-unit id="error.image.noPermission" resname="error.image.noPermission"><source>You do not have permission to generate alt text for this image.</source></trans-unit>
+            <trans-unit id="error.image.missing" resname="error.image.missing"><source>Image #%d no longer exists.</source></trans-unit>
+            <trans-unit id="error.image.unreadable" resname="error.image.unreadable"><source>File contents could not be read for image #%d.</source></trans-unit>
+            <trans-unit id="error.diagnostics.noApiKey" resname="error.diagnostics.noApiKey"><source>Connect an AutoAlt.ai API key before sending diagnostics.</source></trans-unit>
+            <trans-unit id="error.rename.noApiKey" resname="error.rename.noApiKey"><source>Connect an AutoAlt.ai API key before using AI rename.</source></trans-unit>
+            <trans-unit id="error.rename.invalidRequest" resname="error.rename.invalidRequest"><source>Invalid rename request.</source></trans-unit>
+            <trans-unit id="error.rename.busy" resname="error.rename.busy"><source>This file is already being processed.</source></trans-unit>
+            <trans-unit id="error.rename.invalidUpload" resname="error.rename.invalidUpload"><source>The uploaded file has no valid TYPO3 file UID.</source></trans-unit>
+            <trans-unit id="error.rename.invalidUid" resname="error.rename.invalidUid"><source>Invalid file UID.</source></trans-unit>
+            <trans-unit id="error.rename.noUndo" resname="error.rename.noUndo"><source>No valid rename is available to undo.</source></trans-unit>
+            <trans-unit id="error.rename.nameOccupied" resname="error.rename.nameOccupied"><source>The previous filename is already occupied and cannot be restored.</source></trans-unit>
+            <trans-unit id="error.rename.applyFailed" resname="error.rename.applyFailed"><source>TYPO3 could not apply the requested filename.</source></trans-unit>
+            <trans-unit id="error.rename.historyFailed" resname="error.rename.historyFailed"><source>Rename history could not be saved; the file rename was rolled back.</source></trans-unit>
+            <trans-unit id="error.rename.fileMissing" resname="error.rename.fileMissing"><source>The physical file is missing.</source></trans-unit>
+            <trans-unit id="error.rename.unsupported" resname="error.rename.unsupported"><source>The file is not a supported image.</source></trans-unit>
+            <trans-unit id="error.rename.unsupportedType" resname="error.rename.unsupportedType"><source>This image type is not supported.</source></trans-unit>
+            <trans-unit id="error.rename.storageOffline" resname="error.rename.storageOffline"><source>The file storage is offline.</source></trans-unit>
+            <trans-unit id="error.rename.storageReadOnly" resname="error.rename.storageReadOnly"><source>The file storage is read-only.</source></trans-unit>
+            <trans-unit id="error.rename.noPermission" resname="error.rename.noPermission"><source>You do not have permission to rename this file.</source></trans-unit>
+            <trans-unit id="error.rename.emptyFilename" resname="error.rename.emptyFilename"><source>AutoAlt.ai did not return a filename. The file was not changed.</source></trans-unit>
+            <trans-unit id="error.rename.aiFailed" resname="error.rename.aiFailed"><source>AI rename failed.</source></trans-unit>
+            <trans-unit id="error.rename.failed" resname="error.rename.failed"><source>The file could not be renamed.</source></trans-unit>
+            <trans-unit id="error.filename.invalid" resname="error.filename.invalid"><source>Invalid filename. Enter a basename without a path.</source></trans-unit>
+            <trans-unit id="error.filename.pathTraversal" resname="error.filename.pathTraversal"><source>Path traversal is not allowed in filenames.</source></trans-unit>
+            <trans-unit id="error.filename.reserved" resname="error.filename.reserved"><source>The filename is empty or reserved after normalization.</source></trans-unit>
+            <trans-unit id="error.filename.empty" resname="error.filename.empty"><source>The normalized filename is empty.</source></trans-unit>
+            <trans-unit id="error.filename.noAvailableName" resname="error.filename.noAvailableName"><source>No available filename could be found.</source></trans-unit>
+            <trans-unit id="error.metadata.translationRequired" resname="error.metadata.translationRequired"><source>A default metadata record, target language and translated ALT text are required.</source></trans-unit>
+            <trans-unit id="error.metadata.sourceRequired" resname="error.metadata.sourceRequired"><source>Localized metadata must be created from its language-0 source record.</source></trans-unit>
+            <trans-unit id="error.metadata.backendRequired" resname="error.metadata.backendRequired"><source>TYPO3 backend user context is required to localize file metadata.</source></trans-unit>
+            <trans-unit id="error.metadata.localizeFailed" resname="error.metadata.localizeFailed"><source>TYPO3 could not create metadata translation %d for record %d.</source></trans-unit>
+            <trans-unit id="error.metadata.unsupportedField" resname="error.metadata.unsupportedField"><source>Unsupported metadata field "%s".</source></trans-unit>
+            <trans-unit id="error.log.api" resname="error.log.api"><source>API returned an error: %s</source></trans-unit>
+            <trans-unit id="error.log.manual" resname="error.log.manual"><source>Manual generation failed for "%s": %s</source></trans-unit>
+            <trans-unit id="error.log.retry" resname="error.log.retry"><source>Retry generation failed for "%s": %s</source></trans-unit>
+            <trans-unit id="error.log.upload" resname="error.log.upload"><source>Automatic upload processing failed for "%s": %s</source></trans-unit>
+            <trans-unit id="error.log.rename" resname="error.log.rename"><source>Auto-rename on upload failed for "%s": %s</source></trans-unit>
+            <trans-unit id="error.log.bulk" resname="error.log.bulk"><source>Bulk generation failed for "%s": %s</source></trans-unit>
+            <trans-unit id="error.log.translation" resname="error.log.translation"><source>ALT translation failed for language %s: %s</source></trans-unit>
+            <trans-unit id="error.log.email" resname="error.log.email"><source>Could not send bulk completion notification email: %s</source></trans-unit>
         </body>
     </file>
 </xliff>

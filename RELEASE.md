@@ -1,10 +1,11 @@
 # Releasing Alt Text Generator - AutoAlt.ai
 
-The current release is **1.0.8**, dated 28 October 2026. This release adds
-administrator-controlled default-off telemetry, confirmed one-time support
-reports, privacy-safe diagnostic payloads and improved settings/review screens.
-The report preview scrolls within a maximum height of 17rem. No new database
-schema or manual SQL migration is introduced.
+The current release is **1.0.9**, dated 30 October 2026. It adds a complete
+German backend interface while preserving English as the source and fallback.
+Progress indicators, notifications, language names, error presentation and
+completion emails follow the backend user's language. Existing site-language
+and AI generation behavior is unchanged. No database migration is introduced.
+Clear TYPO3 caches and reload the backend after updating.
 
 ## Develop and validate
 
@@ -36,6 +37,25 @@ For each published version, compare the production file contents between the
 approved internal source, public tag and distribution archive. Internal notes
 and customer documentation can differ; the shipped production code must match.
 
+## Version 1.0.9 verification
+
+Production source is synchronized with the approved internal 1.0.9 tag. All
+existing test files are preserved, including the localization suite covering
+German/English backend preferences, German regional fallback, all 562 catalogue
+labels and placeholders, module/JavaScript labels, history language names,
+error responses, Fluid parsing and a completion email with a mocked mailer.
+The owner supplied a working-site archive with matching production code and
+screenshots showing successful English and German generated metadata.
+Public validation on PHP 8.2.35 passed the full `composer test` suite with
+TYPO3 13.4.37: **49 PHPUnit tests, 5,331 assertions, and 76 privacy behavior
+checks**, plus Composer/PHP/YAML validation. The same 49 PHPUnit tests and
+5,331 assertions also passed with TYPO3 14.3.10. All **89 production files**
+match the approved 1.0.9 development tag exactly. No real API request or email
+was sent during these automated checks.
+
+Automated checks do not replace browser/FAL/API integration testing on every
+supported TYPO3/PHP combination.
+
 ## Version 1.0.8 verification
 
 The public release preserves all ten existing PHPUnit test files and updates the
@@ -51,7 +71,7 @@ or supported-version matrix certification.
 1. Review the complete release diff and test results, then merge the release
    branch into `main` through the repository's review process.
 2. Create the new version tag only at the reviewed commit. Do not replace
-   existing tags. For this release, use `v1.0.8`.
+   existing tags. For this release, use `v1.0.9`.
 3. Push the approved branch/tag and create a GitHub Release with release notes
    and the tested distribution ZIP.
 4. Verify that Packagist indexes the public tag and that Composer can resolve
@@ -68,9 +88,9 @@ From the reviewed tagged repository:
 
 ```bash
 mkdir -p dist
-git archive --format=zip --output=dist/alt_text_generator_1.0.8.zip v1.0.8
-unzip -t dist/alt_text_generator_1.0.8.zip
-unzip -l dist/alt_text_generator_1.0.8.zip
+git archive --format=zip --output=dist/alt_text_generator_1.0.9.zip v1.0.9
+unzip -t dist/alt_text_generator_1.0.9.zip
+unzip -l dist/alt_text_generator_1.0.9.zip
 ```
 
 The extension files must be at the ZIP root: `composer.json`, `ext_emconf.php`,
@@ -84,7 +104,7 @@ Keep useful test sources in the Git repository.
 From the TYPO3 project root:
 
 ```bash
-composer require autoaltai/alt-text-generator:^1.0.8 --with-all-dependencies
+composer require autoaltai/alt-text-generator:^1.0.9 --with-all-dependencies
 vendor/bin/typo3 extension:setup
 ```
 

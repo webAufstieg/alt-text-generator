@@ -14,6 +14,7 @@ use TYPO3\CMS\Core\Authentication\BackendUserAuthentication;
 use TYPO3\CMS\Core\FormProtection\FormProtectionFactory;
 use TYPO3\CMS\Core\Http\HtmlResponse;
 use TYPO3\CMS\Core\Http\RedirectResponse;
+use TYPO3\CMS\Core\Localization\LanguageService;
 use TYPO3\CMS\Core\Page\PageRenderer;
 use TYPO3\CMS\Core\Utility\GeneralUtility;
 
@@ -21,6 +22,7 @@ use TYPO3\CMS\Core\Utility\GeneralUtility;
 final readonly class DiagnosticsController
 {
     private const ROUTE = 'media_autoalt_alt_text_generator_settings';
+    private const LLL = 'LLL:EXT:alt_text_generator/Resources/Private/Language/locallang.xlf:';
 
     public function __construct(
         private ModuleTemplateFactory $moduleTemplateFactory,
@@ -34,12 +36,12 @@ final readonly class DiagnosticsController
     {
         $user = $GLOBALS['BE_USER'] ?? null;
         if (!$user instanceof BackendUserAuthentication || (int)($user->user['uid'] ?? 0) <= 0 || !$user->isAdmin()) {
-            return new HtmlResponse('Administrator access is required.', 403);
+            return $this->errorResponse('diagnostics.error.adminRequired', 'Administrator access is required.', 403);
         }
 
         $method = $request->getMethod();
         if (!in_array($method, ['GET', 'POST'], true)) {
-            return new HtmlResponse('Method not allowed.', 405, ['Allow' => 'GET, POST']);
+            return $this->errorResponse('diagnostics.error.methodNotAllowed', 'Method not allowed.', 405, ['Allow' => 'GET, POST']);
         }
         ($this->pageRenderer ?? GeneralUtility::makeInstance(PageRenderer::class))
             ->addCssFile('EXT:alt_text_generator/Resources/Public/Css/backend-module.css');
@@ -52,14 +54,14 @@ final readonly class DiagnosticsController
             $body = is_array($body) ? $body : [];
             $token = is_string($body['formToken'] ?? null) ? $body['formToken'] : '';
             if (!$formProtection->validateToken($token, 'autoaltDiagnostics', 'send')) {
-                return new HtmlResponse('Invalid form token. Reopen the diagnostic review.', 403);
+                return $this->errorResponse('diagnostics.error.invalidFormToken', 'Invalid form token. Reopen the diagnostic review.', 403);
             }
             if (($body['diagnosticAction'] ?? null) === 'cancel') {
                 $this->supportDiagnosticService->cancel($user);
                 return new RedirectResponse((string)$this->uriBuilder->buildUriFromRoute(self::ROUTE), 303);
             }
             if (($body['diagnosticAction'] ?? null) !== 'confirm') {
-                return new HtmlResponse('Invalid diagnostic action.', 400);
+                return $this->errorResponse('diagnostics.error.invalidAction', 'Invalid diagnostic action.', 400);
             }
             $reviewToken = is_string($body['reviewToken'] ?? null) ? $body['reviewToken'] : '';
             $result = $this->supportDiagnosticService->confirm($user, $reviewToken) ? 'success' : 'failure';
@@ -82,5 +84,15 @@ final readonly class DiagnosticsController
             'result' => $result,
         ]);
         return $template->renderResponse('Settings/Diagnostics');
+    }
+
+    /** @param array<string, string> $headers */
+    private function errorResponse(string $key, string $fallback, int $status, array $headers = []): HtmlResponse
+    {
+        // TYPO3's backend middleware initializes LANG from the authenticated
+        // user's preferences. Keep early responses usable without that context.
+        $languageService = $GLOBALS['LANG'] ?? null;
+        $message = $languageService instanceof LanguageService ? ($languageService->sL(self::LLL . $key) ?: $fallback) : $fallback;
+        return new HtmlResponse(htmlspecialchars($message, ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'), $status, $headers);
     }
 }

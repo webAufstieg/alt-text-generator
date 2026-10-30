@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AutoAltAi\AltTextGenerator\Controller;
 
+use AutoAltAi\AltTextGenerator\Localization\BackendMessageLocalizer;
+
 use AutoAltAi\AltTextGenerator\Exception\AutoAltApiException;
 use AutoAltAi\AltTextGenerator\Service\AutoAltApiService;
 use AutoAltAi\AltTextGenerator\Service\AltTextTranslationService;
@@ -132,7 +134,7 @@ final readonly class SingleGenerateAjaxController
 
             return new JsonResponse([
                 'success' => false,
-                'message' => $exception->getMessage(),
+                'message' => BackendMessageLocalizer::localize($exception->getMessage(), $languageService),
             ], 502);
         }
 
@@ -176,7 +178,7 @@ final readonly class SingleGenerateAjaxController
 
             return new JsonResponse([
                 'success' => false,
-                'message' => $exception->getMessage(),
+                'message' => BackendMessageLocalizer::localize($exception->getMessage(), $languageService),
             ], 500);
         }
 

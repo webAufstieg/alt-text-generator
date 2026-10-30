@@ -4,6 +4,8 @@ declare(strict_types=1);
 
 namespace AutoAltAi\AltTextGenerator\Controller;
 
+use AutoAltAi\AltTextGenerator\Localization\BackendMessageLocalizer;
+
 use AutoAltAi\AltTextGenerator\Service\AutoAltApiService;
 use AutoAltAi\AltTextGenerator\Service\ConfigurationService;
 use AutoAltAi\AltTextGenerator\Service\CreditSummaryService;
@@ -118,7 +120,7 @@ final readonly class SettingsController
             $body = $request->getParsedBody();
             $token = is_array($body) && is_string($body['formToken'] ?? null) ? $body['formToken'] : '';
             if (!$formProtection->validateToken($token, 'autoaltSettings', 'save')) {
-                return new HtmlResponse('Invalid form token. Reopen the settings page.', 403);
+                return new HtmlResponse(htmlspecialchars($languageService->sL(self::LLL . 'settings.error.invalidFormToken'), ENT_QUOTES | ENT_SUBSTITUTE, 'UTF-8'), 403);
             }
         }
 
@@ -178,7 +180,7 @@ final readonly class SettingsController
         unset($settingsForTemplate['apiKey']);
         $connectionState = $this->buildConnectionState($languageService, $settings, $validationResult);
         $writingStyleOptions = $this->buildWritingStyleOptions($languageService, (string)$settings['writingStyle']);
-        $recentErrorLogs = $this->buildRecentErrorLogs();
+        $recentErrorLogs = $this->buildRecentErrorLogs($languageService);
         $moduleTemplate = $this->moduleTemplateFactory->create($request);
         $moduleTemplate->setTitle($languageService->sL(self::LLL . 'module.title'), $languageService->sL(self::LLL . 'settings.title'));
         $moduleTemplate->assignMultiple([
@@ -221,7 +223,7 @@ final readonly class SettingsController
     /**
      * @return array<int, array<string, string>>
      */
-    private function buildRecentErrorLogs(): array
+    private function buildRecentErrorLogs(LanguageService $languageService): array
     {
         $entries = [];
         foreach ($this->errorLogService->getRecent(20) as $row) {
@@ -232,7 +234,8 @@ final readonly class SettingsController
             }
             $entries[] = [
                 'level' => $level,
-                'message' => (string)($row['message'] ?? ''),
+                'levelLabel' => $languageService->sL(self::LLL . 'settings.errorLogs.level.' . $level),
+                'message' => BackendMessageLocalizer::localize((string)($row['message'] ?? ''), $languageService),
                 'date' => date('d M Y', $timestamp),
                 'time' => date('H:i:s', $timestamp),
                 'datetime' => date(DATE_ATOM, $timestamp),

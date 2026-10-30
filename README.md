@@ -1,6 +1,6 @@
 # AutoAlt.ai for TYPO3
 
-Version **1.0.8** · Extension key `alt_text_generator` · GPL-2.0-or-later
+Version **1.0.9** · Extension key `alt_text_generator` · GPL-2.0-or-later
 
 Generate image alternative text, titles, descriptions, and SEO-friendly filenames
 through AutoAlt.ai from TYPO3's File Abstraction Layer (FAL). Editors can review
@@ -10,6 +10,7 @@ the declared compatibility range is not a certification of every TYPO3/PHP combi
 ## Features
 
 - Backend dashboard with image statistics, generation defaults, and credits.
+- English and German backend interfaces, following each backend user's language.
 - Single-image generation from the metadata form and selected Filelist items.
 - Browser-driven bulk generation with independent Generate, Keep, or Clear actions.
 - Automatic generation and optional AI filename renaming on upload.
@@ -46,7 +47,7 @@ The privacy behavior suite uses mocked TYPO3 adapters, persistence, and HTTP.
 Install the public package from your TYPO3 project root:
 
 ```bash
-composer require autoaltai/alt-text-generator:^1.0.8
+composer require autoaltai/alt-text-generator:^1.0.9
 vendor/bin/typo3 extension:setup
 ```
 
